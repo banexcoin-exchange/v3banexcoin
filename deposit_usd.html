@@ -1,0 +1,1044 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <title>Banexcoin Payment</title>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,900i" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+      <link href="./local/css/jquery.payfield.css" rel="stylesheet">
+      <script src="./local/js/alphapoint.min.js"></script>
+    <style>
+      html, body {
+        background: #F6F9FF;
+      }
+      /* APEX ORIGINAL FIX*/
+      .page-header__container-1 {
+          position: relative;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+          z-index: var(--z-index__navigation);
+          margin-bottom: 4px;
+          height: var(--nav-header__height);
+          background: var(--nav-header__bg-color);
+          -webkit-box-shadow: 0 4px 0 0 var(--nav-item__bg-color--selected),0 2px 2rem 0 var(--component__box-shadow-color);
+          box-shadow: 0 4px 0 0 var(--nav-item__bg-color--selected),0 2px 2rem 0 var(--component__box-shadow-color);
+      }
+      
+      .page-header__header-item {
+          font-size: 1.4rem;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+          align-items: center;
+          height: 100%;
+          width: 16rem;
+          padding-top: .8rem;
+          -ms-flex-pack: center;
+          justify-content: center;
+          border-right: 1px solid var(--nav-item__separator-color);
+          border-color: var(--nav-item__separator-color);
+          color: var(--nav-item__color);
+      }
+      .page-header__header-item--logo {
+          width: 16rem;
+          color: var(--font__color-primary);
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+      }
+      @media only screen and (max-width: 99.2rem) {
+        .page-header__header-item--logo {
+            -ms-flex-order: 2;
+            order: 2;
+            -ms-flex: 1 1;
+            flex: 1 1;
+            border-right: 0;
+            border-color: var(--nav-item__separator-color);
+        }
+      }
+      @media only screen and (min-width: 79.2rem) {
+        .page-header__header-item--logo {
+            order: 0!important;
+            flex: none!important;
+        }
+      }
+      .page-header-nav__container, .page-header-nav__item {
+          display: -ms-flexbox;
+          display: flex;
+      }
+      @media only screen and (min-width: 79.2rem) {
+        .page-header-nav__container {
+            flex-direction: row!important;
+            position: relative!important;
+        }
+      }
+
+      .page-header-nav__container--closed {
+          overflow: hidden;
+      }
+      @media only screen and (max-width: 99.2rem) {
+        .page-header-nav__container {
+            -ms-flex-order: 1;
+            order: 1;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            z-index: var(--z-index__navigation);
+            position: absolute;
+            height: var(--nav-header__height);
+        }
+      }
+      .page-header__right-panel {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+      }
+      @media only screen and (max-width: 99.2rem) {
+        .page-header__right-panel {
+            -ms-flex-order: 3;
+            order: 3;
+            -ms-flex-positive: unset;
+            flex-grow: unset;
+            position: absolute;
+            right: 0;
+            height: var(--nav-header__height);
+        }
+      }
+      .page-header-nav__item {
+          -ms-flex-align: center;
+          align-items: center;
+          width: 16rem;
+          padding-top: .5rem;
+          cursor: pointer;
+          font-weight: 700;
+          -ms-flex-pack: center;
+          justify-content: center;
+          color: var(--nav-item__color);
+          background: var(--nav-header__bg-color);
+          border-right: solid 1px var(--nav-item__separator-color);
+          border-color: var(--tab__separator-color);
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          z-index: var(--z-index__navigation);
+      }
+      @media only screen and (max-width: 99.2rem) {
+        .page-header-nav__item--selected, .page-header-nav__item--selected:hover {
+            -ms-flex-order: 1;
+            order: 1;
+            z-index: -1;
+            background: transparent;
+            cursor: default;
+        }
+      }
+
+      @media only screen and (max-width: 99.2rem) {
+        .page-header-nav__item {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            min-height: var(--nav-header__height);
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-line-pack: start;
+            align-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            width: 20rem;
+            position: relative;
+            border-top: 1px solid var(--tab__separator-color);
+            -ms-flex-order: 2;
+            order: 2;
+        }
+      }
+      .page-header-nav__icon {
+          display: -ms-flexbox;
+          display: flex;
+          width: var(--nav-item__icon-size);
+          margin: 0 1.2rem 0 0;
+      }
+      .page-header-nav__icon--exchange {
+          margin-top: .3rem;
+      }
+
+      .user-summary__container {
+          width: 25rem;
+          height: 100%;
+          line-height: 1.4;
+          min-width: 25rem;
+          border-left: 1px solid var(--user-summary__border-color);
+          border-right: 1px solid var(--user-summary__border-color);
+      }
+      @media only screen and (max-width: 99.2rem) {
+        .user-summary__container {
+            width: auto;
+            min-width: 6rem;
+        }
+      }
+
+      /* APEX ORIGINAL END*/
+      #all-pay, #no-pay {
+        display: none;
+      }
+      div#loading_pay {
+        display: block;
+        width: 100%;
+        height: 101%;
+        top: -2px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-image: url(/local/img/loading_pay.gif) !important;
+        background-position: center;
+        background-size: initial !important;
+        background-repeat: no-repeat;
+        background-color: #F6F9FF!important;
+        text-align: center;
+        align-items: center;
+        padding-top: 50%;
+        line-height: 5rem;
+        color: #6a6a6a;
+        font-weight: 300;
+        font-size: 1.5rem;
+        z-index: 99;
+      }
+      .centered {
+        margin: auto;
+      }
+      #box-amount {
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+      }
+      .amount-simbol {
+          margin-right: 4px;
+          margin-top: 10px;
+          text-align: right;
+          color: rgb(44, 46, 47);
+          font-size: 18px;
+          font-weight: 400;
+      }
+      .amount-payme {
+          color: rgb(44, 46, 47);
+          text-align: center;
+          text-overflow: clip;
+          cursor: pointer;
+          letter-spacing: normal;
+          line-height: 1.4;
+          font-family: PayPal-Sans-Big, sans-serif;
+          font-weight: 300;
+          width: 84px;
+          font-size: 38px;
+          background: none;
+          border-width: initial;
+          border-style: none;
+          border-color: initial;
+          border-image: initial;
+          padding: 0px;
+          margin: 0px;
+          outline: 0px;
+      }
+      .payment-title img {
+          width: 278px;
+          margin: 10px auto 0;
+          display: block;
+      }
+      .payment-title span.title {
+          width: 283px;
+          margin: -21px auto 10px;
+          display: block;
+          text-align: right;
+          font-weight: 500;
+          font-size: 0.9rem;
+          cursor: default;
+      }
+      hr {
+          margin-top: 0rem;
+          margin-bottom: 0.5rem;
+      }
+      ul.lista-error {
+        margin: 0;
+      }
+      .form-group {
+          margin-bottom: 0.5rem;
+      }
+      .boxpayment {
+        border: 0px solid #b0b0b0;
+        margin: 10px;
+        font-family: 'Roboto', sans-serif;
+        
+      }
+      .block_card {
+        border-radius: 3px;
+        background: #ffffff;
+        padding: 20px 0;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.43);
+      }
+      b {
+        color: #767676;
+        font-weight: 500;
+      }
+      h3, h4 {
+        color: #343434;
+        font-weight: 400;
+      }
+      .btn-primary {
+          color: #fff;
+          background-color: #F4511E;
+          border-color: #F4511E;
+      }
+      .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+          color: #fff;
+          background-color: #D84315;
+          border-color: #D84315;
+      }
+
+      .line_res {
+        margin: 10px 0px 5px;
+        font-size: 0.9rem;
+      }
+      .line_res .right_info {
+        float: right;
+        font-size: 1rem;
+        color: #515151;
+        width: 50%;
+      }
+      span#description_info {
+        font-size: 0.9rem;
+      }
+      .right_info span, .right_info b {
+        font-weight: 500;
+        color: #515151;
+        text-align: right;
+        display: block;
+      }
+      .form-group.button-bot {
+          padding: 15px;
+      }
+      #paysaved, #nexttransfer {
+        width: 100%;
+        margin: 0 -15px;
+        padding: 15px;
+      }
+      span#amount_total_usd {
+        font-size: 1.5rem;
+      }
+      .form-control:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+          border-color: #ffc380!important;
+          box-shadow: 0 0 0 0.2rem rgba(255, 117, 0, 0.25)!important;
+      }
+      .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+          color: #fff;
+          background-color: #4CAF50;
+          border-color: #1B5E20;
+      }
+      .btn-primary:hover {
+        color: #fff;
+        background-color: rgba(76, 175, 80, 0.7);
+        border-color: rgba(27, 94, 32, 0.7);
+      }
+      .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+          color: #fff;
+          background-color: #4CAF50;
+          border-color: #1B5E20;
+      }
+      div#resume_alert {
+        border-radius: 0;
+      }
+      span#aprox {
+          border-bottom: dashed 1px;
+          color: #cccccc;
+          margin-top: -5px;
+          display: block;
+          text-align: center;
+          cursor: pointer;
+      }
+
+      ul.lines-step {
+        align-items: center;
+        text-align: center;
+        margin: 0 0 15px;
+        padding: 0;
+      }
+      .lines-step li {
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        line-height: 2em;
+        border-radius: 1em;
+        background: #f28e2a;
+        margin: 0 1em;
+        display: inline-block;
+        color: white;
+        position: relative;
+      }
+
+      .lines-step li::before {
+        content: '';
+        position: absolute;
+        top: .9em;
+        left: -4em;
+        width: 4em;
+        height: .2em;
+        background: #f28e2a;
+        z-index: -1;
+      }
+      .lines-step li.active::after {
+          content: '';
+          position: absolute;
+          top: -0.5em;
+          left: -0.5em;
+          width: 3em;
+          height: 3em;
+          background: #f3f3f3;
+          z-index: -1;
+          border-radius: 2em;
+          border: 2px solid #ff7e44;
+      }
+
+      .lines-step li:first-child::before {
+        display: none;
+      }
+
+      .lines-step .active {
+        background: #f28e2a;
+      }
+
+      .lines-step .active ~ li {
+        background: #ffbe7e;
+      }
+
+      .lines-step .active ~ li::before {
+        background: #ffbe7e;
+      }
+      div#materialize-transaction-report i {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4rem;
+      }
+      .box-whited {margin: 0 auto;}
+      input#amount_usd, input#amount_ticket {
+        border-width: 1.5px;
+      }
+    </style>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+      function checkForm(){
+        var empty_count = 0;
+        var texto_msj = '<ul class="lista-error">';
+        $('form.form-send input.required').each(function(){
+          if( $(this).val().length === 0) {
+            empty_count++;
+            var this_msj = $(this).attr('error-msj');
+            texto_msj += "<li>"+this_msj+"</li>";
+          }
+          var attr = $(this).attr('error-msj-amount');
+          if( typeof attr !== typeof undefined && attr !== false && $(this).val() <= 0) {
+            empty_count++;
+            var this_msj = $(this).attr('error-msj-amount');
+            texto_msj += "<li>"+this_msj+"</li>";
+          }
+        });
+        texto_msj += '</ul>';
+        if(empty_count > 0){
+          $('#resume_alert').show();
+          $('#resume_alert').html(texto_msj);
+        } else {
+          $('#resume_alert').hide();
+          $('#resume_alert').html('');
+        }
+        return empty_count;
+      }
+      $.fn.serializeObject = function() {
+          var o = {};
+          var a = this.serializeArray();
+          $.each(a, function() {
+              if (o[this.name]) {
+                  if (!o[this.name].push) {
+                      o[this.name] = [o[this.name]];
+                  }
+                  o[this.name].push(this.value || '');
+              } else {
+                  o[this.name] = this.value || '';
+              }
+          });
+          return o;
+      };
+      function submitPayment() {
+        var data = $("#deposit_money").serializeObject();
+          $("button#nexttransfer").attr('disabled',true);
+          $.ajax({
+            type: "POST",
+            url: "https://api.gbcpay.net/api/pay",
+            data: data,
+            dataType: "json",
+                beforeSend: function(){
+                  $('#materialize-transaction-report').html("<h3>Transfiriendo...</h3>");
+                  //nextBoxStep();
+                  $('form.input').attr("readonly", true);
+                },
+                success: function(data){
+                $('.txt_status').hide();
+                $('#materialize-transaction-report').html('');
+                if(data.error){
+                  $('#materialize-transaction-report').append('<i class="fas fa-exclamation-circle denied_t"></i> ');
+                  $('#materialize-transaction-report').append('<b class="txt_error">Estado: </b>' + data.error.msg + '<br/>');
+                  $('.txt_error').css("color", "coral");
+                  $('.denied_t').css("color", "coral");
+                  
+                  if(data.error.respuesta) {
+                    $('#materialize-transaction-report').append('<b class="txt_respuesta">Respuesta: </b>' + data.error.respuesta + '<br/>');
+                  }
+                  if(data.error.responsetext) {
+                    $('#materialize-transaction-report').append('<b class="txt_respuesta">Texto de Respuesta: </b>' + data.error.responsetext + '<br/>');
+                  }
+                  if(data.error.code_error) {
+                    $('#materialize-transaction-report').append('<b class="txt_codigo">Codigo de Error: </b>' + data.error.code_error + '<br/>');
+                  }
+                  $("button#nexttransfer").attr('disabled',false);
+                  //tooCheckmark('error');
+                } else {
+                  $( "#left_card" ).remove();
+                  $( "li#step2" ).removeClass('active');
+                  $( "li#step3" ).addClass('active');
+                  $( "#right_card" ).attr('style', 'margin: 0 auto;');
+                  
+                  $('#materialize-transaction-report').html("<i class='fas fa-check-circle txt_success'></i> ");
+                  $('#materialize-transaction-report').append('<b class="txt_success">Estado: </b>' + data.success.msg + '<br/>');
+                  $('.txt_success').css("color", "#35c367");
+                  $('.success_t').css("color", "#35c367");
+                  if(data.success.transactionid) {
+                    $('#materialize-transaction-report').append('<b class="txt_codigo">ID de Transaccion: </b>' + data.success.transactionid + '<br/>');
+                  }
+                  generateticket(data.success.amount, data.success.currency, data.success.amount_usd);
+                  //tooCheckmark('exito');
+                  $("button#nexttransfer").attr('disabled',true);
+                }
+            },
+            error:function(){
+            }
+          });
+        }
+      function passForm(){
+        if(checkForm() == 0){
+          submitPayment();
+          
+        }
+      }
+      const generateticket = async (amount_crypto, currency, amount_usd) => {
+        const ui = await apex.GetUserInfo();
+        const gai = await apex.GetAccountInfo();
+        var currency_tb = currency;
+        var amount_currency = amount_crypto;
+        var amount_currency_usd = amount_usd;
+
+        const account = await apex.GetUserAccounts();
+        const example = {
+          OMSId: 1,
+          OperatorId: 1,
+          AccountId: account[0],
+          RequestUser: account[0],
+          AssetId: 13,
+          Amount: amount_currency,
+          DepositInfo:
+            '{"ProductSymbol":"' + currency_tb + '","fullname":"' + gai['AccountName'] + '","comments":"Compra de ' + currency_tb + ' con tarjeta en USD por el monto de $' + amount_usd + '"}',
+          Status: 'New'
+        };
+        if(currency_tb == 'BTC'){
+          assetId = 1;
+        } else if(currency_tb == 'LTC'){
+          assetId = 2;
+        } else if(currency_tb == 'DASH'){
+          assetId = 3;
+        } else if(currency_tb == 'ETH'){
+          assetId = 5;
+        }
+        const dep = {
+            "assetManagerId": 1,
+            "accountId": account[0],
+            "assetId": assetId,
+            "assetName": ""+currency_tb,
+            "amount": parseFloat(amount_currency),
+            "omsId": 1,
+            "requestCode": null,
+            "requestIP": null,
+            "requestUser": account[0],
+            "requestUserName": null,
+            "operatorId": 1,
+            "Status": 0,
+            "feeAmt": 0.0,
+            "updatedByUser": 0,
+            "updatedByUserName": null,
+            "ticketNumber": 0,
+            "depositInfo": '{"ProductSymbol":"' + currency_tb + '","fullname":"' + gai['AccountName'] + '","comments":"Compra de ' + currency_tb + ' con tarjeta"}',
+            "createdTimestamp": "0001-01-01T00:00:00",
+            "lastUpdateTimeStamp": "0001-01-01T00:00:00",
+            //"comments": "Compra de "+ currency_tb + " para el username: " + gai['AccountName'],
+            "comments": null,
+            "attachments": null
+        }
+
+        const deposit = await apex.CreateDepositTicket(dep);
+        
+
+        
+      }
+      function js_array_serialize(a) {
+          return JSON.stringify(a);
+      }
+      $(document).on('submit','form',function(e){
+         e.preventDefault();
+         passForm();
+      });
+      $(document).on('click','#paysaved',function(){
+        $('#materialize-transaction-report').html("<h3>Transfiriendo...</h3>");
+        
+        $('form.input').attr("readonly", true);
+        var txt_select = $('select#txt_select option:selected').val();
+        var token_gbc = $('input[name=token_gbc]').val();
+        var ticket_id = $('input[name=ticket_id]').val();
+        var a = {
+          'initial_transaction_id': txt_select,
+          'token_gbc': token_gbc,
+          'ticket_id': ticket_id
+        };
+        
+        var data = js_array_serialize(a);
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.open("POST", "https://api.gbcpay.net/api/pay_stored");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.send(data);
+        retorno = xhr.addEventListener("readystatechange", async function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+              var myobj = JSON.parse(xhr.responseText);
+              //console.log(myobj);
+              var data = myobj;
+                $('.txt_status').hide();
+                $('#materialize-transaction-report').html('');
+                if(data.error){
+                  $('#materialize-transaction-report').append('<i class="fas fa-exclamation-circle denied_t"></i> ');
+                  $('#materialize-transaction-report').append('<b class="txt_error">Estado: </b>' + data.error.msg + '<br/>');
+                  $('.txt_error').css("color", "coral");
+                  $('.denied_t').css("color", "coral");
+                  
+                  if(data.error.respuesta) {
+                    $('#materialize-transaction-report').append('<b class="txt_respuesta">Respuesta: </b>' + data.error.respuesta + '<br/>');
+                  }
+                  if(data.error.responsetext) {
+                    $('#materialize-transaction-report').append('<b class="txt_respuesta">Texto de Respuesta: </b>' + data.error.responsetext + '<br/>');
+                  }
+                  if(data.error.code_error) {
+                    $('#materialize-transaction-report').append('<b class="txt_codigo">Codigo de Error: </b>' + data.error.code_error + '<br/>');
+                  }
+                  //tooCheckmark('error');
+                } else {
+                  $( "#left_card" ).remove();
+                  $( "li#step2" ).removeClass('active');
+                  $( "li#step3" ).addClass('active');
+                  $( "#right_card" ).attr('style', 'margin: 0 auto;');
+                  
+                  $('#materialize-transaction-report').html("<i class='fas fa-check-circle txt_success'></i> ");
+                  $('#materialize-transaction-report').append('<b class="txt_success">Estado: </b>' + data.success.msg + '<br/>');
+                  $('.txt_success').css("color", "#35c367");
+                  $('.success_t').css("color", "#35c367");
+                  if(data.success.transactionid) {
+                    $('#materialize-transaction-report').append('<b class="txt_codigo">ID de Transaccion: </b>' + data.success.transactionid + '<br/>');
+                  }
+                  generateticket(data.success.amount, data.success.currency, data.success.amount_usd);
+                  //tooCheckmark('exito');
+                  $("button#nexttransfer").attr('disabled',true);
+                }
+          }
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div class="container rest-topper">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 dep-pos centered boxpayment">
+              <div class="col-lg-6 centered">
+                  <div class="payment-title">
+                    <img src="./local/logos/logo-banexcoin.svg">
+                    <span class="title">PAYMENT</span>
+                  </div>
+                  <div class="col-lg-12 col-md-12 title-box" style="z-index: 1;">
+                      <ul class="lines-step">
+                        <li>1</li>
+                        <li class="active" id="step2">2</li>
+                        <li id="step3">3</li>
+                      </ul> 
+                  </div>
+              </div>
+              <div class="col-lg-10 col-md-10 box-whited" id="all-pay">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" id="left_card">
+                      <div class="col-lg-12 col-md-12 block_card" >
+                        <div class="col-lg-12 col-md-12 title-box">
+                          <p>Bienvenido, <b id="username"></b></p>
+                          <h4 class="text-left">Pagar ticket de deposito</h4>
+                        </div>
+                        <div class="row">
+                          <div class="row col-sm-12 col-lg-12" style="margin: 0 auto;">
+                            <div class="col-sm-12 col-lg-12 col-marg">
+                              <div class="form-group" id="fill_saved"></div>
+                            </div>
+                          </div>
+                          <form method="post" id="deposit_money" class="col-lg-12 col-md-12 deposito form-send">
+                            <input type="hidden" name="token_gbc" value="">
+                            <input type="hidden" name="ticket_id" value="">
+                            <input type="hidden" name="transaction_type" value="depacc">
+                            <input type="hidden" name="tipo_card" id="tipo_card" value="">
+                            <input type="hidden" name="titular" value="">
+                            <div class="alert alert-danger" role="alert" id="resume_alert" style="display: none;"></div>
+                            <div class="box_step activo_box" id="stepb-1">
+                              <div class="row col-sm-12 col-lg-12" style="margin: 0 auto;padding:0">
+                                <div class="col-sm-12 col-lg-12 col-marg">
+                                  <div class="form-group">
+                                    <label for="cardholder" class="label_pos">Nombre de titular</label>
+                                    <input type="text" name="cardholder" id="cardholder" placeholder="Nombre de titular" error-msj="Debe ingresar el nombre de titular" autocomplete="off" class="form-control required" data-bv-field="cardholder"><i class="form-control-feedback bv-no-label"  style="display: none;"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row col-sm-12 col-lg-12" style="margin: 0 auto;padding:0">
+                                <div class="col-sm-12 col-lg-12 col-marg">
+                                  <div class="form-group">
+                                    <label for="cc_number" class="label_pos">Numero de tarjeta</label>
+                                    <input type="text" class="form-control credit-card-input required" id="cc_number" name="cc_number" error-msj="Debe llenar el numero de la tarjeta" placeholder="0000 0000 0000 0000" autocomplete="off">
+                                    <small id="walletHelp" class="form-text text-muted">Introducir el numero de su tarjeta</small>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row col-sm-12 col-lg-12" style="margin: 0 auto;padding:0">
+                                <div class="col-sm-6 col-lg-6 col-marg">
+                                  <div class="form-group">
+                                    <label for="mes_exp" class="label_pos">Mes de Expiración</label>
+                                    <input type="text" name="mes_exp" id="mes_exp" error-msj="Debe llenar agregar el mes de expiracion de la tarjeta" placeholder="12" autocomplete="off" class="form-control required" data-bv-field="mes_exp"><i class="form-control-feedback bv-no-label" data-bv-icon-for="mes_exp" style="display: none;"></i>
+                                    
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-marg">
+                                  <div class="form-group">
+                                    <label for="ano_exp" class="label_pos">Año de Expiración</label>
+                                    <input type="text" name="ano_exp" id="ano_exp" error-msj="Debe llenar agregar el año de expiracion de la tarjeta" placeholder="20" autocomplete="off" class="form-control required" data-bv-field="ano_exp"><i class="form-control-feedback bv-no-label" data-bv-icon-for="mes_exp" style="display: none;"></i>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row col-sm-12 col-lg-12" style="margin: 0 auto;padding:0">
+                                <div class="col-sm-12 col-lg-12 col-marg">
+                                  <div class="form-group">
+                                    <label for="cvv_card" class="label_pos">CVV</label>
+                                    <input type="text" name="cvv_card" id="cvv_card" placeholder="123" autocomplete="off" class="form-control" data-bv-field="cvv_card"><i class="form-control-feedback bv-no-label" data-bv-icon-for="mes_exp" style="display: none;"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group button-bot text-center">
+                                <button type="submit" id="nexttransfer" class="btn btn-primary centered">Pagar <i class="fas fa-credit-card"></i></button>
+                              </div>
+                            </div>
+                          </form>
+                          <div id="savedbutton" class="col-lg-12" style="display:none;">
+                            <div class="form-group button-bot text-center">
+                              <button type="button" id="paysaved" class="btn btn-primary centered">
+                                <div class="saved_normal" role="status">
+                                    Pagar <i class="fas fa-credit-card"></i>
+                                  </div>
+                                <div class="spinner-border text-light saved_loading" style="display: none;" role="status">
+                                  <span class="sr-only">Loading...</span>
+                                </div>
+                              
+                              </button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" id="right_card">
+                      <div class="col-lg-12 col-md-12 block_card">
+                        <div class="col-lg-12 col-md-12">
+                          <h4>Resumen de compra <i class="fas fa-info-circle" id="title_ticket"></i></h4>
+                        </div>
+                        <div class="col-lg-12 col-md-12 body-resumen">
+                          <span class="row">
+                              <span class="col-lg-12 line_res">
+                                  <b>Moneda a comprar</b>
+                                  <span class="right_info">
+                                    <span class="currency_destination"></span>
+                                  </span>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                  <b>Monto comprado en <span class="currency_destination"></span></b>
+                                  <span class="right_info">
+                                      <span id="amount_destination">0.00</span>
+                                      <span id="aprox" data-toggle="tooltip" data-placement="top" title="El monto final se basa en el tasa de cambio cuando se completa la transacción.">Aproximadamente</span>
+                                  </span>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                  <b>Descripción</b>
+                                  <span class="right_info">
+                                      <span id="description_info"></span>
+                                  </span>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                  <hr>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                  <b>Monto comprado en USD</b>
+                                  <span class="right_info">
+                                      <span id="amount_destination_usd"><b id="currency_destination_usd">$</b> 0.00</span>
+                                  </span>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                  <b>Comision</b>
+                                  <span class="right_info">
+                                      <span id="amount_comision_usd"><b id="currency_destination_usd">$</b> 0.00</span>
+                                  </span>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                  <b>Total</b>
+                                  <span class="right_info">
+                                      <span id="amount_total_usd"><b id="currency_destination_usd">$</b> 0.00</span>
+                                  </span>
+                              </span>
+                              <span class="col-lg-12 line_res">
+                                <div id="materialize-transaction-report"></div>
+                              </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div id="loading_pay">Cargando</div>
+              </div>
+              <div class="box_step col-lg-12 col-md-12" id="stepb-2">
+                <div id="materialize-progress">
+                  <div class="circle-loader"><div class="checkmark draw"></div><div class="error draw"></div></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" id="no-pay">
+            <h3 class="text-center">Debe autenticarse para realizar el pago del servicio</h3>
+          </div>
+      </div>
+      <script src="./local/js/jquery.payfield.js"></script>
+      <script src="./local/js/jquery.inputmask/dist/jquery.inputmask.bundle.min.js"></script>
+      <script src="./local/js/jquery.maskMoney.js" type="text/javascript"></script>
+      
+  </body>
+  <script>
+    const main = async () => {
+
+      $(document).on('click change', '#txt_select', function(){
+        var sl = $(this).find('option:selected').val();
+        if(sl != 0){
+          $('#deposit_money').hide();
+          $('#savedbutton').show();
+        } else {
+          $('#deposit_money').show();
+          $('#savedbutton').hide();
+        }
+      });
+      function lookup( name, arr ) {
+          for(var i = 0, len = arr.length; i < len; i++) {
+              if( arr[ i ].Key === name )
+                  return true;
+          }
+          return false;
+      }
+      function getVal( name, arr ) {
+          for(var i = 0, len = arr.length; i < len; i++) {
+              if( arr[ i ].Key === name )
+                  return arr[ i ].Value;
+          }
+          return false;
+      }
+      function getToken(token){
+        var retorno = "";
+        var data = JSON.stringify({
+          "nombre": '"' + token +'"'
+        });
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.open("POST", "https://api.gbcpay.net/api/generate");
+        //xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.send(data);
+        retorno = xhr.addEventListener("readystatechange", function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var myobj = JSON.parse(xhr.responseText);
+            $('input[name=token_gbc]').val(myobj.success.val);
+            getSavedCards(myobj.success.val);
+          }
+        });
+       
+      }
+      function getSavedCards(token){
+        var retorno = "";
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.open("GET", "https://api.gbcpay.net/api/pagos/getcards/"+token);
+        //xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.send();
+        retorno = xhr.addEventListener("readystatechange", function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var myobj = JSON.parse(xhr.responseText);
+            if(!myobj.error){
+              var sav = '<label for="txt_select" class="label_pos">Tarjetas Guardadas</label><select class="form-control" id="txt_select" name="txt_select">';
+                  sav += "<option value='0'>Pagar con nueva tarjeta</option>";
+              $.each(myobj, function(i, item) {
+                  sav += "<option value='" + item.id_card + "'>" + item.cc_number + " (" +item.exp_date + ")</option>";
+              });
+              sav += "</select>";
+            }
+            $("#fill_saved").append(sav);
+            
+            
+            /* GET TICKET FROM URL */
+            var url_string =  window.location.href;
+            var url = new URL(url_string);
+            var c = url.searchParams.get("ticket");
+            $('i#title_ticket').attr('title', c);
+            GetTicketInfo(c, token);
+            $('input[name=ticket_id]').attr('value', c);
+          }
+        });
+       
+      }
+      function GetTicketInfo(ticket, token){
+        $.ajax({
+            type: "POST",
+            url: "https://api.gbcpay.net/api/get/ticket",
+            data: {ticket_id : ticket, token : token},
+            dataType: "json",
+                beforeSend: function(){},
+                success: function(data){
+                
+                if(data.error){
+                  $('#all-pay').html('<i class="fas fa-exclamation-circle denied_t"></i>');
+                  $('#all-pay').append('<h1 class="txt_error">Estado: </h1><p>' + data.error.msg + '</p>');
+                  $('div#all-pay').attr('style', 'display: block;text-align: center;');
+                  $('h1.txt_error').attr('style', 'color: coral;');
+                  $('i.denied_t').attr('style', 'color: coral;font-size: 8rem;');
+                } else {
+                  $('.currency_destination').html(data.success.currency);
+                  $('span#amount_destination').html(data.success.amount);
+                  $('span#description_info').html(data.success.coment_banex);
+                  $('span#amount_destination_usd').html("$" + data.success.amount_usd);
+                  $('span#amount_comision_usd').html("$" + data.success.comision_amount_usd);
+                  $('span#amount_total_usd').html("$" + data.success.total);
+                 
+                }
+                $("#loading_pay").hide();
+            },
+            error:function(){
+            }
+          });
+      }
+      // Get SessionToken to log in
+      const SessionToken = localStorage.getItem('token');
+      apex = new alphapoint.APEX(
+        'wss://api.banexcoin.com/WSGateway/'
+      );
+      // Authenticate to the server
+      const auth = await apex.WebAuthenticateUser({
+        SessionToken
+      });
+      // Make sure to update the SessionToken or the user will have to enter User/Pass again
+      localStorage.setItem('token', auth.SessionToken);
+      function getKeyByValue(object, value) {
+        for (item in object) {
+          var obj = object[item];
+          if(obj["Key"] == value){
+            return obj["Value"];
+          }
+        }
+      }
+      if (auth.Authenticated) {
+        $('#all-pay').show();
+        // Get the users config object to Get the token we need for GBC
+        const uc = await apex.GetUserConfig();
+        const gai = await apex.GetAccountInfo();
+        $('b#username').html(gai.AccountName);
+        $('input[name=titular]').val(getKeyByValue(uc, "firstName") + " " + getKeyByValue(uc, "middleName") + " " + getKeyByValue(uc, "lastName"));
+        //getToken(gai.AccountName);
+        var retorno = "";
+        var data = '{"nombre" : "' + gai.AccountName + '"}';
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.open("POST", "https://api.gbcpay.net/api/generate");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.send(data);
+        retorno = xhr.addEventListener("readystatechange", async function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var myobj = JSON.parse(xhr.responseText);
+            $('input[name=token_gbc]').val(myobj.success.val);
+            getSavedCards(myobj.success.val);
+
+            
+            var obtener = lookup( 'GBC_token', uc );
+            if(obtener){
+              var token = getVal( 'GBC_token', uc );
+              if(token == ""){
+                uc.push({Key: 'GBC_token', Value: myobj.success.val});
+                const app = await apex.SetUserConfig({OMSId: 1, UserId: auth.UserId, Config: uc});
+              }
+              //console.log('Si hay '+token);
+            } else {
+              uc.push({Key: 'GBC_token', Value: myobj.success.val});
+              await apex.SetUserConfig({OMSId: 1, UserId: auth.UserId, Config: uc});
+            }
+          }
+        });
+        
+      } else {
+        $('#no-pay').show();
+        var element = document.getElementById('all-pay');
+        element.parentNode.removeChild(element);
+      }
+    };
+    main();
+
+    $(function() {
+      /**/
+      $(".credit-card-input").payfield();
+	  });
+
+  </script>
+</html>

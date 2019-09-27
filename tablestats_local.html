@@ -1,0 +1,246 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Banexcoin Payment</title>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="/local/landing-page/css/landing-style.css" rel="stylesheet">
+      <script src="./local/js/alphapoint.min.js"></script>
+      <script src="/local/landing-page/js/banexcoin.js"></script>
+  </head>
+  <style>
+    body, html {
+      font-family: Trebuchet MS,roboto,ubuntu,sans-serif;
+      font-size: 14px;
+    }
+    html {
+      box-sizing: border-box;
+      height: fit-content;
+      width: 100%;
+      background-color: white;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    html body a {color: black!important;}
+    .flobox {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+      padding: 10px 15px;
+    }
+    .flobox h3.title {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .flobox h3.subt {
+      font-size: 0.7rem;
+      color: #a7a7a7;
+      margin: 0;
+    }
+    #amount {
+      font-size: 1.5rem;
+    }
+    .neutral {
+      color: black;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    .negative {
+      color: crimson;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    .positive {
+      color: #74ba74;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    tr:nth-child(2n-1) {
+      background: rgba(228, 225, 225, 0.17);
+    }
+    table tr:nth-child(2n-1):hover {
+      background: rgba(228, 225, 225, 0.5);
+    }
+    td {
+        font-size: 0.8rem;
+        color:#474747;
+    }
+    .tr-subtitle {
+      background: #616161!important;
+      cursor: default;
+    }
+    .tr-subtitle td {
+      font-weight: bold;
+      padding: 1.75rem 0.75rem;
+      border: none;
+      color: #ffffff;
+      letter-spacing: .3px;
+      white-space: normal;
+      text-transform: uppercase;
+    }
+    tr img {
+      width: 20px;
+      margin-right: 3px;
+    }
+    .table td, .table th {
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    /**/
+    .menu {
+      width: 170px;
+      z-index: 1;
+      box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      display: none;
+      transition: 0.2s display ease-in;
+      background: white;
+    }
+    .menu .menu-options {
+      list-style: none;
+      padding: 10px 0;
+      margin-bottom: 0rem;
+      z-index: 1;
+    }
+    .menu .menu-option {
+      font-weight: 500;
+      z-index: 1;
+      font-size: 13px;
+      padding: 10px 20px 10px 10px;
+      /*border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);*/
+      cursor: pointer;
+    }
+    .menu .menu-option:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    button{
+      background: grey;
+      border: none;
+    }
+    button .next{
+      color:green;
+    }
+    button .next[disabled="false"]:hover, button .next[disabled="false"]:hover .next{
+      color: red;
+      animation: move 0.5s;
+      animation-iteration-count: 2;
+    }
+
+    @keyframes move{
+      from{
+        transform: translate(0%);
+      }
+      50%{
+        transform: translate(-40%);
+      }
+      to{
+        transform: transform(0%);
+      }
+    }
+  </style>
+  <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <!--<div class="customer-logos"></div>-->
+      <div class="menu">
+          <ul class="menu-options">
+            <li class="menu-option">Powered by <b>Banexcoin</b></li>
+          </ul>
+        </div>
+        <table class="table" id="tableStat"></table>
+  </body>
+  <script>
+    
+      const menu = document.querySelector(".menu");
+      let menuVisible = false;
+  
+      const toggleMenu = command => {
+        menu.style.display = command === "show" ? "block" : "none";
+        menuVisible = !menuVisible;
+      };
+  
+      const setPosition = ({ top, left }) => {
+        menu.style.left = `${left}px`;
+        menu.style.top = `${top}px`;
+        toggleMenu("show");
+      };
+  
+      window.addEventListener("click", e => {
+        if(menuVisible)toggleMenu("hide");
+      });
+  
+      window.addEventListener("contextmenu", e => {
+        e.preventDefault();
+        const origin = {
+          left: e.pageX,
+          top: e.pageY
+        };
+        setPosition(origin);
+        return false;
+      });
+
+    const formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 3
+    });
+    const formatterPer = new Intl.NumberFormat('en-US', {
+      style: 'percent',
+      maximumFractionDigits: 2
+    });
+    const formatterNull = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 3
+    });
+    
+    function formatterCustom(value, cripto){
+      const formatting = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: cripto,
+        minimumFractionDigits: 3
+      });
+      return formatting.format(value);
+    }
+
+    const main = async () => {
+        function testAjax() {
+          return $.ajax({
+              url: "https://api.gbcpay.net/api/estadisticas/getcoins",
+              dataType: 'json'
+          });
+        }
+        var promise = testAjax();
+        promise.success(function (data) {
+          var jsonS = data['data'];
+          //console.log(data);
+          var filacabe = "<tr class='tr-subtitle'><td class='lang' key='table_name'>Nombre</td><td class='lang' key='table_market_cap'>Cap. de Mercado</td><td class='lang' key='table_last_price'>Ultimo Precio</td><td class='lang' key='table_volumen'>Volumen (24h)</td><td align='right' class='lang' key='table_coins'>Monedas en Circulacion</td><td align='right' class='lang' key='table_total_coins'>Total Monedas</td><td class='lang' key='table_change'>Cambio (24h)</td></tr>";
+          $('table#tableStat').append(filacabe);
+          Object.keys(jsonS).forEach(function(k){
+                var fila = "<tr id-ins='" + jsonS[k]['id'] + "'>";
+                fila += "<td><img src='/local/product-icons/" + jsonS[k]["symbol"].toLowerCase() + "-48px.svg'> <b>" + jsonS[k]["name"] + " (" + jsonS[k]["symbol"] + ")</b></td>";
+                fila += "<td>" + formatter.format(jsonS[k]["quote"]["USD"]["market_cap"]) + "</td>";
+                fila += "<td>" + formatter.format(jsonS[k]["quote"]["USD"]["price"]) + "</td>";
+                fila += "<td>" + formatter.format(jsonS[k]["quote"]["USD"]["volume_24h"]) + "</td>";
+                fila += "<td align='right'>" + formatterNull.format(jsonS[k]["total_supply"]) + " " + jsonS[k]["symbol"] + "</td>";
+                fila += "<td align='right'>" + formatterNull.format(jsonS[k]["max_supply"]) + " " + jsonS[k]["symbol"] + "</td>";
+                fila += "<td><b class='" + (jsonS[k]["quote"]["USD"]["percent_change_24h"] > 0 ? 'positive' : 'negative') + "'>" + formatterPer.format(jsonS[k]["quote"]["USD"]["percent_change_24h"]/100) + "</b></td>";
+                fila += "</tr>";
+                $('table#tableStat').append(fila);
+          });
+        });
+    };
+    
+    main();
+
+    
+
+       
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</html>

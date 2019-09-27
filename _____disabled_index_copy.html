@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/local/landing-page/images/isotipo.png" />
+    <link
+      rel="preconnect"
+      href="https://api_apexqa.alphapoint.com/WSGateway/"
+    />
+    <link
+      rel="dns-prefetch"
+      href="https://api_apexqa.alphapoint.com/WSGateway/"
+    />
+    <title>Banexcoin</title>
+		<link href="/static/css/main.css" rel="stylesheet" />
+    <link href="/local/css/override.css" rel="stylesheet" />		
+    <link href="/theme.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,900i&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="/local/landing-page/js/jquery.initialize.js"></script>
+	
+	<script src="/local/landing-page/js/banexcoin.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<!--
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="/local/landing-page/js/jquery.initialize.js"></script>
+	<script src="/local/landing-page/js/rss-parser.min.js"></script>
+	<script src="/local/landing-page/js/banexcoin.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	-->
+	<script>
+		function scriptLoader(path, callback)
+        {
+            var script = document.createElement('script');
+            script.type = "text/javascript";
+            script.async = true;
+            script.src = path;
+            script.onload = function(){
+                if(typeof(callback) == "function")
+                {
+                    callback();
+                }
+            }
+            try
+            {
+                var scriptOne = document.getElementsByTagName('script')[0];
+                scriptOne.parentNode.insertBefore(script, scriptOne);
+            }
+            catch(e)
+            {
+                document.getElementsByTagName("head")[0].appendChild(script);
+            }
+		}
+		
+	</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="/local/landing-page/css/landing-style.css"/>
+	<link rel="stylesheet" href="/local/landing-page/css/passwordRulesHelper.min.css">
+	<script src="/local/js/alphapoint.min.js"></script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T32FGC5');</script>
+	<!-- End Google Tag Manager -->
+	
+  </head>
+  <body class="hide">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T32FGC5"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="/local/config.js"></script>
+    <script src="/local/translation/translations.js"></script>
+    <script src="/vendor/polyfills.js"></script>
+    <div id="landing">
+      <!--Add your landing page content below-->
+      <div class="landing-content-container">
+        <header>
+          <nav class="nav-top-container show-background">
+			<div class="nav-top-container-cented">
+            <a href="/index" class="nav-logo-link">
+              <img
+                alt="Site logo"
+								src="/local/logos/logo-banexcoin.svg"
+                class="ap-logo__img standalone-form__logo__img"
+              />
+            </a>
+            <div class="landing-nav-menu">
+				<label class="switch"><input type="checkbox" id="changes-the-theme"/><div></div></label>
+				<a href="/login" class="ap-button__btn ap-button__btn--general signin lang" key="login">Iniciar sesión</a>
+				<a href="/signup" class="ap-button__btn ap-button__btn--general signup lang" key="signup_top">Regístrarte</a>
+				<li class="nav-item dropdown right-men">
+					<span class="nav-link dropdown-toggle" id="dropdown09"> <span class="lang" key="langactual"><img src="/local/landing-page/images/country/espana.png" width="20px"/>    &#9660;</span>
+						<div class="dropdown-menu" aria-labelledby="dropdown09">
+							<button class="translate" id="en"><img class="lozad" src="/local/landing-page/images/country/estados-unidos.png" data-src="/local/landing-page/images/country/estados-unidos.png" width="20px"/>  English</button>
+							<button class="translate" id="es"><img class="lozad" src="/local/landing-page/images/country/espana.png" data-src="/local/landing-page/images/country/espana.png" width="20px"/>  Español</button>
+							<!--<button class="translate" id="fr"><img src="/local/landing-page/images/country/espana.png" width="20px"/>  Français</button>-->
+						</div>
+					</span>
+				</li>
+				<li class="nav-item dropdown-new right-men">
+					<span class="nav-link" id="dropped">
+						<button class="tgg-new"><i class="fas fa-bars disabled-access"></i></button>
+						<div class="dropdown-menu-new hid" aria-labelledby="dropped">
+							<div class="containero">
+								<div class="sect-s">
+									<ul>
+										<li><a class="menu-li lang" key="features" href="#features">Caracteristicas</a></li>
+										<li><a class="menu-li lang" key="we" href="/acerca.html">Nosotros</a></li>
+										<li><a class="menu-li lang" key="contact" href="/contacto.html">Contacto</a></li>
+										<li><a class="menu-li lang" key="monedas" href="/monedas.html">Monedas</a></li>
+										<li><a class="menu-li lang" key="niveles-clientes" href="/niveles-clientes.html">Niveles de clientes</a></li>
+									</ul>
+								</div>
+								<div class="sect-s">
+									<a href="#" class="title-li disabled-access lang" key="monedas">Monedas</a>
+									<ul>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/bitcoin_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/bitcoin_icon.svg);"></div>
+											</div>
+											Bitcoin (BTC)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/bitcoincash_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/bitcoincash_icon.svg);"></div>
+											</div>
+											Bitcoin Cash (BCH)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/ripple_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/ripple_icon.svg);"></div>
+											</div>
+											Ripple (XRP)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/etherum_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/etherum_icon.svg);"></div>
+											</div>
+											Ethereum (ETH)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/litecoin_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/litecoin_icon.svg);"></div>
+											</div>
+											Litecoin (LTC)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/zcash_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/zcash_icon.svg);"></div>
+											</div>
+											Zcash (ZEC)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/eosio_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/eosio_icon.svg);"></div>
+											</div>
+											Eosio (EOS)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/dash_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/dash_icon.svg);"></div>
+											</div>
+											Dash (DASH)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/product-icons/xmr-48px.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/product-icons/xmr-48px.svg);"></div>
+											</div>
+											Monero (XMR)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/eosio_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/eosio_icon.svg);"></div>
+											</div>
+											Eosio (EOS)
+										</a>
+										<!--stablecoins-->
+										<hr>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/tether_icon.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/tether_icon.svg);"></div>
+											</div>
+											Tether (USDT)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/usdcoin_icon.png);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/usdcoin_icon.png);"></div>
+											</div>
+											USD Coin (USDC)
+										</a>
+										<!--fiat-->
+										<hr>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/product-icons/usd-48px.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/product-icons/usd-48px.svg);"></div>
+											</div>
+											Dolar Americano (USD)
+										</a>
+										<a class="menu-li" href="/monedas.html">
+											<div moneda="coin">
+												<div class="side-a" style="background-image:url(/local/landing-page/images/sol.svg);"></div>
+												<div class="side-b" style="background-image:url(/local/landing-page/images/sol.svg);"></div>
+											</div>
+											Sol Peruano (PEN)
+										</a>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</span>
+				</li>
+			  <div id="landing-nav-menu-toggle" class="landing-nav-menu-toggle" style="display: none;">
+                <span></span> <span></span> <span></span>
+              </div>
+              <div id="menu-wrapper" class="menu-wrapper" data-status="closed">
+                <div class="menu-container">
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#features">
+                        <span ap-translate="INDEX.MENU_FEATURES" class="lang" key="features">Caracteristicas</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="/acerca.html" ><span ap-translate="INDEX.MENU_ABOUT" class="lang" key="we">Nosotros</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="/contacto.html"><span ap-translate="INDEX.MENU_CONTACT" class="lang" key="contact">Contacto</span></a>
+					</li>
+					<li class="menu-item">
+							<a href="/monedas.html"><span ap-translate="INDEX.MENU_CONTACT" class="lang" key="monedas">Monedas</span></a>
+					</li>
+					<li class="menu-item">
+							<a href="/niveles-clientes.html"><span ap-translate="INDEX.MENU_CONTACT" class="lang" key="niveles-clientes">Niveles de clientes</span></a>
+					</li>
+                    <li class="menu-item only-show-on-mobile">
+                      <a href="/login"><span
+                          ap-translate="INDEX.MENU_LOGIN"
+                          class="modal-btn login-btn lang" key="login"
+                          >Login</span></a>
+                    </li>
+                    <li class="menu-item only-show-on-mobile">
+                      <a href="/signup" >
+                        <span
+                          ap-translate="INDEX.MENU_SIGNUP"
+                          class="modal-btn register-btn lang" key="signup">Sign Up
+                        </span >
+                      </a>
+                    </li>
+                  </ul>
+				  <div class="flo-daas">
+						<div class="cointer">
+							<img class="lozad" data-src="/local/landing-page/images/bitcoin_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/bitcoincash_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/ripple_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/etherum_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/litecoin_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/zcash_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/eosio_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/dash_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/tether_icon.svg" />
+							<img class="lozad" data-src="/local/landing-page/images/usdcoin_icon.png" />
+							<img class="lozad" data-src="/local/landing-page/images/monero_icon.svg" />
+						</div>
+						</div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </nav>
+        </header>
+        <section id="home" class="chapter">
+			<article>
+			<div class="row">
+				<div class="col-lg content-container">
+					<div class="col-flex">
+						<div class="content-top benbenute">
+							<h1 class="lang" key="welcome">Bienvenidos a Banexcoin</h1>
+						</div>
+							<p class="lang" key="p_welcome">
+								Intercambia tus Activos Digitales en la Cripto Plataforma mas segura de las Américas.<br/>
+							</p>
+							<button><a href="/signup" class="lang" key="signup">¡Regístrate!</a></button>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+					</div>
+					<div class="col-md" id="laptop">
+					  <img class="content-img" src="/local/landing-page/images/laptop-header-1.png" alt="icon1">
+					</div>
+					</div>
+					<div class="margin-mobile"></div>
+					<div class="container">
+							<div class="cryptostats">
+								<div class="slide tradeframehd"><iframe src="/btcusd.html" class="tradeframe" scrolling="no" allowtransparency="true" frameborder="0"></iframe></div>
+								<div class="slide tradeframehd"><iframe src="/btcpen.html" class="tradeframe" scrolling="no" allowtransparency="true" frameborder="0"></iframe></div>
+								<div class="slide tradeframehd"><iframe src="/ethusd.html" class="tradeframe" scrolling="no" allowtransparency="true" frameborder="0"></iframe></div>
+								<div class="slide tradeframehd"><iframe src="/ethusd.html" class="tradeframe" scrolling="no" allowtransparency="true" frameborder="0"></iframe></div>
+								<div class="slide tradeframehd"><iframe src="/ethusd.html" class="tradeframe" scrolling="no" allowtransparency="true" frameborder="0"></iframe></div>
+							</div>
+					</div>
+          
+			</div>
+			</article>
+    </section>
+		
+        
+        <section id="for-all" class="chapter">
+		<!--<div style="height:669px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 99%;"><div style="height:649px;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=10&pref_coin_id=1505&graph=yes" width="100%" height="645" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing:content-box; margin: 3px 6px 10px 0px; font-family: Verdana, Tahoma, Arial, sans-serif;">powered by&nbsp;<a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none;font-size:11px">Coinlib</a></div></div>-->
+          <div style="width: 80%;padding-bottom: 6px;">
+				<iframe width="100%" style="min-height: 520px;border-radius: 3px;border: 1px solid #c2c2c2;" src="/tablestats_local.html" scrolling="yes" allowtransparency="true" frameborder="0"></iframe>
+		  </div>
+		</section>
+		<section id="features" class="chapter">
+		  <br/><br/>
+          <h1 class="lang" key="key_features">Caracteristicas de nuestra plataforma</h1>
+          <article>
+			<div class="row features-plataforma">
+				<div class="circle-container">
+					<div class="circle-cloud"><img class="lozad" data-src="/local/landing-page/images/features-icons/exchange-real-time.png"/></div>
+					<!--<div class="circle-cloud"><i class="fas fa-exchange-alt"></i></div>-->
+					<p class="lang" key="intercambio_tiempo_real">Intercambio en tiempo real</p>
+				</div>
+				<div class="circle-container">
+					<div class="circle-cloud"><img class="lozad" data-src="/local/landing-page/images/features-icons/crypto.png"/></div>
+					<!--<div class="circle-cloud"><i class="fab fa-btc"></i></div>-->
+					<p class="lang" key="principales_criptos">Usa las principales criptomonedas del momento</p>
+				</div>
+				<div class="circle-container">
+					<div class="circle-cloud"><img class="lozad" data-src="/local/landing-page/images/features-icons/secure.png"/></div>
+					<!--<div class="circle-cloud"><i class="fas fa-university"></i></div>-->
+					<p class="lang" key="informacion_segura">Tu información siempre esta segura</p>
+				</div>
+				<div class="circle-container">
+					<div class="circle-cloud"><img class="lozad" data-src="/local/landing-page/images/features-icons/connect-everyone.png"/></div>
+					<!--<div class="circle-cloud"><i class="fas fa-users"></i></div>-->
+					<p class="lang" key="conectate_cualquier_parte">Conéctate desde cualquier parte</p>
+				</div>
+			</div>
+			<div class="row btn-regi-m">
+				<button><a href="/signup" class="button-reg lang" key="signup">¡Registrate!</a></button>
+			</div>
+          </article>
+        </section>
+		<section id="friendly" class="chapter">
+		<div class="multiplat"></div>
+		  <article>
+            <div class="row">
+              <div class="col-lg content-container">
+                <div class="col-flex">
+                  <div class="content-top">
+                    <h2 class="lang" key="user_friendly" id="user_friendly_title">Amigable en multiples dispositivos</h2>
+                  </div>
+                  <p class="lang" key="user_friendly_desc">
+                    Ofrecemos una experiencia única de intercambio para todos nuestros usuarios,<br/> a través de una plataforma segura, confiable y que funciona también en dispositivos móviles para que puedas realizar tus transacciones de forma rápida, fácil y segura donde sea que te encuentres.
+				 </p>
+                </div>
+              </div>
+            </div>
+		  </article>
+		</section>
+		<section id="easy-signup" class="chapter">
+		  <article class="easy-signup">
+			<h1 class="lang" key="steps_to_follow">Pasos a seguir</h1>
+			<div class="row">
+              <div class="col-lg content-container">
+                <div class="stepper">
+					<ul>
+						<li class="step done active current">
+							<div class="circle-step">
+								<span class="color-number">1</span>
+								<img class="lozad" data-src="/local/landing-page/images/manya/Registrate-gris.svg"/>
+								<!--<i class="fas fa-user-edit"></i>-->
+							</div>
+							<div class="content-step">
+								<h2 class="lang" key="get_registered">¡Regístrate!</h2>
+								<p class="lang" key="get_registered_desc">
+										La plataforma te guiará a través del proceso de registro que dura solo unos minutos, ingresa tus datos personales en nuestra plataforma y en instantes tendrás lista tu Cuenta Banexcoin.
+								</p>
+							</div>
+						</li>
+						<li class="step">
+							<div class="circle-step">
+								<span class="color-number">2</span>
+								<img class="lozad" data-src="/local/landing-page/images/manya/Verificate.svg"/>
+								<!--<i class="fas fa-credit-card"></i>-->
+							</div>
+							<div class="content-step">
+								<h2 class="lang" key="get_verified">¡Verifícate!</h2>
+								<p class="lang" key="get_verified_desc">
+									Dentro de Banexcoin existen 4 niveles de verificación, los cuales determinarán la cantidad de moneda FIAT que podrás retirar de la plataforma. Consigna tus documentos y consigue rápidamente el siguiente nivel.
+								</p>
+							</div>
+						</li>
+						<li class="step">
+							<div class="circle-step">
+								<span class="color-number">3</span>
+								<img class="lozad" data-src="/local/landing-page/images/manya/Deposita.svg"/>
+								<!--<i class="fab fa-bitcoin"></i>-->
+							</div>
+							<div class="content-step">
+								<h2 class="lang" key="deposit_your_funds">¡Deposita tus fondos!</h2>
+								<p class="lang" key="deposit_your_funds_desc">
+										Agrega fondos a tu cuenta Banexcoin ya sea con dinero fiat, transfiriendo desde tu propia cuenta bancaria, tu tarjeta de crédito o también cualquiera de las criptomonedas que manejamos.
+								</p>
+							</div>
+						</li>
+						<li class="step">
+							<div class="circle-step">
+								<span class="color-number">4</span>
+								<img class="lozad" data-src="/local/landing-page/images/manya/Intercambiar.svg"/>
+								<!--<i class="fas fa-mobile-alt"></i>-->
+							</div>
+							<div class="content-step">
+								<h2 class="lang" key="exchange">¡Comienza a intercambiar!</h2>
+								<p class="lang" key="exchange_desc">
+										¡Todo Listo! ya puedes comenzar a comprar y vender con los fondos de tu Cuenta Banexcoin los activos digitales de tu preferencia de forma rápida y segura.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button class="show-til-responsive"><a href="/signup" class="button-reg lang" key="signup">¡Registrate!</a></button>
+              </div>
+            </div>
+          </article>
+        </section>
+		<section class="ourWorkingBrands">
+          <article>
+            <div class="row">
+              <div class="col-lg content-container">
+				<h2 class="text-center font-weight-bold lang" key="our_allies">Nuestros aliados</h2>
+                <div class="col-md brand-container">
+				<div class="container">
+					<div class="customer-logos">
+					  <div class="slide"><a href="https://identitymindglobal.com/"><img src="/local/landing-page/images/identity-mind-logo.png"></a></div>
+					  <div class="slide"><a href="https://alphapoint.com/"><img class="lozad" src="/local/landing-page/images/alphapoint-logo.svg"></a></div>
+					  <!--<div class="slide"><a href="https://www.silvergatebank.com/"><img class="lozad" src="/local/landing-page/images/silvergatebank-logo.png"></a></div>-->
+					  <div class="slide"><a href="https://www.chainalysis.com/"><img class="lozad" data-src="/local/landing-page/images/chainalysis-logo.png"></a></div>
+					  <div class="slide"><a href="https://www.centre.io/"><img class="lozad" data-src="/local/landing-page/images/centre-logo.png"></a></div>
+					  <div class="slide"><a href="https://www.circle.com/pe/"><img class="lozad" data-src="/local/landing-page/images/circle-logo.svg"></a></div>
+					  <div class="slide"><a href="https://poloniex.com/"><img class="lozad" data-src="/local/landing-page/images/poloniex-logo.png"></a></div>
+					  <div class="slide"><a href="https://www.scotiabank.com.pe"><img class="lozad" data-src="/local/landing-page/images/scotiabank-logo.png"></a></div>
+					  <div class="slide"><a href="https://interbank.pe/"><img class="lozad" data-src="/local/landing-page/images/interbank-logo.png"></a></div>
+					  <div class="slide"><a href="https://www.credicorpbank.com/"><img class="lozad" data-src="/local/landing-page/images/creditcorpbank-logo.png"></a></div>
+					  <div class="slide"><a href="https://www.canalbank.com/"><img class="lozad" data-src="/local/landing-page/images/canalbank-logo.svg"></a></div>
+					</div>
+				</div>
+                </div>
+                <!--<div class="col-md brand-container">
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/identity-mind-logo.png"
+                    alt="icon1" width="200"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/alphapoint-logo.svg"
+                    alt="icon1" width="200"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/silvergatebank-logo.png"
+                    alt="icon1" width="150" style="width: 150px;"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/chainalysis-logo.png"
+                    alt="icon1" width="150" 
+                  />
+				</div>-->
+				<!--<div class="col-md brand-container">
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/centre-logo.png"
+                    alt="icon1" width="200"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/circle-logo.svg"
+                    alt="icon1" width="200"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/estados-unidos.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/poloniex-logo.png"
+                    alt="icon1" width="200"
+                  />
+				</div>-->
+                <!--<div class="col-md brand-container">
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/peru.png"
+                    alt="icon1" width="16"
+                  />
+				  <img
+				    class="brand"
+                    src="/local/landing-page/images/scotiabank-logo.png"
+                    alt="icon1" width="200"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/peru.png"
+                    alt="icon1" width="16"
+                  />
+				  <img
+				    class="brand"
+                    src="/local/landing-page/images/interbank-logo.png"
+                    alt="icon1" width="200"
+                  />
+                </div>-->
+				<!--<div class="col-md brand-container">
+				  <br>
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/panama.png"
+                    alt="icon1" width="16"
+                  />
+                  <img
+				    class="brand"
+                    src="/local/landing-page/images/creditcorpbank-logo.png"
+                    alt="icon1" width="300" style="width: 27.3%;"
+                  />
+				  <img
+				    class="country-image"
+                    src="/local/landing-page/images/country/panama.png"
+                    alt="icon1" width="16"
+                  />
+				  <img
+				    class="brand"
+                    src="/local/landing-page/images/canalbank-logo.svg"
+                    alt="icon1" width="200" style="width: 26%;"
+                  />
+                </div>-->
+              </div>
+            </div>
+          </article>
+        </section>
+		<!-- widget trade -->
+		<div ap-widget="ticker"></div>
+		<!-- end widget trade -->
+			<section class="footer-fade p-5 margin-top-xl pos-r">
+			<article>
+			  <div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+					<h2 class="text-center font-weight-bold lang" key="last_news">Últimas noticias</h2>
+					<p></p>
+				  <div class="mt-5 pos-r" id="news-eng">
+					  <div class="carousel-controls testimonial-carousel-controls">
+						<div class="control prev"><i class="fa fa-chevron-left text-black">&nbsp;</i></div>
+						<div class="control next"><i class="fa fa-chevron-right text-black">&nbsp;</i></div>
+					  </div>
+					  <div class="testimonial-carousel" id="news">
+						
+					  </div>
+					</div>
+
+					<div class="mt-5 pos-r" id="news-es">
+							<div class="carousel-controls testimonial-carousel-controls">
+							<div class="control prev"><i class="fa fa-chevron-left text-black">&nbsp;</i></div>
+							<div class="control next"><i class="fa fa-chevron-right text-black">&nbsp;</i></div>
+							</div>
+							<div class="testimonial-carousel" id="newses">
+							
+							</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  </article>
+			</section>
+			<br>
+        <footer id="contact" class="chapter black-style">
+			<!--<div class="box-parent">
+				<div class="box"></div>
+			</div>-->
+          <article>
+            <div class="row row-contact element-content">
+				<div class="col-flex element-content">
+					<a href="/" class="nav-logo-link-footer">
+					  <img
+						alt="Site logo"
+						class="ap-logo__img standalone-form__logo__img lozad" data-src="/local/logos/siite-logo.png"
+					  />
+					</a>
+				</div>
+			</div>
+      <div class="row row-contact element-content">
+              <div class="col-flex footer-menus">
+                <ul class="element-content-child">
+					<li class="first lang" key="foot_about_us">NOSOTROS</li>
+					<li><a href="/acerca.html" class="lang" key="foot_about_us">NOSOTROS</a></li>
+					<li><a href="#features" class="lang" key="foot_features">CARACTERISTICAS</a></li>
+					<!--<li><a href="/blog.html" class="lang" key="foot_blog">BLOG</a></li>-->
+					<li><a href="/tarifas.html" class="lang" key="foot_fees">TARIFAS Y COMISIONES</a></li>
+					<li><a href="/monedas.html" class="lang" key="foot_currencies">MONEDAS</a></li>
+					<li><a href="/niveles-clientes.html" class="lang" key="foot_levels">NIVELES DE CLIENTES</a></li>
+                </ul>
+				<ul class="element-content-child">
+                  <li class="first lang" key="foot_support">SOPORTE</li>
+                  <!--<li><a href="/api" class="lang" key="foot_api">API</a></li>-->
+                  <li><a href="/seguridad.html" class="lang" key="foot_security">SEGURIDAD</a></li>
+                  <li><a href="https://soporte.banexcoin.com" class="lang" key="foot_support_center">CENTRO DE SOPORTE</a></li>
+                </ul>
+				<ul class="element-content-child">
+                  <li class="first lang" key="foot_policies">POLITICAS</li>
+                  <li><a href="/politicas-kyc.html" class="lang" key="foot_kyc">POLITICAS DE KYC</a></li>
+                  <li><a href="/politicas-aml.html" class="lang" key="foot_aml">POLITICAS DE AML</a></li>
+                </ul>
+              </div>
+      </div>
+		  </article>
+		  <article class="pie-brand">
+			<div class="row row-contact element-content text-left">
+				<p class="left-side">
+					Copyright © 2019 Banexcoin. Todos los derechos reservados.<br/>
+					Al usar este sitio web estas aceptando los <a href="/terminos-condiciones.html" class="lang" key="foot_term_cond">Terminos y condiciones</a>, <a href="/politica-privacidad" class="lang" key="foot_privacy">Politicas de privacidad</a> y <a href="/terminos-condiciones.html#cookies" class="lang" key="foot_cookies">Politicas de Cookies</a>
+				</p>
+				<p class="right-side">
+					<a href="https://www.facebook.com/Banexcoin-SA-1966167210356313/" class="socialy"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/banexcoin" class="socialy"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/banexcoin/" class="socialy"><i class="fab fa-instagram"></i></a>
+				</p>
+			</div>
+          </article>
+        </footer>
+      </div>
+	</div>
+	<script src="/local/landing-page/js/rss-parser.min.js"></script>
+	<script src="/local/js/lozad.min.js"></script>
+	<script src="/local/landing-page/js/rss.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+	<script src="/local/landing-page/js/theme.js"></script>
+	</body>
+	<!-- Conditionally load CSS overrides -->
+	<script type="application/javascript">
+	const observer = lozad();
+	observer.observe();
+	function constructBg(content) {
+		if ($('#particles-js').length) {
+			$('#particles-js').remove();
+		}
+		if(content){
+			$(content).prepend('<div id="particles-js"></div>');
+		} else {
+			$('.standalone-layout__wrapper').prepend('<div id="particles-js"></div>');
+		}
+		
+
+		particlesJS("particles-js", {
+			particles: {
+				number: {
+				value: 3,
+				limit: 100,
+				density: {
+					enable: true,
+					value_area: 800
+				}
+				},
+				color: {
+				value: "#ffffff"
+				},
+				shape: {
+				type: "image",
+				stroke: {
+					width: 0,
+					color: "#000000"
+				},
+				polygon: {
+					nb_sides: 5
+				},
+				image: {
+					src:
+					"./local/landing-page/images/isotipo_new.png",
+					width: 100,
+					height: 100
+				}
+				},
+				opacity: {
+				value: 0.5,
+				random: false,
+				anim: {
+					enable: false,
+					speed: 1,
+					opacity_min: 0.1,
+					sync: false
+				}
+				},
+				size: {
+				value: 30,
+				random: true,
+				anim: {
+					enable: false,
+					speed: 40,
+					size_min: 0.1,
+					sync: false
+				}
+				},
+				line_linked: {
+				enable: true,
+				distance: 208.44356791251798,
+				color: "#ffffff",
+				opacity: 0.4,
+				width: 1
+				},
+				move: {
+				enable: true,
+				speed: 1.603412060865523,
+				direction: "none",
+				random: true,
+				straight: false,
+				out_mode: "out",
+				bounce: false,
+				attract: {
+					enable: false,
+					rotateX: 80.17060304327615,
+					rotateY: 80.17060304327615
+				}
+				}
+			},
+			interactivity: {
+				detect_on: "canvas",
+				events: {
+				onhover: {
+					enable: true,
+					mode: "grab"
+				},
+				onclick: {
+					enable: true,
+					mode: "push"
+				},
+				resize: true
+				},
+				modes: {
+				grab: {
+					distance: 400,
+					line_linked: {
+					opacity: 1
+					}
+				},
+				bubble: {
+					distance: 400,
+					size: 40,
+					duration: 2,
+					opacity: 0,
+					speed: 3
+				},
+				repulse: {
+					distance: 200,
+					duration: 0.4
+				},
+				push: {
+					particles_nb: 4
+				},
+				remove: {
+					particles_nb: 2
+				}
+				}
+			},
+			retina_detect: true
+		});
+	}
+	function getLevelsby() {
+		const construir = async () => {
+			var language = localStorage.getItem("language");
+			if(language == 'es'){
+				var arr = [ "nivel Inicial", "nivel Intermedio", "nivel Maestro", "nivel Corporativo" ];
+				var desc = [ "Para quienes se inician en el universo del Cripto.", "Para los que tienen cierto nivel de conocimiento y manejo de Cripto.", "Para los Clientes de Alto nivel que tienen amplios conocimientos en Cripto.", "Nivel exclusivo para empresas." ];
+				var inc = "Incrementar a";
+				var coporate_name = "Corporativo";
+				var verified = "Verificado";
+			} else {
+				var arr = [ "Initial level", "Intermediate level", "Master level", "Corporate level" ];
+				var desc = [ "For beginners starting at the universe of the Crypto.", "For those who have a certain level of knowledge and handling Crypto.", "For Experts who have extensive knowledge in Crypto.", "Exclusive level for Entities & Corpotations." ];
+				var inc = "Increase to";
+				var coporate_name = "Corporate";
+				var verified = "Verified";
+			}
+			const SessionToken = localStorage.getItem('token');
+			apex = new alphapoint.APEX(
+				'wss://api.banexcoin.com/WSGateway/'
+			);
+			
+			const aup = await apex.WebAuthenticateUser({
+				SessionToken
+			});
+			
+			localStorage.setItem('token', aup.SessionToken);
+			const ucss = await apex.GetAccountInfo();
+			const auu = await apex.GetUserInfo();
+			localStorage.setItem('e', auu.Email);
+			localStorage.setItem('u', ucss.AccountName);
+			localStorage.setItem('user', auu.UserName);
+			localStorage.setItem('step-verification', ucss.VerificationLevel);
+			var lv1 = "1";
+			var lv2 = "2";
+			var lv3 = "3";
+			var lv4 = "4";
+			var status1, status2, status3, status4 = 'pending';
+			if(ucss.VerificationLevel > 0){
+				var lv1 = '<i class="fas fa-check"></i>';
+				var status1 = 'done';
+				if(ucss.VerificationLevel >= 1){
+					var lv2 = '<i class="fas fa-check"></i>';
+					var status2 = 'done';
+					if(ucss.VerificationLevel >= 2){
+						var lv3 = '<i class="fas fa-check"></i>';
+						var status3 = 'done';
+						if(ucss.VerificationLevel >= 3){
+							var lv4 = '<i class="fas fa-check"></i>';
+							var status4 = 'done';
+						}
+					}
+				}
+			}
+			
+				var level_row = '<div id="dashboard-widget" class="react-root">';
+					level_row += '<div class="dashboard-widget">';
+						level_row += '<ol class="ordered-list pr40 pl40 pb30 horizontal">';
+							level_row += '<li class="list-step verification-card horizontal">';
+								level_row += '<div class="header flex mb20"><div class="numbered-circle ba flex justify-center ' + status1 + '"><span class="bold">' + lv1 + '</span></div><h5 class="item-label flex flex-column justify-around ' + status1 + ' ml10"><span>' + arr[0] + '</span></h5></div>';
+								level_row += '<div class="flex flex-grow-1"><svg class="mr10 flex-shrink-0 initial"></svg><div class="flex flex-column justify-between"><div class="item-children"><span>' + desc[0] + '</span></div><div class="pt20">' + 
+									
+									(status1=='done' ? '<button class="button di fw4 medium" type="button" disabled><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + verified + '</span></span></div></button>': '<a class="kraken-link" rel="noopener" href="/settings/verification" target="_blank"><button class="button di fw4 medium" type="button"><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + inc + ' ' + arr[0] + '</span></span></div></button></a>')
+									
+									+ '</div></div></div>';
+							level_row += '</li>';
+							level_row += '<li class="list-step verification-card horizontal">';
+								level_row += '<div class="header flex mb20"><div class="numbered-circle ba flex justify-center ' + status2 + '"><span class="bold">' + lv2 + '</span></div><h5 class="item-label flex flex-column justify-around ' + status2 + ' ml10"><span>' + arr[1] + '</span></h5></div>';
+								level_row += '<div class="flex flex-grow-1"><svg class="mr10 flex-shrink-0 intermediate"></svg><div class="flex flex-column justify-between"><div class="item-children"><span>' + desc[1] + '</span></div><div class="pt20">' +
+									(ucss.VerificationLevel < 1 ? '': (status2=='done' ? '<button class="button di fw4 medium" type="button" disabled><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + verified + '</span></span></div></button>' : '<a class="kraken-link" rel="noopener" href="#"><button id="button-niv" lvl="intermedio" class="button di fw4 medium" type="button"><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + inc + ' ' + arr[1] + '</span></span></div></button></a>'))
+									+ '</div></div></div>';
+							level_row += '</li>';
+							level_row += '<li class="list-step verification-card horizontal">';
+								level_row += '<div class="header flex mb20"><div class="numbered-circle ba flex justify-center ' + status3 + '"><span class="bold">' + lv3 + '</span></div><h5 class="item-label flex flex-column justify-around ' + status3 + ' ml10"><span>' + arr[2] + '</span></h5></div>';
+								level_row += '<div class="flex flex-grow-1"><svg class="mr10 flex-shrink-0 master"></svg><div class="flex flex-column justify-between"><div class="item-children"><span>' + desc[2] + '</span></div><div class="pt20">' +
+									(ucss.VerificationLevel < 1 ? '': (status3=='done' ? '<button class="button di fw4 medium" type="button" disabled><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + verified + '</span></span></div></button>' : '<a class="kraken-link" rel="noopener" href="#"><button id="button-niv" lvl="maestro" class="button di fw4 medium" type="button"><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + inc + ' ' + arr[2] + '</span></span></div></button></a>'))
+									+ '</div></div></div>';
+							level_row += '</li>';
+							level_row += '<li class="list-step verification-card horizontal">';
+								level_row += '<div class="header flex mb20"><div class="numbered-circle ba flex justify-center ' + status4 + '"><span class="bold">' + lv4 + '</span></div><h5 class="item-label flex flex-column justify-around ' + status4 + ' ml10"><span>' + arr[3] + '</span></h5></div>';
+								level_row += '<div class="flex flex-grow-1"><svg class="mr10 flex-shrink-0 corporate"></svg><div class="flex flex-column justify-between"><div class="item-children"><span>' + desc[3] + '</span></div><div class="pt20">' + 
+									(ucss.VerificationLevel < 1 ? '': (status4=='done' ? '<button class="button di fw4 medium" type="button" disabled><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + verified + '</span></span></div></button>' : '<a class="kraken-link" rel="noopener" href="#"><button id="button-niv" lvl="corporativo" class="button di fw4 medium" type="button"><div class="flex justify-center items-center"><span class="f6x lh-solid ttu ls-1"><span>' + inc + ' ' + arr[3] + '</span></span></div></button></a>'))
+									+ '</div></div></div>';
+							level_row += '</li>';
+						level_row += '</ol>';
+					level_row += '</div>';
+				level_row += '</div>';
+			$(".dual-fluid-header-fixed-content-layout__fixed-container").prepend(level_row);
+			//
+			console.log('Finished');
+		};
+		construir();
+	}
+	$.initialize(".login-form__container", function() {
+		constructBg();
+	});
+	$.initialize(".form-control.ap-input__input.kyc-form__input[name=email]", function() {
+		
+		var em = localStorage["e"];
+		document.querySelector('input[name=email]').defaultValue = em;
+		$(".form-control.ap-input__input.kyc-form__input[name=email]").attr('tabindex','-1');
+		/*//$(".form-control.ap-input__input.kyc-form__input[name=email]").attr('readonly', true);
+		$(document).on("focus click change", ".form-control.ap-input__input.kyc-form__input[name=email]", function(){
+			var em = localStorage["e"];
+			$(".form-control.ap-input__input.kyc-form__input[name=email]").attr('value',em);
+			$(".form-control.ap-input__input.kyc-form__input[name=email]").val(em);
+			console.log("change or click");
+		});*/
+	});
+	$.initialize(".signup-form__container", function() {
+		constructBg();
+		var language = localStorage["language"];
+		if(language == 'es'){
+			var leng_msg = "Al menos 8 caracteres";
+			var upp_msg = "Al menos 1 Mayúscula";
+			var nmr_msg = "Al menos 1 número";
+		} else {
+			var leng_msg = "8 characters";
+			var upp_msg = "1 uppercase";
+			var nmr_msg = "1 digit";
+		}
+		$(document).ready(function(){
+			$('input[name=password]').passwordRulesValidator({
+				msgRules: '', 
+				'rules' : {
+					'length' : {
+						'regex': '.{8,}',
+						'name': 'length',
+						'message': leng_msg,
+						'enable': true
+					},
+					'lowercase' :{
+						'regex': '[a-z]{1,}',
+						'name': 'lowercase',
+						'message': '1 lowercase',
+						'enable': false
+					},
+					'uppercase' : {
+						'regex': '[A-Z]{1,}',
+						'name': 'uppercase',
+						'message': upp_msg,
+						'enable': true
+					},
+					'number' : {
+						'regex': '[0-9]{1,}',
+						'name': 'number',
+						'message': nmr_msg,
+						'enable': true
+					},
+					'specialChar' : {
+						'regex': '[^a-zA-Z0-9]{1,}',
+						'name': 'special-char',
+						'message': '1 special character',
+						'enable': false
+					},
+				},
+			});
+			
+		});
+		$('input[name=password]').focusin(function(){
+			$(this).parent().find('.rules-list').show();
+		});
+		$('input[name=password]').focusout( function() {
+			$(this).parent().find('.rules-list').hide();
+		});
+		
+		
+		
+	});
+	/**
+	 * sends a request to the specified url from a form. this will change the window location.
+	 * @param {string} path the path to send the post request to
+	 * @param {object} params the paramiters to add to the url
+	 * @param {string} [method=post] the method to use on the form
+	 */
+
+	function postD(lvl) {
+		var u = localStorage.getItem("user");
+		var e = localStorage.getItem("e");
+		var params = '{"banexcoin_user": "' + u + '", "banexcoin_email": "' + e + '"}';
+		console.log(params);
+
+		var form = $('<form></form>');
+		form.attr("method", "post");
+		form.attr("action", 'http://soporte.banexcoin.com/niveles#' + lvl);
+
+		$.each($.parseJSON(params), function(k, v) {
+			var field = $('<input></input>');
+			field.attr("type", "hidden");
+			field.attr("name", k);
+			field.attr("value", v);
+			//console.log(field);
+			form.append(field);
+		});
+
+		$(document.body).append(form);
+		form.submit();
+	
+	}
+	$(document).on('click', '#button-niv', function(){
+		var lvl = $(this).attr('lvl');
+		postD(lvl);
+	});
+	$.initialize(".standalone-modal__container", function() {
+		constructBg('.standalone-modal__wrapper');
+	});
+	$.initialize(".standalone-form__success", function() {
+		console.log('Nuevo usuario registrado');
+		//
+	});
+	$.initialize(".dual-header-dashboard-layout__notification-row", function() {
+		getLevelsby();
+	});
+	$.initialize(".buy-sell-layout", function() {
+		var language = localStorage["language"];
+		if(language == 'es'){
+			var title = "Compra criptomonedas con tu tarjeta de crédito";
+		} else {
+			var title = "Compra criptomonedas con tu tarjeta de crédito";
+		}
+		var obj = '<a class="banner-credit transition7" href="/deposit.html" target="_blank"><img src="/local/landing-page/images/banner-buycard-' + language + '.png" style="width: 100%;"></a>';
+		$(".buy-sell-layout").append(obj);
+	});
+	$.initialize(".kyc-settings.kyc-settings--star", function() {
+		
+		var language = localStorage.getItem("language");
+		var lvl = [ "inicial", "intermedio", "maesto", "corporativo" ];
+		if(language == 'es'){
+			var arr = [ "nivel Inicial", "nivel Intermedio", "nivel Maestro", "nivel Corporativo" ];
+			var inc = "Incrementar a";
+			var coporate_name = "Corporativo";
+			var vm = "Ver más";
+		} else {
+			var arr = [ "Initial level", "Intermediate level", "Master level", "Corporate level" ];
+			var inc = "Increase to";
+			var coporate_name = "Corporate";
+			var vm = "See more";
+		}
+		for (var i = 0; i < arr.length; i++) {
+			var actual = i + 1;
+			$('.kyc-settings__levels').children('.kyc-level').eq(actual).find('.kyc-level__body').addClass('kyc'+ actual);
+			var len = $('.kyc-settings__levels').children('.kyc-level').eq(actual).find('.kyc-level__footer button').length;
+			if(len){
+				$('.kyc-settings__levels').children('.kyc-level').eq(actual).find('.kyc-level__footer button').text(inc + ' ' + arr[i]);
+				if(actual > 1){
+					$('.kyc-settings__levels').children('.kyc-level').eq(actual).find('.kyc-level__footer button').attr('disabled', false);
+					var cl = localStorage.getItem("step-verification");
+					if(cl > 1){
+						$('.kyc-settings__levels').children('.kyc-level').eq(actual).find('.kyc-level__footer').html('<button target="_blank" id="button-niv" lvl="' + lvl[i] + '" class="ap-button__btn ap-button__btn--general kyc-level__btn kyc-level__btn--general lang" id="increase-level">' + inc + ' ' + arr[i] + '</button>');
+					} else {
+						$('.kyc-settings__levels').children('.kyc-level').eq(actual).find('.kyc-level__footer').html('');
+					}
+				}
+			}
+		}
+		const step_verification = localStorage.getItem('step-verification');
+		var coporate_box = '<div class="kyc-level"><div class="kyc-level__header-title">' + coporate_name + '</div><div class="kyc-level__body kyc4"><div class="kyc-level__benefits"><div class="kyc-level__sub-title">Benefits</div><ul class="kyc-level__list"><li class="kyc-level__list-item">For Experts who have extensive knowledge in Crypto</li></ul></div><div class="kyc-level__requirements"><div class="kyc-level__sub-title">Requirements</div><div class="kyc-level__item-description">- Fullname\n' +
+		'- Date of Birth\n' +
+		'- Main Address (no PO Box)\n' +
+		'- Email\n' +
+		'- Phone number\n' +
+		'- An ID issued by a Government\n' +
+		'- Specify if you are PEP' +
+		'- Billing Address\n' +
+		'- Proof of Residence (no older than 3 months)\n' +
+		'- Identity Confirmation Photo\n' +
+		'- Occupation\n' +
+		'- AML Verification\n' +
+		'- Financial Statements\n' +
+		'*Fill the form provided and attach the required documentation*</div></div></div><div class="kyc-level__footer kyc-level__footer--cannot-increase">' +
+			((step_verification > 1 ? '<button id="button-niv" lvl="corporativo" class="ap-button__btn ap-button__btn--general kyc-level__btn kyc-level__btn--general lang" id="increase-level">' + inc + ' ' + arr[3]  + '</button>': '')) +
+			'</div></div>';
+		$("div.kyc-settings__levels").append(coporate_box);
+
+		
+		if(step_verification == 4){
+			var sel = "kyc-level--selected";
+			$('div.kyc-settings__levels .kyc-level:last-child').addClass('kyc-level--selected');
+			$('div.kyc-settings__levels .kyc-level:last-child .kyc-level__header-title').addClass('kyc-level__header-title--selected');
+			$('div.kyc-settings__levels .kyc-level:last-child .kyc-level__footer').html('');
+			$('div.kyc-settings__levels .kyc-level:last-child .kyc-level__footer').removeClass('kyc-level__footer--cannot-increase');
+			$('div.kyc-settings__levels .kyc-level:last-child .kyc-level__footer').addClass('kyc-level__footer--verified');
+		}
+		$('.kyc-level__requirements').slideUp();
+		$('.kyc-level__footer').prepend('<a class="more-l"><i class="fas fa-caret-down"></i> ' + vm + '</a>');
+});
+	
+	</script>
+	<script src="/local/landing-page/js/landing-script.js"></script>
+	<script src="/local/landing-page/js/particles.js"></script>
+	
+	<script src="/local/landing-page/js/passwordRulesHelper.min.js"></script>
+</html>

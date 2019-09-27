@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/local/landing-page/images/isotipo.png" />
+    <link
+      rel="preconnect"
+      href="https://api_apexqa.alphapoint.com/WSGateway/"
+    />
+    <link
+      rel="dns-prefetch"
+      href="https://api_apexqa.alphapoint.com/WSGateway/"
+    />
+    <title>Tarifas y comisiones - Banexcoin</title>
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <link href="/theme.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,900i" rel="stylesheet">
+	
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	
+	<script src="/local/landing-page/js/rss-parser.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="/local/landing-page/js/banexcoin.js"></script>
+	<style>
+			section#acerca div.parrafo, section#acerca p.parrafo {
+				text-align: justify;
+			}
+		</style>
+  </head>
+  <body class="">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="/local/config.js"></script>
+    <script src="/local/translation/translations.js"></script>
+	<script src="/vendor/polyfills.js"></script>
+    <div id="landing">
+      <!--Add your landing page content below-->
+      <link
+        rel="stylesheet"
+        href="/local/landing-page/css/landing-style.css"
+      />
+      <script src="/local/landing-page/js/landing-script.js"></script>
+      <div class="landing-content-container">
+        <header>
+          <nav class="nav-top-container show-background">
+			<div class="nav-top-container-cented">
+            <a href="/index" class="nav-logo-link">
+              <img
+                alt="Site logo"
+                src="/local/logos/logo-banexcoin.svg"
+                class="ap-logo__img standalone-form__logo__img"
+              />
+            </a>
+            <div class="landing-nav-menu">
+				<label class="switch"><input type="checkbox" id="check-theme"/><div></div></label>
+				
+			  
+				<a href="/login" class="ap-button__btn ap-button__btn--general signin lang" key="login">Iniciar sesión</a>
+				<a href="/signup" class="ap-button__btn ap-button__btn--general signup lang" key="signup">Registrarte</a>
+				<li class="nav-item dropdown">
+					<span class="nav-link dropdown-toggle" id="dropdown09"> <span class="lang" key="langactual"><img src="/local/landing-page/images/country/espana.png" width="20px"/>    &#9660;</span>
+						<div class="dropdown-menu" aria-labelledby="dropdown09">
+							<button class="translate" id="en"><img src="/local/landing-page/images/country/reino-unido.png" width="20px"/>  English</button>
+							<button class="translate" id="es"><img src="/local/landing-page/images/country/espana.png" width="20px"/>  Español</button>
+							<!--<button class="translate" id="fr"><img src="/local/landing-page/images/country/espana.png" width="20px"/>  Français</button>-->
+						</div>
+					</span>
+					
+				</li>
+				<div id="landing-nav-menu-toggle" class="landing-nav-menu-toggle">
+                <!--<span></span> <span></span> <span></span>-->
+                </div>
+              <div id="menu-wrapper" class="menu-wrapper" data-status="closed">
+                <div class="menu-container">
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#home"><span ap-translate="INDEX.MENU_HOME" class="lang" key="inicio">Inicio</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#features">
+                        <span ap-translate="INDEX.MENU_FEATURES" class="lang" key="features">Caracteristicas</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#features-expanded" >
+                        <span ap-translate="INDEX.MENU_FEATURES" class="lang" key="more_features">Mas caracteristicas</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#about" ><span ap-translate="INDEX.MENU_ABOUT" class="lang" key="about">Acerca</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#contact"><span ap-translate="INDEX.MENU_CONTACT" class="lang" key="contact">Contacto</span></a>
+                    </li>
+                    <li class="menu-item only-show-on-mobile">
+                      <a href="/login"><span
+                          ap-translate="INDEX.MENU_LOGIN"
+                          class="modal-btn login-btn lang" key="login"
+                          >Login</span></a>
+                    </li>
+                    <li class="menu-item only-show-on-mobile">
+                      <a href="/signup" >
+                        <span
+                          ap-translate="INDEX.MENU_SIGNUP"
+                          class="modal-btn register-btn lang" key="signup">Sign Up
+                        </span >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </nav>
+        </header>
+        <section id="acerca">
+			<div class="banner-op" style="height: 200px;margin-bottom: 50px;">
+					<h1 class="lang" key="tarifas_comisiones">Tarifas y Comisiones</h1>
+					<p class="lang" key="best_rates_com">Aquí en Banexcoin trabajamos con las mejores tarifas y comisiones.</p>
+			</div>
+			<article>
+				<p class="lang parrafo" key="tarifas_comisiones_prr1">En Banexcoin contamos con varias formas de aumentar el saldo de tu cuenta, una vez tu cuenta tenga saldo suficiente puedes utilizarlo para intercambiarlo por los criptoactivos o dinero fiat manejándolos dentro de nuestra plataforma, además contamos con una tarifa plana para todas las operaciones de intercambio y solo verás un mínimo porcentaje o residual antes de realizar cualquier forma de intercambio el cual dependerá solamente del nivel de verificación que tengas como Usuario.</p>
+				<p class="lang parrafo" key="tarifas_comisiones_prr2">Como Usuario podrás depositar tus criptomonedas sin tener que pagar comisión alguna, por razones de seguridad y a fines de evitar riesgos de doble gasto se han establecido cierto números de confirmaciones dependiendo de criptoactivos, estas confirmaciones no son mas que la inclusión de una transacción en un bloque incluido en la cadena de bloques por los mineros de dicha blockchain, cada bloque subsiguiente aumenta una confirmación a dicha transacción, como ejemplo en la blockchain de Bitcoin se tiene un tiempo promedio de extracción por bloque de 10 minutos, Banexcoin requiere de 6 confirmaciones por tanto el Usuario verá en su cuenta acreditados los bitcoin que depositó en un plazo de 60 minutos aproximados siempre y cuando los mismos tomen los 10 minutos para minar el bloque, puede que tomen mas tiempo siendo así decimos que la red se encuentra congestionada y ella escapa de las manos de la Plataforma, por tanto debe quedar eximida de responsabilidad cuando se trate de tiempos que no puede controlar.</p>
+				<p></p>
+				<div class="box-center">
+					<table class="table">
+						<tbody>
+							<tr class="tr-title">
+								<td colspan="6" class="text-center lang" key="tarifas_comisiones_tiempos">Tiempos y Comisiones por Depósitos y Retiros</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td colspan="2" class="country-separate lang" key="tarifas_app_peru">Tarifas Aplican para Perú <img src="local/landing-page/images/country/peru.png"/></td>
+								<td colspan="2" class="country-separate lang" key="tarifas_app_panama">Tarifas Aplican para Panamá <img src="local/landing-page/images/country/panama.png"/></td>
+							</tr>
+							<tr class="tr-subtitle">
+								<td class="lang" key="fiat_depo">Depositos Fiat</td>
+								<td class="lang" key="estimate_time">Tiempo Estimado para Depósito*</td>
+								<td class="bor-lf"><span class="lang" key="minimun_amount">Monto Mínimo</span></td>
+								<td><span class="lang" key="perc_com_depo">% Comisión para Depósito</span></td>
+								<td class="bor-lf"><span class="lang" key="minimun_amount">Monto Mínimo</span></td>
+								<td class="bor-rg"><span class="lang" key="perc_com_depo">% Comisión para Depósito</span></td>
+							</tr>
+							<tr>
+								<td>
+									Banexcoin Transfer	
+								</td>
+								<td>		
+									<span class="lang" key="inmediate">Inmediato</span>
+								</td>
+								<td class="bor-lf">
+									5 US$
+								</td>
+								<td>
+									<span class="lang" key="no_cost">Sin Costo</span>
+								</td>
+								<td class="bor-lf">
+									5 US$
+								</td>
+								<td class="bor-rg">
+									<span class="lang" key="no_cost">Sin Costo</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lang" key="tarjeta_Credito">Tarjeta de Crédito **</span>
+								</td>
+								<td>						
+									2 min.	
+								</td>
+								<td class="bor-lf">						
+									50 US$
+								</td>
+								<td>						
+									4%
+								</td>
+								<td class="bor-lf">						
+									50 US$
+								</td>
+								<td class="bor-rg">						
+									4%
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lang" key="trans_nac_same">Transferencia Nacional desde el mismo Banco</span>
+								</td>
+								<td>
+									5 min.	
+								</td>
+								<td class="bor-lf">
+									30 S/. ó 10 US$
+								</td>
+								<td>
+									<span class="lang" key="no_cost">Sin Costo</span>
+								</td>
+								<td class="bor-lf">
+									10 US$
+								</td>
+								<td class="none-apply bor-rg">
+									XXX
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lang" key="trans_nac_other">Transferencia Nacional desde el otro Banco	</span>
+								</td>
+								<td>
+									<span class="lang" key="one_work_day">1 día Habil</span>
+								</td>
+								<td class="bor-lf">
+									30 S/. ó 10 US$
+								</td>
+								<td class="none-apply">
+									XXX
+								</td>
+								<td class="bor-lf">
+									10 US$
+								</td>
+								<td class="none-apply bor-rg">
+									XXX
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="lang" key="trans_inter">Transferencia Internacional***</span>
+								</td>
+								<td>
+									48h - 72h	
+								</td>
+								<td class="bor-lf">
+									1000 US$
+								</td>
+								<td>
+									50 US$
+								</td>
+								<td class="bor-lf">
+									1000 US$
+								</td>
+								<td class="none-apply bor-rg">
+									XXX
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="mini-height clearfix"></div>
+					<table class="table text-center">
+						<tbody>
+								<tr class="tr-title">
+									<td>
+										<span class="lang" key="depo_cript">Depósitos Criptoactivos</span>
+									</td>
+									<td>
+										<span class="lang" key="number_conf_depo"># Confirmaciones para Depósito</span>
+									</td>
+									<td>
+										<span class="lang" key="estimate_time">Tiempo estimado para Depósito*</span>
+									</td>
+									<td>
+										<span class="lang" key="minimun_amount">Monto Mínimo</span>
+									</td>
+									<td>
+										<span class="lang" key="perc_com_depo">% Comisión para Depósito</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Bitcoin (BTC)
+									</td>
+									<td>
+										6 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										60 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BitcoinCash (BCH)
+									</td>
+									<td>
+										15 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										150 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Dash (DASH)
+									</td>
+									<td>
+										6 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										15 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Eosio (EOS)
+									</td>
+									<td>
+										N / A
+									</td>
+									<td>
+										<span class="lang" key="inmediate">Inmediato</span>
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ether (ETH)
+									</td>
+									<td>
+										30 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										6 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Litecoin (LTC)
+									</td>
+									<td>
+										12 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										30 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Monero (XMR)
+									</td>
+									<td>
+										15 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										30 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ripple (XRP)
+									</td>
+									<td>
+										N / A
+									</td>
+									<td>
+										<span class="lang" key="inmediate">Inmediato</span>
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										USD Coin (USDC)
+									</td>
+									<td>
+										30 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										6 Min.
+									</td>
+									<td>
+										1
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										USD Tether (USDT)
+									</td>
+									<td>
+										6 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										60 min.
+									</td>
+									<td>
+										1
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Zcash (ZEC)
+									</td>
+									<td>
+										24 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										60 min.
+									</td>
+									<td>
+										0.0001
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+						</tbody>
+					</table>
+					<div class="mini-height clearfix"></div>
+					<table class="table">
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td colspan="2" class="country-separate lang" key="tarifas_app_peru">Tarifas Aplican para Perú <img src="local/landing-page/images/country/peru.png"/></td>
+									<td colspan="2" class="country-separate lang" key="tarifas_app_panama">Tarifas Aplican para Panamá <img src="local/landing-page/images/country/panama.png"/></td>
+								</tr>
+								<tr class="tr-subtitle">
+									<td class="lang" key="reti_fiat">Retiros Fiat</td>
+									<td class="lang" key="estimate_time_reti">Tiempo Estimado para Retiro*</td>
+									<td class="bor-lf"><span class="lang" key="minimun_amount">Monto Mínimo</span></td>
+									<td><span class="lang" key="perc_com_reti">% Comisión para Retiro</span></td>
+									<td class="bor-lf"><span class="lang" key="minimun_amount">Monto Mínimo</span></td>
+									<td class="bor-rg"><span class="lang" key="perc_com_reti">% Comisión para Retiro</span></td>
+								</tr>
+								<tr>
+									<td>
+										Banexcoin Transfer	
+									</td>
+									<td>		
+										<span class="lang" key="inmediate">Inmediato</span>	
+									</td>
+									<td class="bor-lf">
+										5 US$
+									</td>
+									<td>
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+									<td class="bor-lf">
+										5 US$
+									</td>
+									<td class="bor-rg">
+										<span class="lang" key="no_cost">Sin Costo</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="lang" key="trans_nac_same">Transferencia Nacional desde el mismo Banco</span>
+									</td>
+									<td>
+										20 min.	
+									</td>
+									<td class="bor-lf">
+										10US$
+									</td>
+									<td>
+										0.51%
+									</td>
+									<td class="bor-lf">
+										10 US$
+									</td>
+									<td class="none-apply bor-rg">
+										XXX
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="lang" key="trans_nac_other">Transferencia Nacional desde el otro Banco</span>
+									</td>
+									<td>
+										<span class="lang" key="one_work_day">1 día Habil</span>
+									</td>
+									<td class="bor-lf">
+										30 S/. ó 10 US$
+									</td>
+									<td class="none-apply">
+										XXX
+									</td>
+									<td class="bor-lf">
+										10 US$
+									</td>
+									<td class="none-apply bor-rg">
+										XXX
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="lang" key="trans_inter">Transferencia Internacional***</span>
+									</td>
+									<td>
+										48h - 72h	
+									</td>
+									<td class="bor-lf">
+										2000 US$
+									</td>
+									<td>
+										50 US$
+									</td>
+									<td class="bor-lf">
+										2000 US$
+									</td>
+									<td class="none-apply bor-rg">
+										XXX
+									</td>
+								</tr>
+							</tbody>
+					</table>
+					<div class="mini-height clearfix"></div>
+					<table class="table text-center">
+						<tbody>
+								<tr class="tr-title">
+									<td>
+										<span class="lang" key="reti_cript">Retiros Criptoactivos</span>
+									</td>
+									<td>
+										<span class="lang" key="number_conf_reti"># Confirmaciones para Retiros</span>
+									</td>
+									<td>
+										<span class="lang" key="estimate_time_reti">Tiempo estimado para Retiros*</span>
+									</td>
+									<td>
+										<span class="lang" key="minimun_amount">Monto Mínimo</span>
+									</td>
+									<td>
+										<span class="lang" key="perc_com_reti">% Comisión para Retiros</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Bitcoin (BTC)
+									</td>
+									<td>
+										6 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										60 min.
+									</td>
+									<td>
+										0.002 BTC
+									</td>
+									<td>
+										0.0015 BTC
+									</td>
+								</tr>
+								<tr>
+									<td>
+										BitcoinCash (BCH)
+									</td>
+									<td>
+										15 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										150 min.
+									</td>
+									<td>
+										0.002 BCH
+									</td>
+									<td>
+										0.001 BCH
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Dash (DASH)
+									</td>
+									<td>
+										6 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										15 min.
+									</td>
+									<td>
+										0.004 DASH
+									<td>
+										0.05 DASH
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Eosio (EOS)
+									</td>
+									<td>
+										N / A
+									</td>
+									<td>
+										<span class="lang" key="inmediate">Inmediato</span>
+									</td>
+									<td>
+										0.2 EOS
+									</td>
+									<td>
+										0.1 EOS
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ether (ETH)
+									</td>
+									<td>
+										30 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										6 min.
+									</td>
+									<td>
+										0.02 ETH
+									</td>
+									<td>
+										0.01 ETH
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Litecoin (LTC)
+									</td>
+									<td>
+										12 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										30 min.
+									</td>
+									<td>
+										0.002 LTC
+									</td>
+									<td>
+										0.001 LTC
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Monero (XMR)
+									</td>
+									<td>
+										15 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										30 min.
+									</td>
+									<td>
+										0.01 XMR
+									</td>
+									<td>
+										0.0001 XMR
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Ripple (XRP)
+									</td>
+									<td>
+										N / A
+									</td>
+									<td>
+										<span class="lang" key="inmediate">Inmediato</span>
+									</td>
+									<td>
+										20 XRP
+									</td>
+									<td>
+										0.3 XRP
+									</td>
+								</tr>
+								<tr>
+									<td>
+										USD Coin (USDC)
+									</td>
+									<td>
+										30 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										6 Min.
+									</td>
+									<td>
+										10 USDC
+									</td>
+									<td>
+										3 USDC
+									</td>
+								</tr>
+								<tr>
+									<td>
+										USD Tether (USDT)
+									</td>
+									<td>
+										6 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										60 min.
+									</td>
+									<td>
+										10 USDT
+									</td>
+									<td>
+										4 USDT
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Zcash (ZEC)
+									</td>
+									<td>
+										24 <span class="lang" key="confirm">Confirmaciones</span>
+									</td>
+									<td>
+										60 min.
+									</td>
+									<td>
+										0.01 ZEC
+									</td>
+									<td>
+										0.005 ZEC
+									</td>
+								</tr>
+						</tbody>
+					</table>
+
+
+					<div class="mini-height clearfix"></div>
+					<table class="table text-center">
+						<tbody>
+							<tr class="tr-title">
+								<td colspan="4" class="text-center lang" key="com_buy_sell">Comisión por Compra / Venta de Criptomonedas (Intercambio)</td>
+							</tr>
+							<tr class="tr-subtitle">
+								<td>
+									<span class="lang" key="level_ini1">Inicial - Nivel 1</span>
+								</td>
+								<td>
+									<span class="lang" key="level_int2">Intermedio - Nivel 2</span>
+								</td>
+								<td>
+									<span class="lang" key="level_ma3">Maestro - Nivel 3</span>	
+								</td>
+								<td>
+									<span class="lang" key="level_corp4">Corporativo - Nivel 4</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									0.2%
+								</td>
+								<td>
+									0.15%
+								</td>
+								<td>
+									0.10%
+								</td>
+								<td>
+									0.10%
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="mini-height clearfix"></div>
+					<div class="lang parrafo" key="tarifas_clause1">* Se muestran tiempos de confirmación aproximados ya que los tiempos de ejecución pueden variar según las condiciones de la red. Tenga en cuenta que los tiempos estimados es el tiempo en el cual se espera estén disponibles los fondos en su cuenta Banexcoin y suponen que su transacción se ha confirmado en el primer bloque después de enviada la transacción. Si su transacción no fué confirmada en el primer bloque posible, entonces puede tomar mucho más tiempo dependiendo de las condiciones de la red para ese momento.</div>
+					<div class="lang parrafo" key="tarifas_clause2">** Solo son aceptadas Tarjetas de Crédito Visa y MasterCard, el titular debe ser el mismo que el usuario de la cuenta Banexcoin que está solicitando el depósito de fondos.</div>
+					<div class="lang parrafo" key="tarifas_clause3">*** Esta operación deberá ser realizada por el titular de la Cuenta Banexcoin a la cual van dirigidos los fondos y el mismo deberá previamente asumir los cobros realizados por la entidad bancaria para la ejecución de la transferencia y bajo ningún concepto podrán ser transferidos a Banexcoin, en caso contrario será reversada dicha operación dedudiendo los cargos asociados.</div>
+					<div class="lang parrafo" key="tarifas_clause4">Los tiempos de transferencias para depósitos o retiros fiat son aproximados y están expresados en tiempo hábil/útil o laboral,  dependen de los tiempos de procesamiento de la Red Bancaria y pueden estar sujetos a revisión por parte de la misma.</div>
+					<div class="lang parrafo" key="tarifas_clause5">Las tablas de comisiones aquí mostradas están sujetas a cambio sin previo aviso.</div>
+				</div>
+			</article>
+		</section>
+		<div class="elementor">
+			<!-- old footer -->
+			<div class="row row-contact element-content footer-block">
+			  <div class="col-flex footer-menus">
+				<ul class="element-content-child">
+				  <li class="first lang" key="foot_about_us">NOSOTROS</li>
+				  <li><a href="/acerca.html" class="lang" key="foot_about_us">NOSOTROS</a></li>
+				  <!--<li><a href="#features" class="lang" key="foot_features">CARACTERISTICAS</a></li>-->
+				  <!--<li><a href="/blog.html" class="lang" key="foot_blog">BLOG</a></li>-->
+				  <li><a href="/tarifas.html" class="lang" key="foot_fees">TARIFAS Y COMISIONES</a></li>
+				  <li><a href="/monedas.html" class="lang" key="foot_currencies">MONEDAS</a></li>
+				  <li><a href="/niveles-clientes.html" class="lang" key="foot_levels">NIVELES DE CLIENTES</a></li>
+				</ul>
+				<ul class="element-content-child">
+				  <li class="first lang" key="foot_support">SOPORTE</li>
+				  <!--<li><a href="/api" class="lang" key="foot_api">API</a></li>-->
+				  <li><a href="/seguridad.html" class="lang" key="foot_security">SEGURIDAD</a></li>
+				  <li><a href="https://soporte.banexcoin.com" class="lang" key="foot_support_center">CENTRO DE SOPORTE</a></li>
+				</ul>
+				<ul class="element-content-child">
+				  <li class="first lang" key="foot_policies">POLITICAS</li>
+				  <li><a href="/politicas-kyc.html" class="lang" key="foot_kyc">POLITICAS DE KYC</a></li>
+				  <li><a href="/politicas-aml.html" class="lang" key="foot_aml">POLITICAS DE AML</a></li>
+				</ul>
+				<p class="right-side">
+				  <a href="https://www.facebook.com/Banexcoin-SA-1966167210356313/" class="socialy"><i class="fab fa-facebook-f"></i></a>
+				  <a href="https://twitter.com/banexcoin" class="socialy"><i class="fab fa-twitter"></i></a>
+				  <a href="https://www.instagram.com/banexcoin/" class="socialy"><i class="fab fa-instagram"></i></a>
+				</p>
+			  </div>
+			</div>
+			<!-- stats -->
+			<footer class="elementor-element elementor-element-d13c04c elementor-section-height-min-height elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="d13c04c" data-element_type="section">
+			  <div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				  <div class="elementor-element elementor-element-4f53145 elementor-column elementor-col-33 elementor-top-column" data-id="4f53145" data-element_type="column">
+					<div class="elementor-column-wrap  elementor-element-populated">
+					  <div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-cefeeea elementor-widget elementor-widget-image" data-id="cefeeea" data-element_type="widget" data-widget_type="image.default">
+						  <div class="elementor-widget-container">
+							<div class="elementor-image logoimg">
+							  <img width="1" height="1" src="/local/logos/logo-banexcoin-white.svg" class="attachment-large size-large" alt="Banexcoin Logo Blanco">
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="elementor-element elementor-element-4839c19 elementor-column elementor-col-33 elementor-top-column" data-id="4839c19" data-element_type="column">
+					<div class="elementor-column-wrap  elementor-element-populated">
+					  <div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-848a0e0 elementor-widget elementor-widget-heading" data-id="848a0e0" data-element_type="widget" data-widget_type="heading.default">
+						  <div class="elementor-widget-container">
+							<h3 class="elementor-heading-title elementor-size-default lang" key="copyright_banexcoin">Copyright © 2019 Banexcoin. Todos los derechos reservados</h3> </div>
+						</div>
+						<div class="elementor-element elementor-element-d5cc8a3 elementor-widget elementor-widget-heading" data-id="d5cc8a3" data-element_type="widget" data-widget_type="heading.default">
+						  <div class="elementor-widget-container">
+							<h3 class="elementor-heading-title elementor-size-default"><span class="lang" key="use_allow_terms">Al usar este sitio web estas aceptando los <a href="/terminos-condiciones">Términos y condiciones</a>, y <a href="/politica-privacidad.html">Políticas de Privacidad y Cookies</a></span></h3> </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="elementor-element elementor-element-673e146 elementor-column elementor-col-33 elementor-top-column" data-id="673e146" data-element_type="column">
+					<div class="elementor-column-wrap  elementor-element-populated">
+					  <div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-378c910 elementor-widget elementor-widget-heading" data-id="378c910" data-element_type="widget" data-widget_type="heading.default">
+						  <div class="elementor-widget-container">
+							<h3 class="elementor-heading-title elementor-size-default m4l"><a href="https://manya.pe" target="_blank"></a><a href="https://manya.pe/" target="_blank">Hecho con <img draggable="false" class="emoji" alt=":corazón:" src="/local/landing-page/images/manya/heart.svg"> por Manya.pe</a></h3> </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</footer>
+		</div>
+      </div>
+    </div>
+	<!--<script src="/local/landing-page/js/rss.js"></script>-->
+    <!--<script type="text/javascript" src="/static/js/main.d61e2710.js"></script>-->
+  </body>
+</html>

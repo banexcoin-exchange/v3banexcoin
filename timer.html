@@ -1,0 +1,118 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+  .timer {
+    border-radius: 50%;
+    border: 1px solid black;
+    width:40px;
+    height: 40px;
+    position: relative;
+  }
+  .timer .min, .timer .sec {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin-left: 19px;
+    transform-origin: 100% 100%;
+    position: absolute;
+    border-radius: 2px;
+  }
+  .timer .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #4c4c4c;
+    margin: 17px 0 0 18px;
+    transform-origin: 100% 100%;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .timer .sec {background-color: red;}
+  span.ssec {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+  }
+  #high {background-color: rgb(107, 231, 112);}
+  #normal {background-color: rgb(117, 215, 88);}
+  #warning {background-color: rgb(233, 129, 33);}
+  #danger {background-color: rgb(219, 67, 47);}
+</style>
+
+<div class="timer">
+  <div class="min"></div>
+  <div class="sec"></div>
+  <div class="dot"></div>
+  <span class="ssec"></span>
+</div>
+<script>
+$(document).ready(function() {
+  var min = 0;
+
+  function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear(),
+
+        hour = '' + (d.getHours()),
+        minute = '' + (d.getMinutes()),
+        second = '' + (d.getSeconds());
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+    if (hour.length < 2) hour = '0' + hour;
+    if (minute.length < 2) minute = '0' + minute;
+    if (second.length < 2) second = '0' + second;
+
+    return [year, month, day].join('-') + " " + [hour, minute, second].join(':');
+  }
+
+
+
+  function moveMin(){
+    
+    
+
+   
+    var interval = setInterval(function() {
+      var sec = new Date().getSeconds();
+      var tiempo_restante = 60-sec;
+      console.log("segundos actuales: " + sec);
+      console.log("segundos restantes: " + tiempo_restante);
+      if (tiempo_restante >= 0 ) {
+          var calc_deg = tiempo_restante * 6;
+          $("div.sec").attr("style", "transform: rotate("+ calc_deg +"deg)");
+          $("span.ssec").html(tiempo_restante);
+          if(tiempo_restante > 40) {
+            var status = "high";
+          } else {
+            if(tiempo_restante > 30) {
+              var status = "normal";
+            } else {
+              if(tiempo_restante > 10) {
+                var status = "warning";
+              } else {
+                var status = "danger";
+              }
+            }
+          }
+          $("span.ssec").attr("id", status);
+          $("div.timer").attr("id", status);
+
+          tiempo_restante--;
+      }
+      else { 
+          clearInterval(interval);
+          getDates();
+      }
+    }, 1000);
+  }
+  function getDates() {
+    moveMin();
+  }
+  
+  getDates();
+});
+</script>

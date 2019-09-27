@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/local/landing-page/images/isotipo.png" />
+    <link
+      rel="preconnect"
+      href="https://api_apexqa.alphapoint.com/WSGateway/"
+    />
+    <link
+      rel="dns-prefetch"
+      href="https://api_apexqa.alphapoint.com/WSGateway/"
+    />
+    <title>Banexcoin</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(131, 131, 131);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  html, .whited {background: white;}
+  table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+  }
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  td {
+    display: table-cell;
+    vertical-align: inherit;
+  }
+  .APLI_conteTablaBuscar {
+    BORDER-BOTTOM: #8daece 1px solid;
+    PADDING-BOTTOM: 15px;
+    PADDING-LEFT: 15px;
+    WIDTH: auto;
+    PADDING-RIGHT: 15px;
+    MARGIN-BOTTOM: 10px;
+    BACKGROUND: #f3f6fa;
+    HEIGHT: auto;
+    BORDER-TOP: #8daece 2px solid;
+    PADDING-TOP: 15px;
+    width: 700px !important;
+    pointer-events: none;
+  }
+  .APLI_txtCampo {
+    TEXT-ALIGN: left;
+    PADDING-BOTTOM: 2px;
+    FONT: bold 11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    COLOR: #002469;
+    PADDING-TOP: 2px;
+  }
+  .riSingle {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+  }
+  .RadComboBox {
+    width: 12em;
+    line-height: 1.428571429;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .RadComboBox_Metro {
+    color: #000;
+    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+  }
+  .RadComboBox .rcbInner {
+    padding: 4px 2em 4px 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    display: block;
+    position: relative;
+  }
+  .RadComboBox_Metro .rcbInner {
+    border-color: #e5e5e5;
+    color: #000;
+    background-color: #fff;
+  }
+  .RadInput_Metro, .RadInputMgr_Metro {
+    font: normal 12px "Segoe UI",Arial,Helvetica,sans-serif;
+  }
+  .RadComboBox .rcbInput {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1.428571429em;
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    color: inherit;
+    background: 0;
+    font: inherit;
+    display: inline-block;
+    -webkit-appearance: none;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+  .RadComboBox .rcbEmptyMessage {
+    font-style: italic;
+    filter: alpha(opacity=80);
+    opacity: .8;
+  }
+  .RadComboBox .rcbActionButton {
+    padding: 4px;
+    min-width: 1em;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    box-sizing: content-box;
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    font: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+  .RadComboBox_Metro .rcbActionButton {
+    border-color: #e5e5e5;
+    color: #000;
+    background-color: #f9f9f9;
+  }
+  .RadComboBox .rcbActionButton:before {
+    content: "";
+    display: inline-block;
+  }
+  .t-fi, .t-font-icon {
+    width: 1em;
+    height: 1em;
+    background-image: none;
+    font: 16px/1 "TelerikWebUI";
+    text-transform: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .t-i-arrow-s:before, .t-i-arrow-down:before {
+    content: "\e002";
+  }
+  .RadComboBox .rcbActionButton .rcbButtonText {
+    display: none;
+  }
+  html body .RadInput .riTextBox, html body .RadInputMgr {
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px 2px 1px;
+    vertical-align: middle;
+  }
+  html body .riSingle .riTextBox {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0;
+    width: 100%;
+  }
+  html body .RadInput_Metro .riTextBox, html body .RadInputMgr_Metro {
+    border-color: #e5e5e5;
+    background: #fff;
+    color: black;
+    font: normal 12px "Segoe UI",Arial,Helvetica,sans-serif;
+  }
+  .APLI_boton {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    font: bold 11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    /*background: url(images/boton_fondo.gif) repeat-x;*/
+    COLOR: #ffffff;
+    MARGIN-RIGHT: 11px;
+    margin-top: 0px;
+  }
+  .RadGrid_Metro {
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    color: #000;
+    font: normal 12px "Segoe UI",Arial,Helvetica,sans-serif;
+    line-height: 16px;
+  }
+  .RadGrid .rgMasterTable, .RadGrid .rgDetailTable, .RadGrid .rgEditForm table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .RadGrid_Metro .rgMasterTable, .RadGrid_Metro .rgDetailTable, .RadGrid_Metro .rgGroupPanel table, .RadGrid_Metro .rgCommandRow table, .RadGrid_Metro .rgEditForm table, .RadGrid_Metro .rgPager table {
+    font: normal 12px "Segoe UI",Arial,Helvetica,sans-serif;
+    line-height: 16px;
+  }
+  .RadGrid_Metro .rgHeader {
+    color: #767676;
+  }
+  .RadGrid .rgHeader, .RadGrid th.rgResizeCol {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    text-align: left;
+    font-weight: normal;
+  }
+  .SBS_cabeceraTabla2 {
+    BORDER-BOTTOM: #e5ecf4 1px solid;
+    PADDING-BOTTOM: 3px;
+    BACKGROUND-COLOR: #f1f5f9;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    FONT: bold 9px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    COLOR: #688eb7;
+    BORDER-RIGHT: #e5ecf4 1px solid;
+    PADDING-TOP: 3px;
+    height: 20px;
+  }
+  .SBS_tabla2_Fila1 {
+    PADDING-BOTTOM: 5px;
+    PADDING-LEFT: 3px;
+    WIDTH: auto;
+    PADDING-RIGHT: 3px;
+    FONT: 9px Arial, Helvetica, sans-serif;
+    BACKGROUND: #ffffff;
+    HEIGHT: auto;
+    COLOR: #457ab2;
+    PADDING-TOP: 5px;
+  }
+  .RadGrid .rgRow>td, .RadGrid .rgAltRow>td, .RadGrid .rgEditRow>td, .RadGrid .rgFooter>td {
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
+  .RadGrid .rgRow>td, .RadGrid .rgAltRow>td, .RadGrid .rgEditRow>td, .RadGrid .rgFooter>td, .RadGrid .rgFilterRow>td, .RadGrid .rgHeader, .RadGrid .rgResizeCol, .RadGrid .rgGroupHeader td {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  </style>
+  </head>
+  <body class="whited">
+      <div>
+          <br/>
+          <a href="http://www.sbs.gob.pe/home"><img alt="" class="img-brand-1" src="http://www.sbs.gob.pe/portals/0/img/sbs_logotipo.svg" style="padding: 0 15px;"></a>
+          <br/>
+          <h2 class="titulo" style="padding: 0 15px;">Casas de cambio</h2>
+        <a href="http://www.sbs.gob.pe/supervisados-y-registros/registros/otros-registros/casas-de-cambio-prestamos-y-empenos/casas-de-cambio" target="_blank" style="text-decoration: none;">
+          <table class="APLI_conteTablaBuscar" style="width:auto">
+              <tbody>
+                  <tr style="height:40px">
+                      <td class="auto-style1">
+                          <span id="ctl00_cphContent_LblRazon" class="APLI_txtCampo">Nombre ó Razón Social :</span></td>
+                      <td class="auto-style1">
+                          <div> <span id="ctl00_cphContent_txtRazon_wrapper" class="riSingle RadInput RadInput_Metro" style="width:200px;"><input id="ctl00_cphContent_txtRazon" name="ctl00$cphContent$txtRazon" size="20" class="riTextBox riEnabled" type="text" value="Banexcoin" style="height:25px;"><input id="ctl00_cphContent_txtRazon_ClientState" name="ctl00_cphContent_txtRazon_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;Banexcoin&quot;,&quot;valueAsString&quot;:&quot;Banexcoin&quot;,&quot;lastSetTextBoxValue&quot;:&quot;Banexcoin&quot;}"></span></div>
+                          <div><span id="ctl00_cphContent_rvRazon" style="color:Red;visibility:hidden;">Caracteres Inválidos</span></div>
+      
+                      </td>
+      
+                      <td>
+      
+                          <span id="ctl00_cphContent_lblRuc" class="APLI_txtCampo">Numero RUC :</span> </td>
+                      <td>
+                          <div><span id="ctl00_cphContent_txtRuc_wrapper" class="riSingle RadInput RadInput_Metro" style="width:100px;"><input id="ctl00_cphContent_txtRuc" name="ctl00$cphContent$txtRuc" size="20" maxlength="11" class="riTextBox riEnabled" type="text" value="" style="height:25px;"><input id="ctl00_cphContent_txtRuc_ClientState" name="ctl00_cphContent_txtRuc_ClientState" type="hidden" autocomplete="off" value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;lastSetTextBoxValue&quot;:&quot;&quot;}"></span></div>
+                          <div> <span id="ctl00_cphContent_rvRUC" style="color:Red;visibility:hidden;">Caracteres Inválidos</span></div>
+      
+                      </td>
+      
+                  </tr>
+                  <tr>
+                      <td class="auto-style1">
+                          <span id="ctl00_cphContent_lblDepartamento" class="APLI_txtCampo">Departamento :</span></td>
+                      <td class="auto-style1">
+                          <div>
+                              <div id="ctl00_cphContent_cbDepartamento" class="RadComboBox RadComboBox_Metro" style="width:200px;white-space:normal;">
+                                  <span class="rcbInner"><input name="ctl00$cphContent$cbDepartamento" type="text" class="rcbInput radPreventDecorate rcbEmptyMessage" id="ctl00_cphContent_cbDepartamento_Input" value="Seleccione un departamento" autocomplete="off"><button class="rcbActionButton" tabindex="-1" type="button"><span id="ctl00_cphContent_cbDepartamento_Arrow" class="t-fi t-i-arrow-down"></span><span class="rcbButtonText">select</span></button>
+                                  </span>
+                                  <div class="rcbSlide" style="z-index: 6000; display: none; height: 100px;">
+                                      <div id="ctl00_cphContent_cbDepartamento_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro " style="height: 100px;">
+                                          <div class="rcbScroll rcbWidth">
+                                              <ul class="rcbList">
+                                                  <li class="rcbItem">Todos</li>
+                                                  <li class="rcbItem">Amazonas</li>
+                                                  <li class="rcbItem">Ancash</li>
+                                                  <li class="rcbItem">Apurimac</li>
+                                                  <li class="rcbItem">Arequipa</li>
+                                                  <li class="rcbItem">Ayacucho</li>
+                                                  <li class="rcbItem">Cajamarca</li>
+                                                  <li class="rcbItem">Callao</li>
+                                                  <li class="rcbItem">Cusco</li>
+                                                  <li class="rcbItem">Extranjero</li>
+                                                  <li class="rcbItem">Huancavelica</li>
+                                                  <li class="rcbItem">Huanuco</li>
+                                                  <li class="rcbItem">Ica</li>
+                                                  <li class="rcbItem">Junin</li>
+                                                  <li class="rcbItem">La Libertad</li>
+                                                  <li class="rcbItem">Lambayeque</li>
+                                                  <li class="rcbItem">Lima</li>
+                                                  <li class="rcbItem">Loreto</li>
+                                                  <li class="rcbItem">Madre de Dios</li>
+                                                  <li class="rcbItem">Moquegua</li>
+                                                  <li class="rcbItem">Pasco</li>
+                                                  <li class="rcbItem">Piura</li>
+                                                  <li class="rcbItem">Puno</li>
+                                                  <li class="rcbItem">San Martin</li>
+                                                  <li class="rcbItem">Tacna</li>
+                                                  <li class="rcbItem">Tumbes</li>
+                                                  <li class="rcbItem">Ucayali</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <input id="ctl00_cphContent_cbDepartamento_ClientState" name="ctl00_cphContent_cbDepartamento_ClientState" type="hidden" autocomplete="off">
+                              </div>
+                          </div>
+      
+                      </td>
+                      <td class="auto-style1">
+                          <span id="ctl00_cphContent_lblProvincia" class="APLI_txtCampo">Provincia :</span></td>
+                      <td class="auto-style1">
+                          <div> <span class="RadAjaxPanel" id="ctl00_cphContent_ctl00_cphContent_cbProvinciaPanel"><div id="ctl00_cphContent_cbProvincia" class="RadComboBox RadComboBox_Metro" style="width:200px;white-space:normal;">
+        <span class="rcbInner"><input name="ctl00$cphContent$cbProvincia" type="text" class="rcbInput radPreventDecorate rcbEmptyMessage" id="ctl00_cphContent_cbProvincia_Input" value="Seleccione una provincia" autocomplete="off"><button class="rcbActionButton" tabindex="-1" type="button"><span id="ctl00_cphContent_cbProvincia_Arrow" class="t-fi t-i-arrow-down"></span><span class="rcbButtonText">select</span></button>
+                              </span>
+                              <div class="rcbSlide" style="z-index: 6000; display: none;">
+                                  <div id="ctl00_cphContent_cbProvincia_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro ">
+                                      <div class="rcbScroll rcbWidth"></div>
+                                  </div>
+                              </div>
+                              <input id="ctl00_cphContent_cbProvincia_ClientState" name="ctl00_cphContent_cbProvincia_ClientState" type="hidden" autocomplete="off">
+                          </div>
+                          </span>
+      </div>
+      
+      </td>
+      </tr>
+      <tr>
+          <td class="auto-style1">
+              <span id="ctl00_cphContent_lblDistrito" class="APLI_txtCampo">Distrito :</span></td>
+          <td class="auto-style1">
+              <div> <span class="RadAjaxPanel" id="ctl00_cphContent_ctl00_cphContent_cbDistritoPanel"><div id="ctl00_cphContent_cbDistrito" class="RadComboBox RadComboBox_Metro" style="width:200px;white-space:normal;">
+        <span class="rcbInner"><input name="ctl00$cphContent$cbDistrito" type="text" class="rcbInput radPreventDecorate rcbEmptyMessage" id="ctl00_cphContent_cbDistrito_Input" value="Seleccione un distrito" autocomplete="off"><button class="rcbActionButton" tabindex="-1" type="button"><span id="ctl00_cphContent_cbDistrito_Arrow" class="t-fi t-i-arrow-down"></span><span class="rcbButtonText">select</span></button>
+                  </span>
+                  <div class="rcbSlide" style="z-index: 6000; display: none;">
+                      <div id="ctl00_cphContent_cbDistrito_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Metro ">
+                          <div class="rcbScroll rcbWidth"></div>
+                      </div>
+                  </div>
+                  <input id="ctl00_cphContent_cbDistrito_ClientState" name="ctl00_cphContent_cbDistrito_ClientState" type="hidden" autocomplete="off">
+              </div>
+              </span>
+              </div>
+      
+          </td>
+          <td class="auto-style1"></td>
+      
+          <td class="auto-style1">
+      
+          </td>
+      </tr>
+      <tr style="height:40px">
+          <td colspan="4">
+              <span class="RadAjaxPanel" id="ctl00_cphContent_ctl00_cphContent_btnBuscarEstablecimientosPanel"><input type="button" name="ctl00$cphContent$btnBuscarEstablecimientos" value="Buscar" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphContent$btnBuscarEstablecimientos&quot;, &quot;&quot;, true, &quot;info&quot;, &quot;&quot;, false, true))" id="ctl00_cphContent_btnBuscarEstablecimientos" class="APLI_boton" style="background-color: rgb(74, 134, 188); height: 27px; width: 103px; visibility: visible;"></span>
+      
+          </td>
+      </tr>
+      <tr style="height:40px">
+          <td colspan="4" class="JER_filaArhivosResumen" style="font-weight:bold">
+              * Si desea generar todo el listado de casas de cambio, No debe seleccionar ningun filtro de búsqueda.
+          </td>
+      </tr>
+      </tbody>
+          </table>
+        </a>
+      </div>
+    <div style="Width:auto">
+
+        <span class="RadAjaxPanel" id="ctl00_cphContent_ctl00_cphContent_rgListaEstablecimientosPanel"><div id="ctl00_cphContent_rgListaEstablecimientos" class="RadGrid RadGrid_Metro" tabindex="0" style="visibility: visible;">
+    
+    <!-- 2016.1.225.35 --><table class="rgMasterTable" border="0" id="ctl00_cphContent_rgListaEstablecimientos_ctl00" style="width:100%;table-layout:auto;empty-cells:show;">
+      <colgroup>
+        <col style="width:85px">
+        <col style="width:150px">
+        <col style="width:100px">
+        <col style="width:100px">
+        <col style="width:100px">
+        <col style="width:150px">
+        <col style="width:80px">
+        <col style="width:50px">
+      </colgroup>
+    <thead>
+        <tr>
+          <th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">RUC</th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">Nombre/Razón Social</th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">Departamento</th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">Provincia</th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">Distrito</th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">Dirección</th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;text-align:center;"><a onclick="Telerik.Web.UI.Grid.Sort($find('ctl00_cphContent_rgListaEstablecimientos_ctl00'), 'FecResolucionVencWeb'); return false;" title="Click here to sort" href="javascript:__doPostBack('ctl00$cphContent$rgListaEstablecimientos$ctl00$ctl02$ctl01$ctl00','')" style="color:#688EB7;">Fecha Venc. Doc. SBS</a></th><th scope="col" class="SBS_cabeceraTabla2 rgHeader" style="color:#688EB7;font-weight:bold;">Modalidad</th>
+        </tr>
+      </thead><tbody>
+      <tr class="rgRow SBS_tabla2_Fila1" id="ctl00_cphContent_rgListaEstablecimientos_ctl00__0" style="border-color:Transparent;">
+        <td style="border-color:Transparent;">
+                                            20603726139
+                                        </td><td style="border-color:Transparent;">
+                                            BANEXCOIN S.A.
+                                        </td><td style="border-color:Transparent;">
+                                            Lima
+                                        </td><td style="border-color:Transparent;">
+                                            Lima
+                                        </td><td style="border-color:Transparent;">
+                                            Miraflores
+                                        </td><td style="border-color:Transparent;">
+                                            Calle E. Palacios N° 335, Int. 506
+                                        </td><td style="border-color:Transparent;">
+                                              02/07/2026
+                                        </td><td style="border-color:Transparent;">
+                                            Virtual
+                                        </td>
+      </tr>
+      </tbody>
+    
+    </table><div id="ctl00_cphContent_rgListaEstablecimientos_SharedCalendarContainer" style="display:none;">
+    
+    </div><input id="ctl00_cphContent_rgListaEstablecimientos_ClientState" name="ctl00_cphContent_rgListaEstablecimientos_ClientState" type="hidden" autocomplete="off">	</div>
+    </span>
+    </div>
+  </body>
+
+</html>

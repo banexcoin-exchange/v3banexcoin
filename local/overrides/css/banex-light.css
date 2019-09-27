@@ -1,0 +1,129 @@
+:root {
+    --pc__background-primary: 232, 232, 232 !important;
+    --pc__background-secondary: 229, 229, 229 !important;
+    --pc__background-tertiary: 174, 174, 174 !important;
+
+    /* texto */
+
+    --pc__font-secondary: 24, 24, 24!important;
+    --retail-dashboard__card-header-title-font-color: rgb(61, 71, 84);
+    --component__color-primary: var(--retail-dashboard__card-header-title-font-color);
+    --font__color-primary: var(--retail-dashboard__card-header-title-font-color);
+
+}
+body, html {
+    color: rgb(61, 71, 84)!important;
+}
+body:before {
+    /*background: #c7c7c7!important;*/
+    background: rgb(252, 252, 252)!important;
+}
+.market-overview__header, .product-balances__header, .activity__header-bar  {
+    background: #ededed!important;
+    color: var(--retail-dashboard__card-header-title-font-color);
+}
+.instrument-table__value {
+    color: #3d4754!important;
+}
+.trade-component, .market-overview__instrument-selector, .market-overview-instrument, .market-overview-instrument__row, .balance-item__container, .retail-buy-sell-layout__make-transaction-container, .chart-overview__instrument-container, .chart-overview__instrument-table, .retail-buy-sell__amount-container, .wallet-row-list, .dual-header-dashboard-layout__top-row__component-container-left {
+    background: #fcfcfc!important;
+}
+.instrument-table__row .instrument-table__title {
+    color: rgb(68, 68, 68);
+}
+.instrument-table__row {
+    /*border-right: 1px solid #909090!important;*/
+    border-right: none!important;
+}
+
+.flex-table__body .flex-table__row {
+    background: #dcdee7;
+}
+
+.page-header__container-1 {
+    background: rgb(252, 252, 252)!important;
+    border-bottom: 4px solid #cac9c9!important;
+    margin-bottom: 0px!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.page-header-nav__container .page-header-nav__item {
+    background: #f6f6f6;
+    color: rgb(61, 71, 84);
+}
+
+.instrument-row {
+    background: #dcdee7!important;
+}
+
+.flex-table__title, .trade-component__header, .tv-chart__header, .orderbook__spread-row, .depth-chart__header, .ap-tab__menu, .retail-buy-sell__container, .bulk-cancel-buttons {
+    background: rgb(197, 197, 197)!important;
+}
+
+.page-footer {
+    color: white;
+}
+.page-footer a {
+    color: #ffb778;
+}
+footer .page-footer__icon {
+    color: white;
+}
+
+.ap-datepicker__input, .ap-input__input, .ap-select__select, .react-phone-number-input__input.ap-phone-input__input {
+    background: rgb(191, 191, 191)!important;
+    border: 1px solid rgba(180, 182, 185, 0.25)!important;
+}
+.ap-datepicker__input:hover, .ap-input__input:hover, .ap-select__select:hover, .react-phone-number-input__input.ap-phone-input__input:hover {
+    background: rgb(171, 171, 171)!important;
+    border: 1px solid rgb(91, 97, 119)!important;
+}
+.ap--label {
+    color: rgb(84, 84, 84)!important;
+}
+
+/**/
+.ap-logo {
+    background-image: url('/local/logos/logo-banexcoin-white-middleorange.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14rem;
+    height: 36px;
+}
+.ap-logo .isvg {display: none;}
+
+.ap-button__btn--general {
+    color: white!important;
+    background: rgb(97, 98, 101)!important;
+}
+
+.ap-inline-btn__btn:disabled, .ap-inline-btn__btn:disabled:hover {
+    color: rgba(21, 21, 21, 0.79);
+}
+.ap-tab__menu {
+    color: rgb(136, 136, 136);
+}
+
+
+.ap-tab__menu-item {color: rgb(121, 121, 121);}
+
+/* FIXES FOR CHANGES */
+.buy-sell-layout__make-transaction-container {
+    background-color: #fcfcfc!important;
+}
+.market-overview__header, .product-balances__header, .activity__header-text, .activity__action-text--primary, .balance-item__container, .instrument-selector__trigger, .ap-tab__menu-item--active, .buy-sell-make-transaction__title, .buy-sell-order-overview__title {
+    color: rgb(61, 71, 84)!important;
+}
+
+.page-header-nav__item--selected, .page-header-nav__item--selected:hover {
+    background: rgba(149, 149, 149, 0.21)!important;
+    color: #cc7110!important;
+}
+@media only screen and (max-width: 99.2rem) {
+    .page-header-nav__item--selected, .page-header-nav__item--selected:hover {
+        padding-left: 2.5rem!important;
+    }
+}
+
+  

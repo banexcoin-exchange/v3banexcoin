@@ -1,0 +1,4059 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_419\n"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Create the deposit ticket."
+msgstr "Cree el ticket de depósito."
+
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+msgid "Buy {product1} with {product2}"
+msgstr "Compre {product1} con {product2}"
+
+#: src/redux/actions/kycManualActions.js
+msgid "There was an error in submitting your information. Please try again."
+msgstr ""
+"Se ha producido un error al enviar su información. Por favor inténtalo de "
+"nuevo."
+
+#: src/redux/actions/depositActions.js src/redux/actions/withdrawActions.js
+msgid "There are no providers configured for this product"
+msgstr "No hay proveedores configurados para este producto"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Deposited {a}"
+msgstr "Depositado {a}"
+
+#: src/components/EnableTwoFactorAuth/Enable2FAForm.js
+msgid ""
+"Download a Two-Factor Authentication app to your phone such as Authy or "
+"Google Authenticator"
+msgstr ""
+"Descargue una aplicación de autenticación de dos factores en su teléfono, "
+"como Authy o Google Authenticator"
+
+#: src/helpers/formValidations.js
+msgid "Must be bigger than {a}"
+msgstr "Debe ser más grande que {a}"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Refresh Transfers"
+msgstr "Actualizar transferencias"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Insufficient funds"
+msgstr "Fondos insuficientes"
+
+#: src/helpers/formTemplateHelper.js
+msgid ""
+"Please note that a destination tag may be required if you are withdrawing to "
+"an exchange or online wallet."
+msgstr ""
+"Tenga en cuenta que una etiqueta de destino puede ser necesaria si se retira "
+"a un Exchange o un monedero en línea."
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Instrument"
+msgstr "Instrumento"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid "Current Active Tag"
+msgstr "Etiqueta activa actual"
+
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "Total Amount:"
+msgstr "Cantidad total:"
+
+#: src/components/UserSummary/UserSummaryComponent.js
+msgid "Sign Out"
+msgstr "Desconectar"
+
+#: src/components/SendReceiveSidePane/SendReceiveTwoFactorAuth/SendReceiveTwoFactorAuthForm.js
+#: src/components/TwoFactorAuthForm/TwoFactorAuthFormComponent.js
+msgid "Enter the token from your Authenticator app."
+msgstr "Introduce el token de su aplicación Authenticator."
+
+#: src/components/SendReceiveSidePane/ReceiveForm/ReceiveFormComponent.js
+msgid "Email Address to Request From"
+msgstr "Dirección de correo electrónico para solicitar desde"
+
+#: src/components/OrderBookComponents/BulkCancelButtonsComponent/BulkCancelButtonsComponent.js
+msgid "Cancel:"
+msgstr "Cancelar:"
+
+#: src/components/InstrumentPositions/InstrumentPositionsComponent.js
+#: src/components/ProductPositionDetails/ProductPositionDetailsComponent.js
+msgid "Available Balance"
+msgstr "Saldo disponible"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Stop Limit"
+msgstr "Stop Limit"
+
+#: src/components/ReportSidePaneComponents/ReportSidePaneComponent.js
+msgid "Create a Report"
+msgstr "Crear un Reporte"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Stop Price"
+msgstr "Stop Price"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "September"
+msgstr "Septiembre"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/DepositReferenceIdModal.js
+msgid "Your deposit ticket has been created successfully."
+msgstr "Su ticket de depósito ha sido creado con éxito."
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "from Bank"
+msgstr "del Banco"
+
+#: src/components/TradingServer/TradingServerComponent.js
+msgid "Select server"
+msgstr "Seleccionar servidor"
+
+#: src/components/RecentTrades/RecentTradesComponent.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutContent1280Px.js
+msgid "Recent Trades"
+msgstr "Operaciones Recientes"
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+msgid ""
+"Provide us with your {label} below. We will follow up with reset "
+"instructions."
+msgstr ""
+"Danos tu {label} a continuación. Seguiremos con las instrucciones de "
+"reinicio."
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid "2) Your deposit will automatically be processed"
+msgstr "2) Su depósito será procesado automáticamente"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+msgid "24 Hour High"
+msgstr "Tope Alto 24 Horas"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Residence Permit"
+msgstr "Permiso de Residencia"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeysForm/ApiKeysFormComponent.js
+msgid "Create an API Key"
+msgstr "Crear una Llave API"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+#: src/components/ApiKeysSidePaneComponents/NewApiKey/NewApiKeyModal.js
+msgid "Create New API Key"
+msgstr "Crear Nueva Llave API"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormComponent.js
+msgid ""
+"Verification form is not properly setup, please contact the exchange in "
+"order to solve this."
+msgstr ""
+"El formulario de verificación no se ha configurado correctamente. Póngase en "
+"contacto con Nosotros para resolverlo."
+
+#: src/helpers/formValidations.js
+msgid "Date must be after {a}"
+msgstr "La fecha debe ser posterior a {a}"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid ""
+"Depositing cryptocurrency into the exchange is safe and easy. The address "
+"below can always be used to deposit cryptocurrency into your account."
+msgstr ""
+"Depositar criptomonedas en Banexcoin es seguro y fácil. La siguiente "
+"dirección siempre podrá utilizarce para depositar criptomonedas en su cuenta."
+
+#: src/components/InstrumentSelector/InstrumentSelectorPopupComponent.js
+msgid "No coin is available"
+msgstr "No hay monedas disponibles"
+
+#: src/redux/middlewares/wsConnectionMiddleware.js
+msgid "Connection with server lost. Attempting reconnect..."
+msgstr "Conexión perdida con el servidor. Intentando reconectar…"
+
+#: src/components/EnableTwoFactorAuth/Disable2FAModal.js
+msgid "Disable Two-Factor Authentication"
+msgstr "Deshabilitar la Autenticación de Dos Factores"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+msgid "Resetting your password..."
+msgstr "Restableciendo su contraseña…"
+
+#: src/helpers/formTemplateHelper.js
+msgid "Bank Name"
+msgstr "Nombre del Banco"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Immediate or Cancel"
+msgstr "Inmediato o Cancelar"
+
+#: src/redux/actions/transferRequestActions.js
+msgid "Transfer Approved"
+msgstr "Transferencia Aprobada"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "December"
+msgstr "Diciembre"
+
+#: src/components/PageFooter/PageFooterComponent.js
+msgid "{n}™ {y}. All Rights Reserved."
+msgstr "{n}™ {y}. Todos los Derechos Reservados."
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid "({LoyaltyDiscount}% discount )"
+msgstr "({LoyaltyDiscount}% de descuento )"
+
+#: src/components/Retail/RetailSettings/ResetPasswordForm/RetailResetPasswordConfirmComponent.js
+msgid "Check your email with instructions on changing your password"
+msgstr ""
+"Favor Revise su correo electrónico, recibirá instrucciones sobre cómo "
+"cambiar su contraseña"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+msgid "Allows Trading"
+msgstr "Permite la operación"
+
+#: src/components/DemoSettings/DemoSettingsEditableComponent.js
+#: src/components/DemoSettings/DemoSettingsStaticComponent.js
+msgid "Chart Type"
+msgstr "Tipo de Gráfico"
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid "Use {ProductSymbol} to pay for fees"
+msgstr "Utilice {ProductSymbol} para pagar las tarifas"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "Full Name"
+msgstr "Nombre Completo"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Received Transfers"
+msgstr "Transferencias Recibidas"
+
+#: src/components/Login/LoginFormContainer.js
+msgid ""
+"We were unable to login, check your internet connection and try refreshing "
+"the page."
+msgstr ""
+"Nos encontramos inhabilitados para iniciar sesión, compruebe su conexión a "
+"Internet e intentar actualizar la página."
+
+#: src/components/EnableTwoFactorAuth/Enable2FAForm.js
+msgid "Use the app to scan QR code."
+msgstr "Utilice la aplicación para escanear el código QR."
+
+#: src/components/AffiliateComponents/AffiliateModal.js
+#: src/components/DepositSidePaneComponents/DepositTemplateFormComponent.js
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+#: src/components/WithdrawSidePaneComponents/WithdrawTemplateForm/WithdrawTemplateFormComponent.js
+msgid "Submitting..."
+msgstr "Enviando…"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid ""
+"Your account will automatically update after the cryptocurrency network "
+"confirms your transaction."
+msgstr ""
+"Su cuenta se actualizará automáticamente después de que la red de "
+"criptomonedas confirme su transacción."
+
+#: src/components/WalletDetails/WalletDetailsBackButtonComponent.js
+msgid "Back to Overview"
+msgstr "Regresar a la Vista General"
+
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+msgid "We cannot fill this request."
+msgstr "No podemos llenar esta solicitud."
+
+#: src/helpers/formValidations.js
+msgid "Time must be before {a}"
+msgstr "El tiempo debe ser antes de {a}"
+
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+msgid "24-Hour Pct Change"
+msgstr "Cambio Pct 24 horas"
+
+#: src/components/ApiKeysSidePaneComponents/NewApiKey/NewApiKeyModal.js
+#: src/components/EnableTwoFactorAuth/Enable2FAForm.js
+#: src/components/KYCSettings/KYCConfirmLevelModalComponent.js
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMindLegacy/KYCConfirmMitekModalComponent.js
+#: src/components/ReportSidePaneComponents/ConfirmCyclicalReport/ConfirmCyclicalReportForm.js
+#: src/components/ReportSidePaneComponents/ConfirmSingleReport/ConfirmSingleReportForm.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionConfirmComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawModal.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Upload selfie"
+msgstr "Subir selfie"
+
+#: src/components/EnableTwoFactorAuth/EnableTwoFactorAuthComponent.js
+msgid "Enable 2FA"
+msgstr "Habilitar 2FA"
+
+#: src/components/Retail/RetailSettings/ResetPasswordForm/RetailResetPasswordStaticComponent.js
+msgid ""
+"To change you password, we will send you an email that will allow you to "
+"access out Reset Password feature. Click the button above to receive the "
+"email."
+msgstr ""
+"Para cambiar su contraseña, le enviaremos un correo electrónico que le "
+"permitirá acceder a la función Restablecer contraseña. Haga clic en el botón "
+"de arriba para recibir el correo electrónico."
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "Terms and Conditions"
+msgstr "Términos y Condiciones"
+
+#: src/redux/selectors/openOrdersActivitySelector.js
+msgid "for {Product2Symbol}"
+msgstr "para {Product2Symbol}"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Time & Date"
+msgstr "Hora y Fecha"
+
+#: src/components/SendReceiveSidePane/SendReceiveTwoFactorAuth/SendReceiveTwoFactorAuthForm.js
+msgid "Authenticate Transfer"
+msgstr "Autenticar Transferencia"
+
+#: src/components/KYCSettings/KYCConfirmLevelModalComponent.js
+msgid "Confirm Increase Verification Level Application"
+msgstr "Confirmar la Solicitud de Aumento de Nivel de Verificación"
+
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "Created"
+msgstr "Creado"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Buy Amount"
+msgstr "Cantidad de Compra"
+
+#: src/components/ActivityReportingComponent/ActivityReportingComponent.js
+#: src/components/ReportSidePaneComponents/ReportSidePaneComponent.js
+msgid "Single Report"
+msgstr "Reporte único"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "Confirm Buy Order"
+msgstr "Confirmar Orden de Compra"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeysForm/ApiKeysFormComponent.js
+#: src/components/Retail/RetailSettings/RetailApiKeysFormComponent.js
+msgid ""
+"The Public API is available in HTTP, WebSocket, and Get Request, with "
+"streaming data on products, product pairs, ticker activity, trades, and the "
+"order book."
+msgstr ""
+"La API pública está disponible en HTTP, WebSocket y Get Request, con "
+"transmisión de datos en productos, pares de productos, actividad de ticker, "
+"operaciones y el libro de ordenes."
+
+#: src/components/common/APImageUpload/APImageUpload.js
+msgid "Place image"
+msgstr "Colocar imagen"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositDetailsComponent.js
+msgid ""
+"Step 2: Please deposit the stated amount to the provided bank account "
+"details."
+msgstr "Paso 2: Deposite la cantidad indicada en la cuenta bancaria detallada."
+
+#: src/components/InstrumentPositions/InstrumentPositionsComponent.js
+#: src/components/ProductPositionDetails/ProductPositionDetailsComponent.js
+msgid "Total Balance"
+msgstr "Balance Total"
+
+#: src/components/DepositConfirmation/DepositConfirmationComponent.js
+msgid "Your account balance will be updated soon."
+msgstr "El saldo de su cuenta será prontamente actualizado."
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Document"
+msgstr "Documento"
+
+#: src/components/SendReceiveSidePane/SendReceiveFormTabs/SendReceiveFormTabsComponent.js
+#: src/components/WalletNavItems/CryptoNavItemsComponent.js
+msgid "Receive"
+msgstr "Recibir"
+
+#: src/components/SendReceiveSidePane/ReceiveForm/ReceiveFormComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmHeaderComponent.js
+msgid "Request"
+msgstr "Solicitud"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Comments:"
+msgstr "Comentarios:"
+
+#: src/redux/actions/userActions.js
+msgid "Two Factor Authenticated is enabled"
+msgstr "La Autenticación de Dos Factores está habilitada"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid "Affiliates"
+msgstr "Afiliados"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Full Name:"
+msgstr "Nombre Completo:"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Bank Account to Wire the Funds"
+msgstr "Cuenta Bancaria para Transferencia de Fondos"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Billing Phone"
+msgstr "Teléfono de Facturación"
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/londonTemplate.js src/routeTemplates/retailTemplate.js
+msgid "Wallets"
+msgstr "Billeteras"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Billing State"
+msgstr "Estado de Cuenta"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+msgid "Filled Orders"
+msgstr "Ordenes Completas"
+
+#: src/components/DepositSidePaneComponents/DepositFormComponent.js
+msgid "Options for deposit"
+msgstr "Opciones de depósito"
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+msgid "I’m an existing user and I forgot my password."
+msgstr "Soy un usuario registrado y olvidé mi contraseña."
+
+#: src/components/VerificationRequired/VerificationRequiredComponent.js
+msgid "You are not yet verified. Verify your identity to start trading."
+msgstr ""
+"Aún no estás verificado. Verifique su identidad para comenzar a operar."
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Sent Requests"
+msgstr "Solicitudes enviadas"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Deposits"
+msgstr "Depósitos"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid "Amount to Send"
+msgstr "Cantidad a enviar"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#, fuzzy
+msgid "Trailing Amount"
+msgstr "Trailing Amount"
+
+#: src/components/RecentTrades/RecentTradesComponent.js
+msgid "No recent trades"
+msgstr "No hay operaciones recientes"
+
+#: src/components/WithdrawSidePaneComponents/PaymentProcessors/HyphenWithdrawWorkflowComponent.js
+msgid "Edit banking information"
+msgstr "Editar información bancaria"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+#, fuzzy
+msgid "(100 Washington Way)"
+msgstr "(100 Washington Way)"
+
+#: src/components/ReportSidePaneComponents/ConfirmSingleReport/ConfirmSingleReportModal.js
+msgid "Create Report"
+msgstr "Crear Reporte"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "from External Address"
+msgstr "desde Dirección Externa"
+
+#: src/components/ReportSidePaneComponents/ConfirmCyclicalReport/ConfirmCyclicalReportForm.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Frequency:"
+msgstr "Frecuencia:"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositDetailsComponent.js
+msgid "Note - The information from the deposit ticket will be emailed to you."
+msgstr ""
+"Nota: la información del Ticket de Depósito se le enviará por correo "
+"electrónico."
+
+#: src/components/Language/LanguageComponent.js
+msgid "Set Language"
+msgstr "Seleccionar Lenguaje"
+
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Monthly"
+msgstr "Mensualmente"
+
+#: src/components/VerifyEmail/VerifyEmailComponent.js
+msgid "Problem with verification?"
+msgstr "¿Problema con la verificación?"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Received Requests"
+msgstr "Solicitudes recibidas"
+
+#: src/components/AffiliateComponents/AffiliateModal.js
+msgid "Change tag"
+msgstr "Cambiar etiqueta"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Sell Amount"
+msgstr "Cantidad de Venta"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Type of ID you want to upload"
+msgstr "Tipo de ID que quieres subir"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Very Weak"
+msgstr "Muy Débil"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+msgid "ID"
+msgstr "ID"
+
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/DepositReferenceIdModal.js
+msgid "OK"
+msgstr "OK"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/EnableTwoFactorAuth/EnableTwoFactorAuthComponent.js
+msgid "No"
+msgstr "No"
+
+#: src/components/EnableTwoFactorAuth/Disable2FAForm.js
+msgid "Ok"
+msgstr "Ok"
+
+#: src/components/common/APSwitch/APSwitch.js
+msgid "On"
+msgstr "On"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "To"
+msgstr "A"
+
+#: src/components/OrderHistoryComponents/OrderHistoryHeaderWithFilterComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+#: src/components/TransferRequests/TransferRequestItemComponent.js
+msgid "to"
+msgstr "a"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/ResetPasswordRequestForm/ResetPasswordRequestFormComponent.js
+msgid "Reset Password"
+msgstr "Restablecer la contraseña"
+
+#: src/components/EnableTwoFactorAuth/Enable2FAModal.js
+#: src/components/EnableTwoFactorAuth/EnableTwoFactorAuthComponent.js
+msgid "Enable Two-Factor Authentication"
+msgstr "Habilitar la Autenticación de Dos Factores"
+
+#: src/components/InstrumentPositions/InstrumentPositionsComponent.js
+#: src/components/ProductPositionDetails/ProductPositionDetailsComponent.js
+msgid "Pending Deposits"
+msgstr "Depósitos Pendientes"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Billing Street Address"
+msgstr "Dirección de Facturación"
+
+#: src/components/ApiKeysSidePaneComponents/RemoveApiKeyModal/RemoveApiKeyModal.js
+msgid "Are you sure you want to delete this API Key?"
+msgstr "¿Estás seguro de que deseas eliminar esta Llave API?"
+
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+msgid "Open Orders"
+msgstr "Ordenes abiertas"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+msgid "Choose the following activities to allow the API Key to access:"
+msgstr ""
+"Elija las siguientes actividades para permitir el acceso a la Llave API:"
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "Signup success"
+msgstr "Registro Exitoso"
+
+#: src/components/EnableTwoFactorAuth/Disable2FAForm.js
+msgid "Are you want to turn off Two-Factor Authentication for this account?"
+msgstr "¿Desea desactivar la autenticación de dos factores para esta cuenta?"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "to Bank"
+msgstr "al Banco"
+
+#: src/helpers/formValidations.js
+msgid "Invalid date"
+msgstr "Fecha invalida"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Passport"
+msgstr "Pasaporte"
+
+#: src/components/Login/LoginFormComponent.js
+#: src/components/Retail/RetailSettings/RetailProfileAndSettingsComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Password"
+msgstr "Contraseña"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid ""
+"Our affiliate program lets you earn a bonus for each successful referral "
+"registered to your account. Create an affiliate link below, copy it and "
+"email to a friend. Your friends can click on the affiliate link and sign up "
+"for an account, at which point you will see the number of affliates increase "
+"on this page."
+msgstr ""
+"Nuestro programa de afiliados le permite obtener una bonificación por cada "
+"recomendación exitosa registrada en su cuenta. A continuación Cree un enlace "
+"de afiliado, cópielo y envíelo por correo electrónico a un amigo. Sus amigos "
+"pueden hacer click en el enlace de afiliado y registrarse para obtener una "
+"cuenta, en ese momento Ud. verá cómo aumenta el número de afiliados en esta "
+"página."
+
+#: src/components/OrderBookComponents/OrderBookComponent.js
+msgid "My Size"
+msgstr "Mi medida"
+
+#: src/components/ApiKeysSidePaneComponents/ConfirmApiKeyModal/ConfirmAPIKeyModal.js
+msgid ""
+"To generate your own signature with a different nonce, {hmacSha256} encode "
+"your nonce, user ID, and API key, in the format {messageFormat} using the "
+"secret as your key."
+msgstr ""
+"Para generar su propia firma con un nonce diferente, {hmacSha256} codifique "
+"su nonce, ID de usuario y Llave API, en el formato {messageFormat} usando el "
+"secreto como su llave."
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Sent {a}"
+msgstr "Enviado {a}"
+
+#: src/redux/selectors/openOrdersActivitySelector.js
+msgid "Sold {Product1Symbol}"
+msgstr "Vendido {Product1Symbol}"
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/retailTemplate.js
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: src/components/Retail/RetailSettings/RetailUserContactsComponent.js
+msgid "Trading with Other On-Exchange Participants"
+msgstr "Intercambiando con otros participantes en el Exchange"
+
+#: src/components/BalancesButtons/BalancesButtonsComponent.js
+#: src/components/DepositSidePaneComponents/DepositSidePaneComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/DepositReferenceIdModal.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+#: src/components/Retail/RetailSidePanes/RetailFiatFormTabsComponent.js
+#: src/components/WalletNavItems/FiatNavItemsComponent.js
+msgid "Deposit"
+msgstr "Depósito"
+
+#: src/components/WalletCards/WalletCardComponent.js
+#: src/components/WalletRows/WalletRowComponent.js
+msgid "Details"
+msgstr "Detalles"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Status / ID"
+msgstr "Estatus / ID"
+
+#: src/routeTemplates/settingsRoutes.js
+msgid "Demo Settings"
+msgstr "Configuraciones Demo"
+
+#: src/components/ApiKeysSidePaneComponents/RemoveApiKeyModal/RemoveApiKeyModal.js
+msgid "Delete API Key"
+msgstr "Eliminar Llave API"
+
+#: src/routeTemplates/settingsRoutes.js
+msgid "User Contacts"
+msgstr "Contacto Usuario"
+
+#: src/components/DepthChart/DepthChartComponent.js
+msgid "Mid Market Price"
+msgstr "Precio Medio de Mercado"
+
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Treasury"
+msgstr "Tesorería"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Image of the back of your Drivers License"
+msgstr "Imagen de la parte posterior de su Licencia de Conducir"
+
+#: src/redux/actions/transferActions.js
+msgid "Request transfer succeeded"
+msgstr "Solicitud de Transferencia Exitosa"
+
+#: src/components/OrderBookComponents/BulkCancelButtonsComponent/BulkCancelButtonsComponent.js
+msgid "Buys"
+msgstr "Compras"
+
+#: src/components/InstrumentSelector/InstrumentSelectorPopupComponent.js
+msgid "Coin"
+msgstr "Moneda"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "Date"
+msgstr "Fecha"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+#: src/components/DemoSettings/DemoSettingsStaticComponent.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionStaticComponent.js
+msgid "Edit"
+msgstr "Editar"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Fee:"
+msgstr "Comisión:"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Fees"
+msgstr "Comisiones"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "From"
+msgstr "De"
+
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "High"
+msgstr "Alto"
+
+#: src/components/InstrumentPositions/InstrumentPositionsComponent.js
+#: src/components/ProductPositionDetails/ProductPositionDetailsComponent.js
+msgid "Hold"
+msgstr "Mantener"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "July"
+msgstr "Julio"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "June"
+msgstr "Junio"
+
+#: src/constants/sendOrder/pegPriceTypeConstants.js
+msgid "Last"
+msgstr "Último"
+
+#: src/components/common/Pagination/PaginationComponent.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionFormEditableComponent.js
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Note"
+msgstr "Nota"
+
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Open"
+msgstr "Abrir"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+msgid "Pair"
+msgstr "Par"
+
+#: src/components/common/Pagination/PaginationComponent.js
+msgid "Prev"
+msgstr "Prev"
+
+#: src/components/OrderEntryComponents/AdvancedOrderSidePane/AdvancedOrderSidePaneComponent.js
+#: src/components/OrderEntryComponents/BuySellTabs.js
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+msgid "Sell"
+msgstr "Vender"
+
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmHeaderComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveFormTabs/SendReceiveFormTabsComponent.js
+#: src/components/TransferRequests/TransferRequestItemComponent.js
+#: src/components/WalletNavItems/CryptoNavItemsComponent.js
+msgid "Send"
+msgstr "Enviar"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Sent"
+msgstr "Enviado"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+msgid "Side"
+msgstr "Lado"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+msgid "Size"
+msgstr "Tamaño"
+
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeSidePaneComponent.js
+msgid "Sold"
+msgstr "Vendido"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Stop"
+msgstr "Stop"
+
+#: src/components/RecentTrades/RecentTradesComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawModal.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Time"
+msgstr "Hora"
+
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+msgid "Type"
+msgstr "Tipo"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Weak"
+msgstr "Débil"
+
+#: src/components/DemoSettings/DemoSettingsStaticComponent.js
+#: src/routeTemplates/londonTemplate.js
+msgid "Settings"
+msgstr "Configuraciones"
+
+#: src/components/ProfileForm/ProfileFormComponent.js
+msgid "Update Profile"
+msgstr "Actualizar Perfil"
+
+#: src/components/DepositConfirmation/DepositConfirmationComponent.js
+msgid "There was a problem with your deposit."
+msgstr "Ocurrió un problema con su depósito."
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositDetailsComponent.js
+msgid ""
+"The deposit of these funds might take up to 7 business days, and it’s "
+"subject to operator review."
+msgstr ""
+"El depósito de los fondos puede demorar hasta 7 días laborables y estará "
+"sujeto a revisión del operador."
+
+#: src/components/ApiKeysSidePaneComponents/RemoveApiKeyModal/RemoveApiKeyModal.js
+msgid "Disable"
+msgstr "Deshabilitar"
+
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Locked In"
+msgstr "Cerrados En"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+msgid "Locked in"
+msgstr "Cerrados en"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+msgid "24 Hour Low"
+msgstr "Piso 24 Horas"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawDetailsComponent.js
+msgid "Remaining Balance"
+msgstr "Balance Restante"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Sold {a}"
+msgstr "Vendido {a}"
+
+#: src/components/SendReceiveSidePane/ReceiveForm/ReceiveFormComponent.js
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "(Optional)"
+msgstr "(Opcional)"
+
+#: src/components/OrderBookComponents/BulkCancelButtonsComponent/BulkCancelButtonsComponent.js
+msgid "All"
+msgstr "Todo"
+
+#. April
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+#, fuzzy
+msgid "Apr"
+msgstr "Abr"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+#: src/constants/sendOrder/pegPriceTypeConstants.js
+msgid "Ask"
+msgstr "Demanda"
+
+#. August
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Aug"
+msgstr "Ago"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+#: src/constants/sendOrder/pegPriceTypeConstants.js
+msgid "Bid"
+msgstr "Oferta"
+
+#: src/components/OrderEntryComponents/AdvancedOrderSidePane/AdvancedOrderSidePaneComponent.js
+#: src/components/OrderEntryComponents/BuySellTabs.js
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+msgid "Buy"
+msgstr "Compra"
+
+#. December
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Dec"
+msgstr "Dic"
+
+#. February
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Feb"
+msgstr "Feb"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawDetailsComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawModal.js
+msgid "Fee"
+msgstr "Comisión"
+
+#. January
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Jan"
+msgstr "Ene"
+
+#. July
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Jul"
+msgstr "Jul"
+
+#. June
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Jun"
+msgstr "Jun"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+#: src/components/ApiKeysSidePaneComponents/ConfirmApiKeyModal/ConfirmAPIKeyModal.js
+msgid "Key"
+msgstr "Llave"
+
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Low"
+msgstr "Bajo"
+
+#. March
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Mar"
+msgstr "Mar"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawTemplateForm/WithdrawTemplateFormComponent.js
+msgid "Max"
+msgstr "Máx"
+
+#. May (the month)
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "May"
+msgstr "May"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Net"
+msgstr "Red"
+
+#. November
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Nov"
+msgstr "Nov"
+
+#. October
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Oct"
+msgstr "Oct"
+
+#: src/components/common/APSwitch/APSwitch.js
+msgid "Off"
+msgstr "Apagar"
+
+#: src/components/OrderBookComponents/OrderBookComponent.js
+#: src/components/RecentTrades/RecentTradesComponent.js
+msgid "Qty"
+msgstr "Cant"
+
+#. September
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Sep"
+msgstr "Sep"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/EnableTwoFactorAuth/EnableTwoFactorAuthComponent.js
+msgid "Yes"
+msgstr "Si"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "{a}"
+msgstr "{a}"
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid ""
+"Using {displayProducts} for transaction fees applies a discount to your "
+"trading fee. If you hold {displayProducts} in your account, you have the "
+"option of having your trading fees automatically subtracted from your "
+"{displayProducts} balance."
+msgstr ""
+"Al utilizar {displayProducts} para las pagar las comisiones de transacción "
+"aplica un descuento. Si tiene {displayProducts} en su cuenta, tiene la "
+"opción de que sus comisiones se resten automáticamente de su saldo de "
+"{displayProducts}."
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+msgid "Final Amount"
+msgstr "Monto Final"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositDetailsComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatSidePaneComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid "Instructions"
+msgstr "Instrucciones"
+
+#: src/components/ReportSidePaneComponents/ConfirmSingleReport/ConfirmSingleReportModal.js
+msgid "Create Single Report"
+msgstr "Crear Reporte Único"
+
+#: src/helpers/formValidations.js
+msgid "Must be a valid phone number"
+msgstr "Debe ser un número de teléfono válido"
+
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "Report Summary"
+msgstr "Resumen Informativo"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+#: src/components/EnableTwoFactorAuth/Disable2FAForm.js
+#: src/components/EnableTwoFactorAuth/Enable2FAForm.js
+#: src/components/KYCSettings/KYCConfirmLevelModalComponent.js
+#: src/components/Language/LanguageComponent.js
+#: src/components/Login/LoginFormComponent.js
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+#: src/components/ProfileForm/ProfileFormComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+#: src/components/ResetPasswordRequestForm/ResetPasswordRequestFormComponent.js
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+#: src/components/Retail/RetailSettings/ResetPasswordForm/RetailResetPasswordConfirmComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveTwoFactorAuth/SendReceiveTwoFactorAuthForm.js
+#: src/components/Signup/SignupFormComponent.js
+#: src/components/TwoFactorAuthForm/TwoFactorAuthFormComponent.js
+msgid "Processing..."
+msgstr "Procesando…"
+
+#: src/components/DemoSettings/DemoSettingsComponent.js
+msgid "Demo Settings."
+msgstr "Configuraciones Demo."
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawDetailsComponent.js
+msgid ""
+"Note - The withdrawal and transfer of these funds might take up to 7 "
+"business days, and it’s subject to operator review."
+msgstr ""
+"Nota - Los retiros y transferencias de estos fondos podrán demorar hasta 7 "
+"días laborables y están sujetos a revisión del operador."
+
+#: src/components/Language/LanguageComponent.js
+msgid "Select language"
+msgstr "Seleccionar lenguaje"
+
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+#: src/routeTemplates/settingsRoutes.js
+msgid "Trade Reports"
+msgstr "Reporte de Operaciones"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeysForm/ApiKeysFormComponent.js
+msgid "You can access the API using the following websocket address:"
+msgstr "Ud. podrá accesar el API utilizando la siguiente dirección websocket:"
+
+#: src/components/VerificationRequired/VerificationRequiredComponent.js
+msgid "Verify your identity to start trading. Click here to verify."
+msgstr ""
+"Verifique su identidad para comenzar a operar. Click aquí para verificar."
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "November"
+msgstr "Noviembre"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMindLegacy/KYCConfirmMitekModalComponent.js
+msgid ""
+"Thanks for applying to increase your Verification Level. Once we have "
+"reviewed and approved your documents, you will be able to use all features "
+"of our platform."
+msgstr ""
+"Gracias por aplicar y aumentar su Nivel de Verificación. Una vez su "
+"documentación sea revisada y aprobada Ud. se encontrará habilitado para "
+"utilizar todas las características que brinda nuestra plataforma."
+
+#: src/redux/actions/reportActions.js
+msgid "Cyclical report was successfully created"
+msgstr "El reporte de ciclo fue creado exitosamente"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "Step 2: Wire the funds to this account"
+msgstr "Paso 2: Transfiera los fondos a esta cuenta"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeysForm/ApiKeysFormComponent.js
+#: src/routeTemplates/settingsRoutes.js
+msgid "API Keys"
+msgstr "Llaves API"
+
+#: src/redux/actions/confirmWithdrawActions.js
+msgid ""
+"Your withdrawal has been confirmed successfully and has started processing."
+msgstr ""
+"Su retiro ha sido confirmado de manera exitosa y ha iniciado su "
+"procesamiento."
+
+#: src/components/KYCSettings/KYCLevelComponent.js
+msgid "Benefits"
+msgstr "Beneficios"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Product Sold"
+msgstr "Producto Vendido"
+
+#: src/components/SendReceiveSidePane/Receive/ReceiveComponent.js
+msgid "Show Wallet Address"
+msgstr "Mostrar Dirección de Billetera"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Request for you to send"
+msgstr "Solicitud para que Ud. envíe"
+
+#: src/components/RecentActivity/ActivityCellComponents.js
+msgid "Cancel Order"
+msgstr "Cancelar Orden"
+
+#: src/components/SendReceiveSidePane/ReceiveForm/ReceiveFormComponent.js
+msgid "Amount of {name} to Request"
+msgstr "Cantidad de {name} a Solicitar"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "for {a}"
+msgstr "para {a}"
+
+#: src/helpers/formValidations.js
+msgid "Must be less than {a}"
+msgstr "Debe ser menor que {a}"
+
+#: src/components/OrderHistoryComponents/OrderHistoryHeaderWithFilterComponent.js
+msgid "Transaction History"
+msgstr "Historial de Transacciones"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Documents back"
+msgstr "Documentos devueltos"
+
+#: src/components/ActivityReportingComponent/ActivityReportingComponent.js
+#: src/components/Retail/RetailSettings/RetailApiKeysFormComponent.js
+msgid "Create New:"
+msgstr "Crear Nuevo:"
+
+#: src/redux/actions/orderEntryActions.js
+msgid "Your order failed, please try again"
+msgstr "Orden declinada, por favor intentar nuevamente"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Drivers License"
+msgstr "Licencia de Conducir"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyContainer.js
+msgid "Please choose at least one activity"
+msgstr "Por favor escoger al menos una actividad"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Sent By"
+msgstr "Enviado Por"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+#: src/components/DepositSidePaneComponents/DepositWorkflows/PaymentProcessors/Hyphen/HyphenDepositWorkflowComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "Bank Name:"
+msgstr "Nombre del Banco:"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+#: src/components/SendReceiveSidePane/ReceiveAddress/ReceiveAddressComponent.js
+msgid "Be sure to include this destination tag:"
+msgstr "Asegurese de incluir esta etiqueta de destino:"
+
+#: src/components/DemoSettings/DemoSettingsEditableComponent.js
+#: src/components/DemoSettings/DemoSettingsStaticComponent.js
+msgid "Color Theme"
+msgstr "Color de Tema"
+
+#: src/helpers/formValidations.js
+msgid "Input should only contain alphanumeric and space characters"
+msgstr "La Entrada puede contener solo espacios y caracteres alfanuméricos"
+
+#: src/redux/selectors/openOrdersActivitySelector.js
+msgid "Bought {Product1Symbol}"
+msgstr "Comprado {Product1Symbol}"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid "Join the {n} Affiliate Program"
+msgstr "Disfrute el {n} Programa de Afiliación"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+#: src/components/SendReceiveSidePane/ReceiveAddress/ReceiveAddressComponent.js
+msgid "The destination tag has been copied to the clipboard."
+msgstr "La etiqueta de destino ha sido copiada al portapales."
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/retailTemplate.js
+msgid "Your Snapshot"
+msgstr "Su Captura"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "to External Address"
+msgstr "A Dirección Externa"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Sent Transfers"
+msgstr "Transferencia Enviada"
+
+#: src/redux/actions/userActions.js
+msgid "Code Rejected"
+msgstr "Código Rechazado"
+
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "{product} to Buy"
+msgstr "{product} a Comprar"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Reserve Order"
+msgstr "Orden de Reserva"
+
+#: src/components/Login/LoginFormComponent.js
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: src/components/Retail/RetailSettings/RetailProfileAndSettingsComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveTwoFactorAuth/SendReceiveTwoFactorAuthModal.js
+#: src/components/TwoFactorAuthForm/TwoFactorAuthFormComponent.js
+msgid "Two-Factor Authentication"
+msgstr "Autenticación de Dos Factores"
+
+#: src/components/Retail/RetailSettings/RetailEnableTwoFactorAuthComponent.js
+msgid ""
+"Two-Factor Authentication (2FA) adds another layer of protection to your "
+"account by requiring an additional passcode during the logging in process."
+msgstr ""
+"Autenticación de Dos Factores (2FA) agrega otra capa de protección a su "
+"cuenta requiriendo esta un código de seguridad adicional durante el proceso "
+"de inicio de sesión."
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid "The affiliate tag has been copied to the clipboard."
+msgstr "La etiqueta de afiliado ha sido copiada al portapapeles."
+
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "Recipient’s Email"
+msgstr "Correo Electrónico del destinatario"
+
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Action"
+msgstr "Acción"
+
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "Requestee’s Email"
+msgstr "Correo Electrónico del Solicitante"
+
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+#: src/components/Transfers/TransfersComponent.js
+#: src/components/WithdrawSidePaneComponents/WithdrawTemplateForm/WithdrawTemplateFormComponent.js
+msgid "Amount"
+msgstr "Cantidad"
+
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Annual"
+msgstr "Anual"
+
+#: src/components/DepositConfirmation/DepositConfirmationComponent.js
+msgid "Your deposit is being processed."
+msgstr "Su depósito está siendo procesado."
+
+#: src/components/SendReceiveSidePane/Receive/ReceiveComponent.js
+msgid "Request by Email"
+msgstr "Solicitud por Correo Electrónico"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "August"
+msgstr "Agosto"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormStepComponent.js
+msgid "Upload your ID"
+msgstr "Suba su ID"
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/retailTemplate.js
+msgid "Exchange"
+msgstr "Exchange"
+
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeSidePaneComponent.js
+msgid "Bought"
+msgstr "Comprado"
+
+#: src/routeTemplates/basicTradingTemplate.js
+msgid "Transfer Activity"
+msgstr "Actividad de Transferencia"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+msgid "Allows Withdraws"
+msgstr "Permite Retiros"
+
+#: src/components/VerificationRequired/VerificationRequiredComponent.js
+msgid "You are not yet verified. Verification under review."
+msgstr "Ud. aún no está verificado. Verificación bajo revisión."
+
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/components/OrderBookComponents/OrderBookComponent.js
+msgid "Center"
+msgstr "Centrar"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/Retail/RetailSettings/ResetPasswordForm/RetailResetPasswordStaticComponent.js
+msgid "Reset Your Password"
+msgstr "Restablezca su Contraseña"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#, fuzzy
+msgid "Document's back"
+msgstr "Documento devuelto"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Create"
+msgstr "Crear"
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid "Trading Fees"
+msgstr "Comisiones de operación"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+msgid "Delete"
+msgstr "Borrar"
+
+#: src/components/Language/LanguageComponent.js
+msgid "Switch Language"
+msgstr "Cambio de Idioma"
+
+#: src/components/DepositConfirmation/DepositConfirmationComponent.js
+msgid "Your deposit was successfull."
+msgstr "Su depósito ha sido exitoso."
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMindLegacy/KYCConfirmMitekModalComponent.js
+msgid "Confirm Identification Documents"
+msgstr "Confirmar Documentos de Identificación"
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid "{products} or {lastProduct}"
+msgstr "{products} o {lastProduct}"
+
+#: src/components/common/FullPageSpinner/FullPageSpinner.js
+msgid "Loading ..."
+msgstr "Cargando …"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "No data is available"
+msgstr "Data no disponible"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Limit Price"
+msgstr "Precio Límite"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+msgid "Date/Time"
+msgstr "Fecha/Hora"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+msgid "Matching Password"
+msgstr "Contraseña Coincidente"
+
+#: src/components/KYCSettings/KYCConfirmLevelModalComponent.js
+msgid ""
+"Thanks for applying to increase your Verification Level. Once we have "
+"approved your application, you will next be required to submit "
+"identification documentation."
+msgstr ""
+"Gracias por solicitar el incremento de su Nivel de Verificación. Una vez "
+"aprobada su Solicitud Ud. deberá enviar su documentación de identidad."
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid ""
+"Your account will automatically update after the cryptocurrency network "
+"confirms your transaction. The confirmation may take up to 1 hour"
+msgstr ""
+"Su cuenta será actualizada automáticamente una vez que la red de "
+"criptomoneda confirme su transacción. La confirmación puede llevar hasta 1 "
+"hora"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Upload an image of your selected Document"
+msgstr "Cargue una imagen de su Documento seleccionado"
+
+#: src/components/ConfirmWithdraw/ConfirmWithdrawComponent.js
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+msgid "Go to Exchange"
+msgstr "Ir al Exchange"
+
+#: src/components/ReportSidePaneComponents/ReportAccountsComponent.js
+msgid "Accounts"
+msgstr "Cuentas"
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+#: src/components/Retail/RetailSettings/ResetPasswordForm/RetailResetPasswordConfirmComponent.js
+msgid "Send Email"
+msgstr "Enviar Correo Electrónico"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+msgid "Problem resetting your password?"
+msgstr "¿Tiene problemas reiniciándo su contraseña?"
+
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Hourly"
+msgstr "Por Hora"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Product Bought"
+msgstr "Producto Comprado"
+
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+msgid "24-Hour High"
+msgstr "Tope 24-Horas"
+
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+msgid "24-Hour Vol."
+msgstr "Volumen 24-Horas."
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Step 1:"
+msgstr "Paso 1:"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Step 2:"
+msgstr "Paso 2:"
+
+#: src/components/SendReceiveSidePane/ReceiveAddress/ReceiveAddressComponent.js
+msgid "Or copy this address:"
+msgstr "O copie esta dirección:"
+
+#: src/components/InstrumentPositions/InstrumentPositionsComponent.js
+msgid "Summary"
+msgstr "Resumen"
+
+#: src/components/SendReceiveSidePane/ReceiveAddress/ReceiveAddressComponent.js
+msgid "Scan this QR code to receive funds:"
+msgstr "Escanee este código QR para recibir fondos:"
+
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "No Report Is Available"
+msgstr "No hay Reporte Disponible"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Selfie picture"
+msgstr "Foto Selfie"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "January"
+msgstr "Enero"
+
+#: src/components/ActivityReportingComponent/ActivityReportingComponent.js
+#: src/components/ReportSidePaneComponents/ReportSidePaneComponent.js
+msgid "Cyclical Report"
+msgstr "Reporte de Ciclo"
+
+#: src/components/DepositConfirmation/DepositConfirmationComponent.js
+msgid "Please try again or contact an administrator."
+msgstr "Por favor intente de nuevo o contacte al administrador."
+
+#: src/components/ResetPasswordRequestForm/ResetPasswordRequestFormComponent.js
+msgid "Send Reset Email"
+msgstr "Enviar restablecimiento de Correo Electrónico"
+
+#: src/components/Login/LoginFormComponent.js
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+msgid "Log In"
+msgstr "Iniciar Sesión"
+
+#: src/components/Retail/RetailBuySell/RetailMakeTransactionComponent.js
+msgid "Make a Transaction"
+msgstr "Realizar Transacción"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Market"
+msgstr "Mercado"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Medium"
+msgstr "Medio"
+
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "Frequency"
+msgstr "Frecuencia"
+
+#: src/redux/actions/confirmWithdrawActions.js
+msgid ""
+"Your withdrawal confirmation failed. Try clicking the link in the email you "
+"received again. Contact the exchange admin if the problem persists."
+msgstr ""
+"Su confirmación de retiro ha fallado. Intente nuevamente presionando el link "
+"recibido nuevamente en su correo electrónico. Contáctenos si el problema "
+"persiste."
+
+#: src/routeTemplates/settingsRoutes.js
+msgid "Verification Level"
+msgstr "Nivel de Verificación"
+
+#: src/components/Retail/RetailSettings/RetailApiKeysFormComponent.js
+msgid "API Key"
+msgstr "Llave API"
+
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/PriceChart/TVChartComponent.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutCharts1280Px.js
+msgid "Price Chart"
+msgstr "Gráfico de Precios"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+msgid "Limit Offset"
+msgstr "Límite de Compensación"
+
+#: src/components/ActivityReportingComponent/ActivityReportingComponent.js
+msgid "Activity Reporting"
+msgstr "Reporte de Actividad"
+
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+msgid "Transaction Overview"
+msgstr "Resumen de Transacciones"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawFormComponent.js
+msgid "Final Balance:"
+msgstr "Balance Final:"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Optional - Uplading a selfie helps to verify your identity faster."
+msgstr ""
+"Opcional - Suba un Selfie que permita verificar su identidad mas rápidamente."
+
+#: src/components/WalletCards/WalletCardGridContainer.js
+msgid "Funded Accounts"
+msgstr "Cuentas Fondeadas"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Balance:"
+msgstr "Balance:"
+
+#: src/components/BalancesList/BalancesListComponent.js
+#: src/components/Retail/RetailBuySell/RetailBalancesComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawDetailsComponent.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutContent1280Px.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutContent768Px.js
+#: src/routeTemplates/advancedTemplate.js
+msgid "Balances"
+msgstr "Balances"
+
+#: src/components/SendReceiveSidePane/ReceiveForm/ReceiveFormComponent.js
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "Add a Note "
+msgstr "Agregue una Nota "
+
+#: src/components/DepositSidePaneComponents/DepositTemplateFormComponent.js
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Place Deposit Ticket"
+msgstr "Genere un Ticket de Depósito"
+
+#: src/routeTemplates/settingsRoutes.js
+msgid "Profile & Security"
+msgstr "Perfil y Seguridad"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Billing Zip"
+msgstr "Código Postal de Facturación"
+
+#: src/redux/selectors/openOrdersActivitySelector.js
+msgid "with {Product2Symbol}"
+msgstr "con {Product2Symbol}"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "A copy of this Deposit Ticket will be emailed to you"
+msgstr ""
+"Una copia de este Ticket de Depósito será enviada a su correo electrónico"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "Amount to Deposit"
+msgstr "Cantidad a Depositar"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutContent1280Px.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutContent768Px.js
+msgid "Order Entry"
+msgstr "Orden de Entrada"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+#: src/components/SendReceiveSidePane/ReceiveAddress/ReceiveAddressComponent.js
+msgid "The address has been copied to the clipboard."
+msgstr "La dirección ha sido copiada al portapapeles."
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "Thanks for signing up, please check your inbox for a confirmation email"
+msgstr ""
+"Gracias por registrarse, por favor revise la confirmación enviada a su "
+"correo electrónico"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+msgid "Order Size:"
+msgstr "Tamaño de Orden:"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Order Total"
+msgstr "Orden Total"
+
+#: src/components/Retail/RetailSettings/RetailProfileAndSettingsComponent.js
+msgid "Region"
+msgstr "Región"
+
+#: src/components/TransferRequests/TransferRequestItemComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Reject"
+msgstr "Rechazar"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "October"
+msgstr "Octubre"
+
+#: src/components/KYCSettings/KYCSettingsComponent.js
+msgid "Current Verification Level"
+msgstr "Nivel de Verificación Actual"
+
+#: src/helpers/formValidations.js
+msgid "Time must be after {a}"
+msgstr "Hora debe ser después de {a}"
+
+#: src/components/ApiKeysSidePaneComponents/ConfirmApiKeyModal/ConfirmAPIKeyModal.js
+msgid "Secret"
+msgstr "Secreto"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Selfie"
+msgstr "Selfie"
+
+#: src/components/OrderBookComponents/OrderBookComponent.js
+#, fuzzy
+msgid "Spread"
+msgstr "Diferencia"
+
+#: src/components/ReportSidePaneComponents/ConfirmSingleReport/ConfirmSingleReportForm.js
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+msgid "End Date:"
+msgstr "Fecha Final:"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Withdrew {a}"
+msgstr "Retirado {a}"
+
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Status"
+msgstr "Estatus"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Strong"
+msgstr "Fuerte"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMindLegacy/KYCIdentityMindLegacyFormComponent.js
+#: src/components/TwoFactorAuthForm/TwoFactorAuthFormComponent.js
+msgid "Submit"
+msgstr "Enviar"
+
+#: src/components/SendReceiveSidePane/SendAddress/SendAddressComponent.js
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Your withdraw ticket was created successfully."
+msgstr "Su ticket de retiro fue creado exitosamente."
+
+#: src/redux/actions/depositActions.js
+msgid "Server provided an unexpected response"
+msgstr "El Servidor arrojó una respuesta inesperada"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+#, fuzzy
+msgid "Trailing Stop Limit"
+msgstr "Trailing Stop Limit"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Total:"
+msgstr "Total:"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Trades"
+msgstr "Operaciones"
+
+#: src/components/ResetPasswordRequestForm/ResetPasswordRequestFormComponent.js
+msgid ""
+"To Reset your password, you will need to send an email that will allow you "
+"to access the reset password prompt. Check your email with instructions on "
+"changing your password"
+msgstr ""
+"Para restablecer su contraseña, deberá enviar un correo electrónico que le "
+"permitirá acceder a la solicitud de restablecimiento de contraseña. Revise "
+"su correo electrónico donde recibirá instrucciones de cómo deberá cambiar su "
+"contraseña"
+
+#: src/components/ApiKeysSidePaneComponents/ConfirmApiKeyModal/ConfirmAPIKeyModal.js
+msgid "Call {a} with the following to login:"
+msgstr "Llame a {a} con lo siguiente para iniciar sesión:"
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/retailTemplate.js
+msgid "Market Data"
+msgstr "Datos de Mercado"
+
+#: src/components/AffiliateComponents/AffiliateComponent.js
+msgid "Number of Active Affiliates"
+msgstr "Número de Afiliados Activos"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Deposit Money"
+msgstr "Depositar Dinero"
+
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+msgid "{symbol1} to Sell"
+msgstr "{symbol1} para Vender"
+
+#: src/components/AffiliateComponents/AffiliateModal.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionConfirmComponent.js
+msgid "Update"
+msgstr "Actualizar"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawDetailsComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawModal.js
+msgid "Amount to Withdraw"
+msgstr "Cantidad a Retirar"
+
+#: src/components/KYCSettings/KYCFormSidePaneComponent.js
+msgid "Increase Verification Level"
+msgstr "Incrementar Nivel de Verificación"
+
+#: src/components/InstrumentSelector/InstrumentSelectorPopupComponent.js
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Volume"
+msgstr "Volumen"
+
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Weekly"
+msgstr "Semanal"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawFormComponent.js
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "Current Balance:"
+msgstr "Balance Actual:"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Fill or Kill"
+msgstr "Fill or Kill"
+
+#: src/components/OrderHistoryComponents/OrderHistoryHeaderWithFilterComponent.js
+msgid "Date Range:"
+msgstr "Rango de Fecha:"
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+msgid "New Password"
+msgstr "Nueva Contraseña"
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+msgid ""
+"Select your issue type and provide us with your {label} below. We will "
+"follow up with a solution shortly."
+msgstr ""
+"Seleccione su inconveniente y proporciónenos su {label} Nosotros le haremos "
+"seguimiento y le brindaremos una solución a la brevedad."
+
+#: src/components/DepositSidePaneComponents/DepositFormComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositFormComponent.js
+msgid "Select an option to continue the deposit process"
+msgstr "Seleccione una opción para continuar el proceso de depósito"
+
+#: src/components/WalletCards/WalletCardComponent.js
+#: src/components/WalletRows/WalletRowComponent.js
+msgid "Current Balance"
+msgstr "Balance Actual"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "Confirm Sell Order"
+msgstr "Confirmar Orden de Venta"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Middle Name"
+msgstr "Segundo Nombre"
+
+#: src/components/EnableTwoFactorAuth/Disable2FAForm.js
+msgid "Type Authentication Code Here"
+msgstr "Escriba el código de autenticación aquí"
+
+#: src/components/ProfileForm/ProfileFormComponent.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionConfirmComponent.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionFormEditableComponent.js
+#: src/components/Retail/RetailSettings/RegionForm/RetailRegionStaticComponent.js
+msgid "Language"
+msgstr "Idioma"
+
+#: src/components/EnableTwoFactorAuth/Enable2FAForm.js
+msgid "Type in code from your phone."
+msgstr "Escriba el código de su teléfono."
+
+#: src/components/OrderEntryComponents/AdvancedOrderSidePane/AdvancedOrderSidePaneComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Advanced Orders"
+msgstr "Ordenes Avanzadas"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid ""
+"If the sender is not a registered user of Retail, they will receive an email "
+"invitation to create an account and claim their funds."
+msgstr ""
+"Si el remitente no es un usuario registrado, recibirá una invitación por "
+"correo electrónico para crear una cuenta y reclamar sus fondos."
+
+#: src/components/Login/LoginFormComponent.js
+msgid "Problem Logging In?"
+msgstr "¿Problemas con el inicio de Sesión?"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+msgid "24 Hour Volume"
+msgstr "Volumen 24 Horas"
+
+#: src/components/common/APCryptoAddressInput/APCryptoAddressInputComponent.js
+msgid "Invalid {productSymbol} address"
+msgstr "Dirección {productSymbol} inválida"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid "1) Send cryptocurrency to this address"
+msgstr "1) Enviar criptomoneda a esta dirección"
+
+#: src/components/Login/LoginFormComponent.js
+msgid "Log In to {n}"
+msgstr "Inicia sesión en {n}"
+
+#: src/components/KYCSettings/KYCLevelComponent.js
+msgid "Increase to {label}"
+msgstr "Aumentar a {etiqueta}"
+
+#: src/helpers/formValidations.js
+msgid "Must be {a} characters or less"
+msgstr "Debe tener {a} caracteres o menos"
+
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Submit Report"
+msgstr "Enviar Reporte"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/GenericPaymentWorkflow/GenericPaymentWorkflowComponent.js
+msgid "Server provided an unexpected response."
+msgstr "El servidor proporcionó una respuesta inesperada."
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+msgid "Problems Logging In?"
+msgstr "¿Problemas para iniciar sesión?"
+
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawModal.js
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "Confirmation"
+msgstr "Confirmación"
+
+#: src/components/DemoSettings/DemoSettingsEditableComponent.js
+msgid "Edit Settings"
+msgstr "Editar configuración"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+#, fuzzy
+msgid "Trailing Stop Market"
+msgstr "Trailing Stop Market"
+
+#: src/routeTemplates/settingsRoutes.js
+msgid "Loyalty Token"
+msgstr "Token de Fidelidad"
+
+#: src/components/VerificationRequired/VerificationRequiredComponent.js
+msgid ""
+"Verification under review. Click here to check your verification status."
+msgstr ""
+"Verificación en revisión. Haga clic aquí para ver su estado de verificación."
+
+#: src/helpers/formValidations.js
+msgid "Invalid email address"
+msgstr "Dirección de correo electrónico no válida"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid ""
+"Depositing cryptocurrency into your wallet is safe and easy. The address "
+"below can always be used to deposit cryptocurrency into your account."
+msgstr ""
+"Depositar criptomoneda en su billetera es seguro y fácil. La siguiente "
+"dirección siempre se puede utilizar para depositar criptomonedas en su "
+"cuenta."
+
+#: src/helpers/formValidations.js
+msgid "Date must be before {a}"
+msgstr "La fecha debe ser anterior a {a}"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid "Please read the instructions below"
+msgstr "Por favor, lea las siguientes instrucciones"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+msgid "Final Value"
+msgstr "Valor Final"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid ""
+"Note - if the requestee is not a registered user of Retail, they will "
+"receive an email invitation to create an account."
+msgstr ""
+"Nota: si el solicitante no es un usuario registrado, recibirá una invitación "
+"por correo electrónico para crear una cuenta."
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "Forgot Password?"
+msgstr "¿Olvidó su contraseña?"
+
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "Actions"
+msgstr "Acciones"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid "Address"
+msgstr "Dirección"
+
+#: src/redux/actions/userActions.js
+msgid "Two Factor Authenticated is disabled"
+msgstr "La autenticación de dos factores está deshabilitada"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "First Name"
+msgstr "Primer Nombre"
+
+#: src/components/DemoSettings/DemoSettingsEditableComponent.js
+#: src/components/DemoSettings/DemoSettingsStaticComponent.js
+msgid "Template"
+msgstr "Modelo"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeysForm/ApiKeysFormComponent.js
+#: src/components/Retail/RetailSettings/RetailApiKeysFormComponent.js
+msgid ""
+"The Private API is accessible only by registered users and enables access "
+"and control of a user's account. All key user functions may be executed from "
+"the API, including account and order management activities."
+msgstr ""
+"La API privada es accesible solo para usuarios registrados y permite el "
+"acceso y control de la cuenta de un usuario. Todas las funciones clave del "
+"usuario pueden ejecutarse desde la API, incluidas las actividades de "
+"administración de cuentas y pedidos."
+
+#: src/components/SendReceiveSidePane/SendAddress/SendAddressComponent.js
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Options for withdraw"
+msgstr "Opciones para retirar"
+
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+msgid "Download Report"
+msgstr "Descargar Reporte"
+
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+msgid "Sell {product1} for {product2}"
+msgstr "Vender {product1} por {product2}"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+#: src/routeTemplates/advancedTemplate.js src/routeTemplates/londonTemplate.js
+msgid "Trading"
+msgstr "Operar"
+
+#: src/components/Retail/RetailSettings/RetailProfileAndSettingsComponent.js
+msgid "Update Profile and Security Settings."
+msgstr "Actualizar perfil y configuración de seguridad."
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid "Loyalty token has not been set up on this exchange."
+msgstr "El token de lealtad no se ha configurado en este Exchange."
+
+#: src/redux/actions/transferRequestActions.js
+msgid "Transfer Rejected"
+msgstr "Transferencia Rechazada"
+
+#: src/components/UserSummary/UserSummaryComponent.js
+msgid "Switch to {accountName}"
+msgstr "Cambiar a {accountName}"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Received:"
+msgstr "Recibido:"
+
+#: src/redux/actions/userProfileFormActions.js
+msgid "Your profile has been successfully updated"
+msgstr "Su perfil ha sido actualizado correctamente"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Date of Birth"
+msgstr "Fecha de Nacimiento"
+
+#: src/redux/actions/userActions.js
+msgid "Check Your Email For Reset Password Link"
+msgstr ""
+"Revise su correo electrónico para el enlace de restablecimiento de su "
+"contraseña"
+
+#: src/components/ReportSidePaneComponents/ConfirmCyclicalReport/ConfirmCyclicalReportModal.js
+msgid "Schedule a Cyclical Report"
+msgstr "Programar un Reporte de Ciclo"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#, fuzzy
+msgid "Confirm Block Trade"
+msgstr "Confirmar Bloque de Ordenes"
+
+#: src/components/DepthChart/DepthChartComponent.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutCharts1280Px.js
+msgid "Depth Chart"
+msgstr "Gráfico de Profundidad"
+
+#: src/components/ThemeEditor/ThemeEditorComponent.js
+msgid "Theme Editor"
+msgstr "Editor de Tema"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeysForm/ApiKeysFormComponent.js
+msgid "API Documentation »"
+msgstr "Documentacion API »"
+
+#: src/components/InstrumentSelector/InstrumentSelectorPopupComponent.js
+#, fuzzy
+msgid "24hr Chg"
+msgstr "Cambios 24hr"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawTemplateForm/WithdrawTemplateFormComponent.js
+msgid "Place Withdraw Ticket"
+msgstr "Coloque el Ticket de Retiro"
+
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "External Wallet"
+msgstr "Billetera Externa"
+
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+msgid "Refresh Reports"
+msgstr "Actualizar Reporte"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Amount:"
+msgstr "Cantidad:"
+
+#: src/components/TwoFactorAuthForm/TwoFactorAuthFormContainer.js
+msgid "Invalid Auth Code. Please try again."
+msgstr "Código de autenticación no válido. Inténtelo de nuevo."
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Recipient"
+msgstr "Beneficiario"
+
+#: src/components/SendReceiveSidePane/ReceiveAddress/ReceiveAddressComponent.js
+msgid "Loading url..."
+msgstr "Cargando url…"
+
+#: src/components/Retail/RetailSettings/RetailApiKeysFormComponent.js
+msgid "About API Keys"
+msgstr "Acerca de las Llaves API"
+
+#: src/redux/actions/transferActions.js
+msgid "Transfer succeeded"
+msgstr "Transferencia Exitosa"
+
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+msgid "Choose a Crypto to Sell"
+msgstr "Escoja una Crypto para vender"
+
+#: src/components/ReportSidePaneComponents/ConfirmCyclicalReport/ConfirmCyclicalReportForm.js
+#: src/components/ReportSidePaneComponents/ConfirmSingleReport/ConfirmSingleReportForm.js
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Start Date:"
+msgstr "Fecha de inicio:"
+
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "Recipient’s Email Address"
+msgstr "Correo Electrónico del Destinatario"
+
+#: src/components/TransferRequests/TransferRequestItemComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Approve"
+msgstr "Aprobar"
+
+#: src/redux/actions/reportActions.js
+msgid "Single report was successfully created"
+msgstr "Reporte único fue creado con éxito"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "with {a}"
+msgstr "con {a}"
+
+#: src/redux/middlewares/wsConnectionMiddleware.js
+msgid "Still unable to connect after {attemptCount} attempts, trying again..."
+msgstr "Aún no se puede conectar luego de {tryCount} intentos, reintentando…"
+
+#: src/components/Retail/RetailSettings/RetailTransferHistoryComponent.js
+msgid "Transfer History"
+msgstr "Historial de Transferencias"
+
+#: src/components/ApiKeysSidePaneComponents/CreateApiKey/CreateApiKeyComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Withdrawals"
+msgstr "Retiros"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "Process deposit instructions on the deposit receipt."
+msgstr "Procesar las instrucciones en el recibo de depósito."
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+msgid "Existing API Keys"
+msgstr "Llaves API existentes"
+
+#: src/components/Retail/RetailBuySell/RetailBuySellComponent.js
+msgid "Choose a Crypto to Buy"
+msgstr "Escoja Crypto para comprar"
+
+#: src/components/BalancesButtons/BalancesButtonsComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatFormTabsComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawFormComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawModal.js
+#: src/components/WalletNavItems/FiatNavItemsComponent.js
+msgid "Withdraw"
+msgstr "Retirar"
+
+#: src/components/SettingsMenu/SettingsMenuComponent.js
+#: src/routeTemplates/advancedTemplate.js src/routeTemplates/retailTemplate.js
+msgid "User Settings"
+msgstr "Ajustes de Usuario"
+
+#: src/components/Retail/RetailSettings/RetailTransferHistoryComponent.js
+msgid "No Transfer History"
+msgstr "No hay historial de transferencias"
+
+#: src/components/ConfirmBlockTradeModal/ConfirmBlockTradeModalComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+msgid "Counterparty"
+msgstr "Contraparte"
+
+#: src/components/KYCSettings/KYCLevelComponent.js
+msgid "Requirements"
+msgstr "Requerimientos"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "Transfers"
+msgstr "Transferencias"
+
+#: src/components/ApiKeysSidePaneComponents/ConfirmApiKeyModal/ConfirmAPIKeyModal.js
+msgid "Permissions"
+msgstr "Permisos"
+
+#: src/redux/actions/resetPasswordActions.js
+msgid ""
+"Your attempt to reset your password has failed. Contact the exchange admin "
+"if the problem persists."
+msgstr ""
+"Su intento de restablecer su contraseña ha fallado. Póngase en contacto con "
+"Nosotros si el problema persiste."
+
+#: src/components/OrderEntryComponents/AdvancedOrderMarketPriceComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Market Price"
+msgstr "Precio de Mercado"
+
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+msgid "Transaction Cost"
+msgstr "Costo de Transacción"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawFormComponent.js
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "Transaction Fee:"
+msgstr "Comisión de Transacción:"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeComponent.js
+#: src/components/Transfers/TransfersComponent.js
+msgid "Received"
+msgstr "Recibido"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid "Use this form to request funds via email."
+msgstr "Utilice este formulario para solicitar fondos por correo electrónico."
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid ""
+"Make sure the wire transfer matches the Name and Amount stated in this "
+"Deposit Ticket."
+msgstr ""
+"Asegúrese de que la transferencia bancaria coincida con el Nombre y la "
+"Cantidad que se indican en este Ticket de depósito."
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Date range:"
+msgstr "Rango de fechas:"
+
+#: src/components/ApiKeysSidePaneComponents/ApiKeyList/ApiKeyListComponent.js
+msgid "Allows Deposits"
+msgstr "Permite Depósitos"
+
+#: src/components/Transfers/TransfersComponent.js
+msgid "You requested to Receive"
+msgstr "Usted solicitó recibir"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Billing City"
+msgstr "Ciudad de Facturación"
+
+#: src/components/Retail/RetailSettings/RetailEnableTwoFactorAuthComponent.js
+msgid ""
+"You will need to download Google Authenticator on your smartphone as part of "
+"the process to enable 2FA."
+msgstr ""
+"Deberá descargar Google Authenticator en su teléfono inteligente como parte "
+"del proceso para habilitar 2FA."
+
+#: src/components/Signup/SignupFormComponent.js tmp/KYCTextValues.js
+msgid "Privacy Policy"
+msgstr "Política de Privacidad"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositDetailsComponent.js
+msgid ""
+"Step 1: Create the deposit ticket. Sender’s bank details should match with "
+"the wallet account. Third party and/or anonymous payments cannot be accepted."
+msgstr ""
+"Paso 1: Crear el Ticket de Depósito. Los datos bancarios del remitente deben "
+"coincidir con la billetera de la cuenta. No se aceptarán pagos de terceros "
+"y / o anónimos."
+
+#: src/helpers/formValidations.js
+msgid ""
+"Password must contain at least 8 characters, one number, and at least one "
+"capital letter"
+msgstr ""
+"La contraseña debe contener al menos 8 caracteres, un número y al menos una "
+"letra mayúscula"
+
+#: src/redux/actions/transferRequestActions.js
+msgid "Failed to confirm transfer request"
+msgstr "Error al confirmar la solicitud de transferencia"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "April"
+msgstr "Abril"
+
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Close"
+msgstr "Cerrar"
+
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Daily"
+msgstr "Diario"
+
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "You have insufficient balance"
+msgstr "Saldo Insuficiente"
+
+#: src/components/common/APTable.js
+msgid "Loading..."
+msgstr "Cargando…"
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+#: src/components/ProfileForm/ProfileFormComponent.js
+#: src/components/Retail/RetailSettings/ProfileForm/RetailUserProfileStaticComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Email"
+msgstr "Email"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Limit"
+msgstr "Límite"
+
+#: src/components/Signup/SignupFormComponent.js
+#: src/components/VerifyEmail/VerifyEmailComponent.js
+msgid "Login"
+msgstr "Iniciar Sesión"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "March"
+msgstr "Marzo"
+
+#: src/components/InstrumentSelector/InstrumentSelectorPopupComponent.js
+#: src/components/OrderBookComponents/OrderBookComponent.js
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+#: src/components/PriceChart/ApexChartComponent.js
+#: src/components/RecentTrades/RecentTradesComponent.js
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+#: src/components/RetailPriceChart/RetailPriceChartComponent.js
+msgid "Price"
+msgstr "Precio"
+
+#: src/components/OrderHistoryComponents/InactiveOrdersComponent.js
+#: src/components/OrderHistoryComponents/OpenOrdersComponent.js
+msgid "Quote"
+msgstr "Cotizar"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Place Sell Order"
+msgstr "Colocar Orden de Venta"
+
+#: src/components/OrderBookComponents/BulkCancelButtonsComponent/BulkCancelButtonsComponent.js
+msgid "Sells"
+msgstr "Vender"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+msgid "Total"
+msgstr "Total"
+
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "Miner Fees"
+msgstr "Comisiones de Minero"
+
+#: src/redux/actions/orderEntryActions.js
+msgid "Your order was filled successfully!"
+msgstr "Su Orden fué completada con éxito!"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+msgid "Last Price"
+msgstr "Último Precio"
+
+#: src/helpers/formValidations.js
+msgid "Input should only contain alphabetic characters"
+msgstr "La entrada solo debe contener caracteres alfabéticos"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "All Activities"
+msgstr "Todas las actividades"
+
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "Cyclical Reports"
+msgstr "Reportes Cíclicos"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid "Amount to be Deducted"
+msgstr "Cantidad a Deducir"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatWithdraw/RetailFiatWithdrawFormComponent.js
+#: src/components/SendReceiveSidePane/SendAddress/SendAddressComponent.js
+#: src/components/WithdrawSidePaneComponents/WithdrawForm/WithdrawFormComponent.js
+msgid "Select an option to continue the withdraw process"
+msgstr "Seleccione una opción para continuar el proceso de retiro"
+
+#: src/components/OrderHistoryComponents/OrderHistoryTradeReportsComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Complete"
+msgstr "Completar"
+
+#: src/components/ActivityReportingComponent/ActivityReportingComponent.js
+msgid ""
+"All of your activity on the exchange is available for you to download as a "
+"spreadsheet. Simply choose the type of activity and the timeframe to "
+"generate your report."
+msgstr ""
+"Toda su actividad en la plataforma de Banexcoin está disponible para que la "
+"descargue como una hoja de cálculo. Simplemente elija el tipo de actividad y "
+"el rango de fecha para generar su Reporte."
+
+#: src/components/ResetPasswordForm/ResetPasswordFormComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Very Strong"
+msgstr "Muy Fuerte"
+
+#: src/helpers/formValidations.js
+msgid "Input should only contain alphanumeric characters"
+msgstr "La entrada solo debe contener caracteres alfanuméricos"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+msgid "Display Quantity"
+msgstr "Mostrar Cantidad"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Document State"
+msgstr "Estado del Documento"
+
+#: src/redux/actions/withdrawActions.js
+msgid "Your withdraw has been successfully canceled"
+msgstr "Su retiro ha sido cancelado exitosamente"
+
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+msgid "24-Hour Low"
+msgstr "Baja 24-Horas"
+
+#: src/components/common/SidePaneBalanceComponent/SidePaneBalanceComponent.js
+#: src/components/UserBalance/UserBalanceComponent.js
+msgid "Balance"
+msgstr "Balance"
+
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "Amount of {name} to Send"
+msgstr "Cantidad de {name} a Enviar"
+
+#: src/components/InstrumentPositions/InstrumentPositionsComponent.js
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+msgid "Product"
+msgstr "Producto"
+
+#: src/components/ProfileForm/ProfileFormComponent.js
+#: src/components/Retail/RetailSettings/RetailProfileAndSettingsComponent.js
+msgid "Profile"
+msgstr "Perfil"
+
+#: src/redux/actions/affiliateActions.js
+msgid "Could not create tag or tag already in use"
+msgstr "No se pudo crear una etiqueta o la etiqueta ya en uso"
+
+#: src/components/InstrumentTable/InstrumentTableComponent.js
+msgid "24 Hour Pct Chg"
+msgstr "Cambio Pct 24 Horas"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+#: src/components/DepositSidePaneComponents/DepositWorkflows/PaymentProcessors/Hyphen/HyphenDepositWorkflowComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "Account Number:"
+msgstr "Número de Cuenta:"
+
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "External Address"
+msgstr "Dirección Externa"
+
+#: src/components/OrderHistoryComponents/FilledOrdersComponent.js
+msgid "Execution ID"
+msgstr "ID de Ejecución"
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "By Clicking Sign up you accept our {t} and {p}"
+msgstr "Al hacer clic en Registrarse aceptas nuestro {t} y {p}"
+
+#: src/components/ReportSidePaneComponents/DownloadReportForm/DownloadReportComponent.js
+msgid "Reports Available to Download"
+msgstr "Reportes Disponibles para Descargar"
+
+#: src/components/MarketDataCardsComponent/MarketDataCardComponent.js
+msgid "24-Hour Change"
+msgstr "Cambio 24-Horas"
+
+#: src/components/OrderHistoryComponents/OrderHistoryHeaderWithFilterComponent.js
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Clear Filters"
+msgstr "Borrar filtros"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Document Country"
+msgstr "Documento del país"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/CryptoWalletDepositWorkflow/CryptoWalletDepositWorkflowComponent.js
+msgid "The confirmation may take up to 1 hour."
+msgstr "La confirmación puede tardar hasta 1 hora."
+
+#: src/components/OrderBookComponents/OrderBookComponent.js
+#: src/layouts/Responsive/TrandingLayout/TradingLayoutContent1280Px.js
+msgid "Order Book"
+msgstr "Libro de Ordenes"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "Order Type"
+msgstr "Tipo de Orden"
+
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+msgid "{price} per {symbol1}"
+msgstr "{price} por {symbol1}"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#, fuzzy
+msgid "Good Til Canceled"
+msgstr "Bueno hasta Cancelado"
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "{n} Sign Up"
+msgstr "{n} Registrarse"
+
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "Limit (Fill or Kill)"
+msgstr "Límite (Fill or Kill)"
+
+#: src/components/OrderHistoryComponents/DepositsStatusComponent.js
+msgid "Deposit Status"
+msgstr "Estado de Depósito"
+
+#: src/helpers/formValidations.js
+msgid "Input should only contain numeric characters"
+msgstr "La entrada solo debe contener caracteres numéricos"
+
+#: src/components/DepositSidePaneComponents/DepositTemplateFormComponent.js
+msgid "Please use the following information to make a deposit:"
+msgstr "Por favor use la siguiente información para hacer un depósito:"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+msgid "Peg Price"
+msgstr "Precio Paridad"
+
+#: src/components/LoyaltyToken/LoyaltyTokenComponent.js
+msgid "Use default fees"
+msgstr "Usar Comisiones por defecto"
+
+#: src/redux/actions/resetPasswordActions.js
+msgid ""
+"You successfully reset your password. You can now login with your new "
+"password."
+msgstr ""
+"Has restablecido con éxito su contraseña. Ahora puede iniciar sesión con su "
+"nueva contraseña."
+
+#: src/components/Retail/RetailSettings/RetailUserContactsComponent.js
+msgid ""
+"You can freely transfer currency with other participants on the exchange. "
+"Simply provide the email address for your contact during the “Send” or "
+"“Receive” process. If the email address is registered on the exchange, then "
+"the user will receive the transfer. If the email address is not registered, "
+"the user will get an invitation to join the exchange."
+msgstr ""
+"Puede transferir libremente monedas con otros usuarios de Banexcoin. "
+"Simplemente proporcione la dirección de correo electrónico de su contacto "
+"durante el proceso de “Enviar” o “Recibir”. Si la dirección de correo "
+"electrónico está registrada en Banexcoin, el usuario recibirá la "
+"transferencia. Si la dirección de correo electrónico no está registrada, el "
+"usuario recibirá una invitación para unirse a Banexcoin."
+
+#: src/components/Login/LoginFormComponent.js
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+#: src/components/ProfileForm/ProfileFormComponent.js
+#: src/components/Retail/RetailSettings/ProfileForm/RetailUserProfileStaticComponent.js
+#: src/components/Signup/SignupFormComponent.js
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: src/components/common/APDatePickerDropdown/APDatePickerDropdown.js
+msgid "February"
+msgstr "Febrero"
+
+#: src/components/SendReceiveSidePane/SendForm/SendFormComponent.js
+msgid "To Email Address"
+msgstr "A la Dirección de Correo Electrónico"
+
+#: src/components/ThemeEditor/ThemeEditorComponent.js
+msgid "Edit all the colors used in the app"
+msgstr "Editar todos los colores utilizados en la Aplicación"
+
+#: src/components/Retail/RetailSettings/RetailApiKeysFormComponent.js
+msgid "View: API Documentation »"
+msgstr "Ver: Documentación API »"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Activity type:"
+msgstr "Tipo de Actividad:"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+msgid "The comment field is optional. Please use it for special instructions."
+msgstr ""
+"El campo de comentario es opcional. Por favor utilícelo para instrucciones "
+"especiales."
+
+#: src/components/KYCStatus/KYCStatusComponent.js
+msgid "Learn More"
+msgstr "Aprende más"
+
+#: src/redux/actions/withdrawActions.js
+msgid "Your withdraw has been successfully added"
+msgstr "Su retiro ha sido agregado exitosamente"
+
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+#: src/components/ReportBlockTradeSidePaneComponents/ReportBlockTradeSidePaneComponent.js
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Report Block Trade"
+msgstr "Reporte Bloque Operación"
+
+#: src/components/ReportSidePaneComponents/ConfirmCyclicalReport/ConfirmCyclicalReportForm.js
+#: src/components/ReportSidePaneComponents/ConfirmSingleReport/ConfirmSingleReportForm.js
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Report Type:"
+msgstr "Tipo de Reporte:"
+
+#: src/components/AffiliateComponents/AffiliateModal.js
+msgid "Create or Edit Affiliate Tag"
+msgstr "Crear o Editar una Etiqueta de Afiliado"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Place Buy Order"
+msgstr "Colocar Orden de Compra"
+
+#: src/components/ReportSidePaneComponents/ConfirmCyclicalReport/ConfirmCyclicalReportModal.js
+msgid "Schedule Report"
+msgstr "Reporte de Horario"
+
+#: src/components/KYCStatus/KYCStatusComponent.js
+msgid "Please complete verification to trade and access additional features."
+msgstr ""
+"Por favor complete la verificación para realizar operaciones y acceder a "
+"características adicionales."
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormStepComponent.js
+msgid "Go back"
+msgstr "Regresar"
+
+#: src/components/ProblemLoggingIn/ProblemLoggingInFormComponent.js
+msgid "I’m a new user and I haven’t received my verification email."
+msgstr ""
+"Soy un usuario nuevo y no he recibido mi correo electrónico de verificación."
+
+#: src/components/UserSummary/UserSummaryComponent.js
+msgid "username-in-dropdown"
+msgstr "username-in-dropdown"
+
+#: src/components/MarketOverview/MarketOverviewComponent.js
+msgid "Markets Overview"
+msgstr "Visión general de los Mercados"
+
+#: src/components/SendReceiveSidePane/SendReceiveConfirmModal/SendReceiveConfirmModalComponent.js
+msgid "Total Amount"
+msgstr "Cantidad Total"
+
+#: src/components/Retail/RetailSettings/RetailProfileAndSettingsComponent.js
+msgid " Here you can make general settings such as..."
+msgstr "Aquí puedes hacer ajustes generales como…"
+
+#: src/redux/actions/kycManualActions.js
+msgid ""
+"Your information has been submitted and is under review. Your verification "
+"status will be updated 24-48 hours from the time of submission."
+msgstr ""
+"Su información ha sido enviada y está bajo revisión. Su estado de "
+"verificación se actualizará de 24 a 48 horas desde el momento del envío."
+
+#: src/redux/actions/depositActions.js
+msgid "Your deposit has been successfully added"
+msgstr "Su depósito ha sido añadido con éxito"
+
+#: src/components/SendReceiveSidePane/SendReceiveDetails/SendReceiveDetailsComponent.js
+msgid "Send Details"
+msgstr "Enviar Detalles"
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/retailTemplate.js
+msgid "Buy & Sell"
+msgstr "Compra y Venta"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Fill Or Kill"
+msgstr "Fill Or Kill"
+
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/DepositReferenceIdModal.js
+msgid "Please note the following deposit ticket ID for your reference:"
+msgstr ""
+"Tenga en cuenta la siguiente identificación del ticket de depósito para su "
+"referencia:"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Received {a}"
+msgstr "Recibido {a}"
+
+#: src/helpers/formValidations.js
+msgid "Passwords do not match"
+msgstr "Las contraseñas no coinciden"
+
+#: src/constants/sendOrder/orderEntryFormConstants.js
+msgid "Stop Market"
+msgstr "Stop Market"
+
+#: src/routeTemplates/basicTradingTemplate.js
+#: src/routeTemplates/londonTemplate.js src/routeTemplates/retailTemplate.js
+msgid "Unfunded Accounts"
+msgstr "Cuentas sin Fondos"
+
+#: src/components/Retail/RetailBuySell/RetailOrderConfirmationModalComponent.js
+msgid "{product} to Sell"
+msgstr "{product} a Vender"
+
+#: src/components/Signup/SignupFormComponent.js
+msgid "Retype Password"
+msgstr "Reescribir Contraseña"
+
+#: src/components/common/APImageUpload/APImageUpload.js
+msgid "Choose another image"
+msgstr "Seleccione otra imagen"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Billing Country"
+msgstr "País de facturación"
+
+#: src/components/DepositSidePaneComponents/DepositWorkflows/ManualDepositWorkflow/ManualDepositWorkflowComponent.js
+#: src/components/DepositSidePaneComponents/DepositWorkflows/PaymentProcessors/Hyphen/HyphenDepositWorkflowComponent.js
+#: src/components/Retail/RetailSidePanes/RetailFiatDeposit/RetailFiatDepositModal.js
+msgid "Wire Number:"
+msgstr "Número de Transferencia:"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+#: tmp/KYCTextValues.js
+msgid "Last Name"
+msgstr "Apellido"
+
+#: src/components/ReportSidePaneComponents/ScheduledReportsTable/ScheduledReportsTableComponent.js
+msgid "Cancel Report"
+msgstr "Cancelar Reporte"
+
+#: src/components/OrderEntryComponents/AdvancedOrderForm/AdvancedOrderFormComponent.js
+#: src/components/OrderEntryComponents/OrderEntryComponent.js
+msgid "Time in Force"
+msgstr "Tiempo de Vigencia"
+
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Trade Activity"
+msgstr "Actividad de Operación"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Bought {a}"
+msgstr "Compró {a}"
+
+#: src/components/OrderHistoryComponents/WithdrawStatusComponent.js
+msgid "Withdraw Status"
+msgstr "Estatus de Retiro"
+
+#: src/redux/actions/userActions.js
+msgid "Check Your Email For An Account Verification Email"
+msgstr "Revise su correo electrónico para Verificación de Cuenta"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMind/KYCIdentityMindFormHelpers.js
+msgid "Identity Card"
+msgstr "Documento de Identidad"
+
+#: src/components/Retail/RetailBuySell/RetailOrderOverviewComponent.js
+msgid "{symbol1} to Buy"
+msgstr "{symbol1} a Comprar"
+
+#: src/components/ReportSidePaneComponents/CreateReportForm/CreateReportFormComponent.js
+#: src/components/ReportSidePaneComponents/ScheduleReportForm/ScheduleReportFormComponent.js
+msgid "Transaction"
+msgstr "Transacción"
+
+#: src/routeTemplates/settingsRoutes.js
+msgid "Affiliate Program"
+msgstr "Programa de Afiliación"
+
+#: src/components/KYCSettings/KYCWorkflows/KYCIdentityMindLegacy/KYCIdentityMindLegacyFormComponent.js
+msgid ""
+"Complete this form to verify your account to raise your limits and enable "
+"buys."
+msgstr ""
+"Complete este formulario para verificar su cuenta y aumentar sus límites y "
+"habilitar compras."
+
+#: src/helpers/formValidations.js
+msgid "File size must be under {a}mb"
+msgstr "Tamaño del Archivo debe ser menor a {a}mb"
+
+#: src/components/RecentActivity/RecentActivityComponent.js
+msgid "Recent Activity"
+msgstr "Actividad Reciente"
+
+#: tmp/KYCTextValues.js
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: tmp/KYCTextValues.js
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia y Herzegovina"
+
+#: tmp/KYCTextValues.js
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+#: tmp/KYCTextValues.js
+msgid "Korea, Republic of"
+msgstr "República de Corea"
+
+#: tmp/KYCTextValues.js
+msgid "Tanzania, United Republic of"
+msgstr "República Unida de Tanzania"
+
+#: tmp/KYCTextValues.js
+msgid "Heard Island and Mcdonald Islands"
+msgstr "Islas Heard y Mcdonald"
+
+#: tmp/KYCTextValues.js
+msgid "Brunei Darussalam"
+msgstr "Brunei"
+
+#: tmp/KYCTextValues.js
+msgid "Norfolk Island"
+msgstr "Isla Norfolk"
+
+#: tmp/KYCTextValues.js
+msgid "middleName"
+msgstr "middleName"
+
+#: tmp/KYCTextValues.js
+msgid "Trinidad and Tobago"
+msgstr "Trinidad y Tobago"
+
+#: tmp/KYCTextValues.js
+msgid "Western Sahara"
+msgstr "Sahara Occidental"
+
+#: tmp/KYCTextValues.js
+msgid "New Zealand"
+msgstr "Nueva Zelanda"
+
+#: tmp/KYCTextValues.js
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: tmp/KYCTextValues.js
+msgid "https://www.alphapoint.com"
+msgstr "https://www.alphapoint.com"
+
+#: tmp/KYCTextValues.js
+msgid "Abbreviation only"
+msgstr "Solo Abreviatura"
+
+#: tmp/KYCTextValues.js
+msgid "Moldova, Republic of"
+msgstr "República de Moldavia"
+
+#: tmp/KYCTextValues.js
+msgid "Papua New Guinea"
+msgstr "Papua Nueva Guinea"
+
+#: tmp/KYCTextValues.js
+msgid "firstName"
+msgstr "firstName"
+
+#: tmp/KYCTextValues.js
+msgid "Saint Helena"
+msgstr "Santa Elena"
+
+#: tmp/KYCTextValues.js
+msgid "Korea, Democratic People"
+msgstr "Corea del Norte"
+
+#: tmp/KYCTextValues.js
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: tmp/KYCTextValues.js
+msgid "United Arab Emirates"
+msgstr "Emiratos Arabes Unidos"
+
+#: tmp/KYCTextValues.js
+msgid "info@banexcoin.com"
+msgstr "info@banexcoin.com"
+
+#: tmp/KYCTextValues.js
+msgid "Central African Republic"
+msgstr "República Centro Africana"
+
+#: tmp/KYCTextValues.js
+msgid "Czech Republic"
+msgstr "República Checa"
+
+#: tmp/KYCTextValues.js
+msgid "billingCity"
+msgstr "billingCity"
+
+#: tmp/KYCTextValues.js
+msgid "ID Verification"
+msgstr "Verificación ID"
+
+#: tmp/KYCTextValues.js
+msgid "Portugal"
+msgstr "Portugal"
+
+#: tmp/KYCTextValues.js
+msgid "Comoros"
+msgstr "Comoras"
+
+#: tmp/KYCTextValues.js
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+#: tmp/KYCTextValues.js
+msgid "American Samoa"
+msgstr "Samoa Americana"
+
+#: tmp/KYCTextValues.js
+msgid "Cocos (Keeling) Islands"
+msgstr "Islas Cocos"
+
+#: tmp/KYCTextValues.js
+msgid "United States Minor Outlying Islands"
+msgstr "Islas Ultramarinas Menores de Estados Unidos"
+
+#: tmp/KYCTextValues.js
+msgid "Lao People"
+msgstr "Laos"
+
+#: tmp/KYCTextValues.js
+msgid "Croatia"
+msgstr "Croacia"
+
+#: tmp/KYCTextValues.js
+msgid "Djibouti"
+msgstr "Yibuti"
+
+#: tmp/KYCTextValues.js
+msgid "Saint Kitts and Nevis"
+msgstr "San Cristóbal y Nieves"
+
+#: tmp/KYCTextValues.js
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Islas Georgias del Sur y Sandwich del Sur"
+
+#: tmp/KYCTextValues.js
+msgid "Singapore"
+msgstr "Singapur"
+
+#: tmp/KYCTextValues.js
+msgid "Reunion"
+msgstr "Reunión"
+
+#: tmp/KYCTextValues.js
+msgid "$10,000 sell limit"
+msgstr "venta límite $10,000"
+
+#: tmp/KYCTextValues.js
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: tmp/KYCTextValues.js
+msgid "Thailand"
+msgstr "Tailandia"
+
+#: tmp/KYCTextValues.js
+msgid "Morocco"
+msgstr "Marruecos"
+
+#: tmp/KYCTextValues.js
+msgid "Timor-Leste"
+msgstr "Timor Oriental"
+
+#: tmp/KYCTextValues.js
+msgid "Hungary"
+msgstr "Hungría"
+
+#: tmp/KYCTextValues.js
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: tmp/KYCTextValues.js
+msgid "IM"
+msgstr "IM"
+
+#: tmp/KYCTextValues.js
+msgid "Isle of Man"
+msgstr "Isla de Man"
+
+#: tmp/KYCTextValues.js
+msgid "United States"
+msgstr "Estados Unidos"
+
+#: tmp/KYCTextValues.js
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: tmp/KYCTextValues.js
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: tmp/KYCTextValues.js
+msgid "Dominica"
+msgstr "Dominica"
+
+#: tmp/KYCTextValues.js
+msgid "Saint Vincent and the Grenadines"
+msgstr "San Vicente y las Granadinas"
+
+#: tmp/KYCTextValues.js
+msgid "Romania"
+msgstr "Rumania"
+
+#: tmp/KYCTextValues.js
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: tmp/KYCTextValues.js
+msgid "Syrian Arab Republic"
+msgstr "Siria"
+
+#: tmp/KYCTextValues.js
+msgid "Saudi Arabia"
+msgstr "Arabia Saudita"
+
+#: tmp/KYCTextValues.js
+msgid "South Africa"
+msgstr "Sudáfrica"
+
+#: tmp/KYCTextValues.js
+msgid "Kyrgyzstan"
+msgstr "Kyrgyzstan"
+
+#: tmp/KYCTextValues.js
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: tmp/KYCTextValues.js
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#: tmp/KYCTextValues.js
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: tmp/KYCTextValues.js
+msgid "Denmark"
+msgstr "Dinamarca"
+
+#: tmp/KYCTextValues.js
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: tmp/KYCTextValues.js
+msgid "Swaziland"
+msgstr "Suazilandia"
+
+#: tmp/KYCTextValues.js
+msgid "Iceland"
+msgstr "Islandia"
+
+#: tmp/KYCTextValues.js
+msgid "Chad"
+msgstr "Chad"
+
+#: tmp/KYCTextValues.js
+msgid "Cuba"
+msgstr "Cuba"
+
+#: tmp/KYCTextValues.js
+msgid "Fiji"
+msgstr "Fiji"
+
+#: tmp/KYCTextValues.js
+msgid "Guam"
+msgstr "Guam"
+
+#: tmp/KYCTextValues.js
+msgid "Iraq"
+msgstr "Iraq"
+
+#: tmp/KYCTextValues.js
+msgid "Mali"
+msgstr "Mali"
+
+#: tmp/KYCTextValues.js
+msgid "Niue"
+msgstr "Niue"
+
+#: tmp/KYCTextValues.js
+msgid "Oman"
+msgstr "Oman"
+
+#: tmp/KYCTextValues.js
+msgid "Peru"
+msgstr "Perú"
+
+#: tmp/KYCTextValues.js
+msgid "Togo"
+msgstr "Togo"
+
+#: tmp/KYCTextValues.js
+msgid "date"
+msgstr "fecha"
+
+#: tmp/KYCTextValues.js
+#, fuzzy
+msgid "star"
+msgstr "asterisco"
+
+#: tmp/KYCTextValues.js
+msgid "text"
+msgstr "texto"
+
+#: tmp/KYCTextValues.js
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: tmp/KYCTextValues.js
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: tmp/KYCTextValues.js
+msgid "$600 Limit on Deposits"
+msgstr "Límite en Depósitos $600"
+
+#: tmp/KYCTextValues.js
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: tmp/KYCTextValues.js
+#, fuzzy
+msgid "dob"
+msgstr "dob"
+
+#: tmp/KYCTextValues.js
+msgid "Namibia"
+msgstr "Namibia"
+
+#: tmp/KYCTextValues.js
+msgid "New Caledonia"
+msgstr "Nueva Caledonia"
+
+#: tmp/KYCTextValues.js
+msgid "$2000 Deposits"
+msgstr "Depósitos $2000"
+
+#: tmp/KYCTextValues.js
+msgid "Virgin Islands, U.S."
+msgstr "Islas Vírgenes, USA."
+
+#: tmp/KYCTextValues.js
+msgid "Personal Information"
+msgstr "Información Personal"
+
+#: tmp/KYCTextValues.js
+msgid "Application under review."
+msgstr "Aplicación bajo revisión."
+
+#: tmp/KYCTextValues.js
+msgid "Macedonia, The Former Yugoslav Republic of"
+msgstr "Macedonia"
+
+#: tmp/KYCTextValues.js
+msgid "Palestinian Territory, Occupied"
+msgstr "Palestina Territorio Ocupado"
+
+#: tmp/KYCTextValues.js
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: tmp/KYCTextValues.js
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: tmp/KYCTextValues.js
+msgid "Senegal"
+msgstr "Senegal"
+
+#: tmp/KYCTextValues.js
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: tmp/KYCTextValues.js
+msgid "Account and Billing Information"
+msgstr "Información de Cuenta y Facturación"
+
+#: tmp/KYCTextValues.js
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: tmp/KYCTextValues.js
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: tmp/KYCTextValues.js
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#: tmp/KYCTextValues.js
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: tmp/KYCTextValues.js
+msgid "Faroe Islands"
+msgstr "Islas Faroe"
+
+#: tmp/KYCTextValues.js
+msgid "San Marino"
+msgstr "San Marino"
+
+#: tmp/KYCTextValues.js
+msgid "Angola"
+msgstr "Angola"
+
+#: tmp/KYCTextValues.js
+msgid "$2000 Withdrawals"
+msgstr "Retiros $2000"
+
+#: tmp/KYCTextValues.js
+msgid "Cook Islands"
+msgstr "Islas Cook"
+
+#: tmp/KYCTextValues.js
+msgid "Belize"
+msgstr "Belice"
+
+#: tmp/KYCTextValues.js
+msgid "Bhutan"
+msgstr "Bután"
+
+#: tmp/KYCTextValues.js
+msgid "Brazil"
+msgstr "Brasil"
+
+#: tmp/KYCTextValues.js
+msgid "Congo, The Democratic Republic of the"
+msgstr "República Democrática del Congo"
+
+#: tmp/KYCTextValues.js
+msgid "Canada"
+msgstr "Canadá"
+
+#: tmp/KYCTextValues.js
+msgid "billingZip"
+msgstr "billingZip"
+
+#: tmp/KYCTextValues.js
+#, fuzzy
+msgid "Cote D"
+msgstr "Cote D"
+
+#: tmp/KYCTextValues.js
+msgid "Cyprus"
+msgstr "Chipre"
+
+#: tmp/KYCTextValues.js
+msgid "Somalia"
+msgstr "Somalia"
+
+#: tmp/KYCTextValues.js
+msgid "Wallis and Futuna"
+msgstr "Wallis y Futuna"
+
+#: tmp/KYCTextValues.js
+msgid "France"
+msgstr "Francia"
+
+#: tmp/KYCTextValues.js
+msgid "Gambia"
+msgstr "Gambia"
+
+#: tmp/KYCTextValues.js
+msgid "Greece"
+msgstr "Grecia"
+
+#: tmp/KYCTextValues.js
+msgid "Guinea"
+msgstr "Guinea"
+
+#: tmp/KYCTextValues.js
+msgid "Guyana"
+msgstr "Guyana"
+
+#: tmp/KYCTextValues.js
+msgid "Botswana"
+msgstr "Botswana"
+
+#: tmp/KYCTextValues.js
+msgid "Level 01"
+msgstr "Nivel 01"
+
+#: tmp/KYCTextValues.js
+msgid "Level 02"
+msgstr "Nivel 02"
+
+#: tmp/KYCTextValues.js
+msgid "Level 03"
+msgstr "Nivel 03"
+
+#: tmp/KYCTextValues.js
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: tmp/KYCTextValues.js
+msgid "Israel"
+msgstr "Israel"
+
+#: tmp/KYCTextValues.js
+msgid "Guadeloupe"
+msgstr "Guadalupe"
+
+#: tmp/KYCTextValues.js
+msgid "Billing Address"
+msgstr "Dirección de Facturación"
+
+#: tmp/KYCTextValues.js
+msgid "Taiwan, Province of China"
+msgstr "Taiwan"
+
+#: tmp/KYCTextValues.js
+msgid "Jersey"
+msgstr "Jersey"
+
+#: tmp/KYCTextValues.js
+msgid "Jordan"
+msgstr "Jordania"
+
+#: tmp/KYCTextValues.js
+msgid "Surname"
+msgstr "Apellido"
+
+#: tmp/KYCTextValues.js
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: tmp/KYCTextValues.js
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: tmp/KYCTextValues.js
+msgid "Virgin Islands, British"
+msgstr "Islas Vírgenes Británicas"
+
+#: tmp/KYCTextValues.js
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: tmp/KYCTextValues.js
+msgid "Latvia"
+msgstr "Letonia"
+
+#: tmp/KYCTextValues.js
+msgid "$600 limit on Withdrawals"
+msgstr "Límite de Retiros $600"
+
+#: tmp/KYCTextValues.js
+msgid "Netherlands Antilles"
+msgstr "Antillas Nerlandesas"
+
+#: tmp/KYCTextValues.js
+msgid "Marshall Islands"
+msgstr "Islas Marshall"
+
+#: tmp/KYCTextValues.js
+msgid "Malawi"
+msgstr "Malawi"
+
+#: tmp/KYCTextValues.js
+msgid "Mexico"
+msgstr "Mexico"
+
+#: tmp/KYCTextValues.js
+msgid "Equatorial Guinea"
+msgstr "Guinea Equatorial"
+
+#: tmp/KYCTextValues.js
+msgid "Monaco"
+msgstr "Monaco"
+
+#: tmp/KYCTextValues.js
+msgid "Norway"
+msgstr "Noruega"
+
+#: tmp/KYCTextValues.js
+msgid "Panama"
+msgstr "Panamá"
+
+#: tmp/KYCTextValues.js
+msgid "Poland"
+msgstr "Polonia"
+
+#: tmp/KYCTextValues.js
+msgid "Verified for Level 01"
+msgstr "Verificado para Nivel 01"
+
+#: tmp/KYCTextValues.js
+msgid "Verified for Level 02"
+msgstr "Verificado para Nivel 02"
+
+#: tmp/KYCTextValues.js
+msgid "Verified for Level 03"
+msgstr "Verificado para Nivel 03"
+
+#: tmp/KYCTextValues.js
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: tmp/KYCTextValues.js
+msgid "Sweden"
+msgstr "Suecia"
+
+#: tmp/KYCTextValues.js
+msgid "/settings/verification"
+msgstr "/settings/verification"
+
+#: tmp/KYCTextValues.js
+msgid "Turkey"
+msgstr "Turquia"
+
+#: tmp/KYCTextValues.js
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: tmp/KYCTextValues.js
+msgid "Uganda"
+msgstr "Uganda"
+
+#: tmp/KYCTextValues.js
+msgid "Barbados"
+msgstr "Barbados"
+
+#: tmp/KYCTextValues.js
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: tmp/KYCTextValues.js
+msgid "Estonia"
+msgstr "Estonia"
+
+#: tmp/KYCTextValues.js
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard y Jan Mayen"
+
+#: tmp/KYCTextValues.js
+msgid "Zambia"
+msgstr "Zambia"
+
+#: tmp/KYCTextValues.js
+msgid "Falkland Islands (Malvinas)"
+msgstr "Islas Malvinas"
+
+#: tmp/KYCTextValues.js
+msgid "Saint Lucia"
+msgstr "Santa Lucia"
+
+#: tmp/KYCTextValues.js
+msgid "Sierra Leone"
+msgstr "Sierra Leona"
+
+#: tmp/KYCTextValues.js
+msgid "Russian Federation"
+msgstr "Rusia"
+
+#: tmp/KYCTextValues.js
+msgid "Northern Mariana Islands"
+msgstr "Islas Marianas del Norte"
+
+#: tmp/KYCTextValues.js
+msgid "lastName"
+msgstr "lastName"
+
+#: tmp/KYCTextValues.js
+msgid "Turks and Caicos Islands"
+msgstr "Islas Turcas y Caicos"
+
+#: tmp/KYCTextValues.js
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: tmp/KYCTextValues.js
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: tmp/KYCTextValues.js
+msgid "Iran, Islamic Republic Of"
+msgstr "República Islámica de Irán"
+
+#: tmp/KYCTextValues.js
+msgid "Åland Islands"
+msgstr "Islas Åland"
+
+#: tmp/KYCTextValues.js
+msgid "Unlimited Withdrawals"
+msgstr "Retiros Ilimitados"
+
+#: tmp/KYCTextValues.js
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: tmp/KYCTextValues.js
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: tmp/KYCTextValues.js
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+#: tmp/KYCTextValues.js
+msgid "Saint Pierre and Miquelon"
+msgstr "San Pedro y Miquelón"
+
+#: tmp/KYCTextValues.js
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: tmp/KYCTextValues.js
+msgid "French Polynesia"
+msgstr "Polinesia Francesa"
+
+#: tmp/KYCTextValues.js
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: tmp/KYCTextValues.js
+msgid "isDate"
+msgstr "isDate"
+
+#: tmp/KYCTextValues.js
+msgid "Cayman Islands"
+msgstr "Islas Caimán"
+
+#: tmp/KYCTextValues.js
+msgid "French Guiana"
+msgstr "Guayana Francesa"
+
+#: tmp/KYCTextValues.js
+msgid "Albania"
+msgstr "Albania"
+
+#: tmp/KYCTextValues.js
+msgid "Algeria"
+msgstr "Algeria"
+
+#: tmp/KYCTextValues.js
+msgid "Slovakia"
+msgstr "Eslovaquia"
+
+#: tmp/KYCTextValues.js
+msgid "Slovenia"
+msgstr "Eslovenia"
+
+#: tmp/KYCTextValues.js
+msgid "Andorra"
+msgstr "Andorra"
+
+#: tmp/KYCTextValues.js
+msgid "Finland"
+msgstr "Finlandia"
+
+#: tmp/KYCTextValues.js
+msgid "Micronesia, Federated States of"
+msgstr "Estados Federados de Micronesia"
+
+#: tmp/KYCTextValues.js
+msgid "Christmas Island"
+msgstr "Isla de Navidad"
+
+#: tmp/KYCTextValues.js
+msgid "Switzerland"
+msgstr "Suiza"
+
+#: tmp/KYCTextValues.js
+msgid "Australia"
+msgstr "Australia"
+
+#: tmp/KYCTextValues.js
+msgid "Sao Tome and Principe"
+msgstr "Santo Tomé y Príncipe"
+
+#: tmp/KYCTextValues.js
+msgid "Armenia"
+msgstr "Armenia"
+
+#: tmp/KYCTextValues.js
+msgid "country"
+msgstr "país"
+
+#: tmp/KYCTextValues.js
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: tmp/KYCTextValues.js
+msgid "select"
+msgstr "seleccionar"
+
+#: tmp/KYCTextValues.js
+msgid "Register as an exchange user and verify your email."
+msgstr "Regístrese como usuario y verifique su Email."
+
+#: tmp/KYCTextValues.js
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: tmp/KYCTextValues.js
+msgid "Austria"
+msgstr "Austria"
+
+#: tmp/KYCTextValues.js
+msgid "Anguilla"
+msgstr "Anguila"
+
+#: tmp/KYCTextValues.js
+msgid "$50,000 Buy Limit"
+msgstr "Límite de Compra $50,000"
+
+#: tmp/KYCTextValues.js
+msgid "$10,000 buy limit"
+msgstr "límite de compra $10,000"
+
+#: tmp/KYCTextValues.js
+msgid "Aruba"
+msgstr "Aruba"
+
+#: tmp/KYCTextValues.js
+msgid "Benin"
+msgstr "Benin"
+
+#: tmp/KYCTextValues.js
+msgid "Chile"
+msgstr "Chile"
+
+#: tmp/KYCTextValues.js
+msgid "China"
+msgstr "China"
+
+#: tmp/KYCTextValues.js
+msgid "Congo"
+msgstr "Congo"
+
+#: tmp/KYCTextValues.js
+msgid "Egypt"
+msgstr "Egipto"
+
+#: tmp/KYCTextValues.js
+msgid "Gabon"
+msgstr "Gabón"
+
+#: tmp/KYCTextValues.js
+msgid "Ghana"
+msgstr "Ghana"
+
+#: tmp/KYCTextValues.js
+msgid "Haiti"
+msgstr "Haiti"
+
+#: tmp/KYCTextValues.js
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: tmp/KYCTextValues.js
+msgid "India"
+msgstr "India"
+
+#: tmp/KYCTextValues.js
+msgid "Italy"
+msgstr "Italia"
+
+#: tmp/KYCTextValues.js
+msgid "Japan"
+msgstr "Japón"
+
+#: tmp/KYCTextValues.js
+msgid "Kenya"
+msgstr "Kenia"
+
+#: tmp/KYCTextValues.js
+msgid "Macao"
+msgstr "Macao"
+
+#: tmp/KYCTextValues.js
+msgid "Malta"
+msgstr "Malta"
+
+#: tmp/KYCTextValues.js
+msgid "Nauru"
+msgstr "Nauru"
+
+#: tmp/KYCTextValues.js
+msgid "Nepal"
+msgstr "Nepal"
+
+#: tmp/KYCTextValues.js
+msgid "Niger"
+msgstr "Niger"
+
+#: tmp/KYCTextValues.js
+msgid "Palau"
+msgstr "Palau"
+
+#: tmp/KYCTextValues.js
+msgid "Phone"
+msgstr "Teléfono"
+
+#: tmp/KYCTextValues.js
+msgid "Qatar"
+msgstr "Qatar"
+
+#: tmp/KYCTextValues.js
+msgid "Samoa"
+msgstr "Samoa"
+
+#: tmp/KYCTextValues.js
+msgid "Spain"
+msgstr "España"
+
+#: tmp/KYCTextValues.js
+msgid "Sudan"
+msgstr "Sudan"
+
+#: tmp/KYCTextValues.js
+msgid "billingStreetAddress"
+msgstr "billingStreetAddress"
+
+#: tmp/KYCTextValues.js
+msgid "Tonga"
+msgstr "Tonga"
+
+#: tmp/KYCTextValues.js
+msgid "Yemen"
+msgstr "Yemen"
+
+#: tmp/KYCTextValues.js
+msgid "phone"
+msgstr "teléfono"
+
+#: tmp/KYCTextValues.js
+msgid "state"
+msgstr "estado"
+
+#: tmp/KYCTextValues.js
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: tmp/KYCTextValues.js
+msgid "Colombia"
+msgstr "Colombia"
+
+#: tmp/KYCTextValues.js
+msgid "Ukraine"
+msgstr "Ucrania"
+
+#: tmp/KYCTextValues.js
+msgid "alphanumeric"
+msgstr "alfanumérico"
+
+#: tmp/KYCTextValues.js
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: tmp/KYCTextValues.js
+msgid "Bahrain"
+msgstr "Bahrein"
+
+#: tmp/KYCTextValues.js
+msgid "Luxembourg"
+msgstr "Luxemburgo"
+
+#: tmp/KYCTextValues.js
+msgid "French Southern Territories"
+msgstr "Territorios Franceses del Sur"
+
+#: tmp/KYCTextValues.js
+msgid "Increase to Level 1"
+msgstr "Incrementar al Nivel 1"
+
+#: tmp/KYCTextValues.js
+msgid "Increase to Level 2"
+msgstr "Incrementar al Nivel 2"
+
+#: tmp/KYCTextValues.js
+msgid "Increase to Level 3"
+msgstr "Incrementar al Nivel 3"
+
+#: tmp/KYCTextValues.js
+msgid "Martinique"
+msgstr "Martinica"
+
+#: tmp/KYCTextValues.js
+msgid "required"
+msgstr "necesario"
+
+#: tmp/KYCTextValues.js
+msgid "Honduras"
+msgstr "Honduras"
+
+#: tmp/KYCTextValues.js
+msgid "Bouvet Island"
+msgstr "Isla Bouvet"
+
+#: tmp/KYCTextValues.js
+msgid "Belarus"
+msgstr "Bielorrusia"
+
+#: tmp/KYCTextValues.js
+msgid "Belgium"
+msgstr "Bélgica"
+
+#: tmp/KYCTextValues.js
+msgid "British Indian Ocean Territory"
+msgstr "Territorio Británico del Océano Índico"
+
+#: tmp/KYCTextValues.js
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: tmp/KYCTextValues.js
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: tmp/KYCTextValues.js
+msgid "Antarctica"
+msgstr "Antartica"
+
+#: tmp/KYCTextValues.js
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: tmp/KYCTextValues.js
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: tmp/KYCTextValues.js
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: tmp/KYCTextValues.js
+msgid "Netherlands"
+msgstr "Países Bajos"
+
+#: tmp/KYCTextValues.js
+msgid "Georgia"
+msgstr "Georgia"
+
+#: tmp/KYCTextValues.js
+msgid "Germany"
+msgstr "Alemania"
+
+#: tmp/KYCTextValues.js
+msgid "$50,000 Sell Limit"
+msgstr "Límite de Venta $ 50,000"
+
+#: tmp/KYCTextValues.js
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: tmp/KYCTextValues.js
+msgid "Libyan Arab Jamahiriya"
+msgstr "Libia"
+
+#: tmp/KYCTextValues.js
+msgid "Cape Verde"
+msgstr "Cabo Verde"
+
+#: tmp/KYCTextValues.js
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: tmp/KYCTextValues.js
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: tmp/KYCTextValues.js
+msgid "Solomon Islands"
+msgstr "Islas Solomón"
+
+#: tmp/KYCTextValues.js
+msgid "Lebanon"
+msgstr "Libano"
+
+#: tmp/KYCTextValues.js
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: tmp/KYCTextValues.js
+msgid "Cambodia"
+msgstr "Camboya"
+
+#: tmp/KYCTextValues.js
+msgid "Cameroon"
+msgstr "Camerún"
+
+#: tmp/KYCTextValues.js
+msgid "Lesotho"
+msgstr "Lesoto"
+
+#: tmp/KYCTextValues.js
+msgid "Terms & Conditions"
+msgstr "Términos y Condiciones"
+
+#: tmp/KYCTextValues.js
+msgid "Serbia and Montenegro"
+msgstr "Serbia y Montenegro"
+
+#: tmp/KYCTextValues.js
+msgid "Argentina"
+msgstr "Argentina"
+
+#: tmp/KYCTextValues.js
+msgid "Liberia"
+msgstr "Liberia"
+
+#: tmp/KYCTextValues.js
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: tmp/KYCTextValues.js
+msgid "Antigua and Barbuda"
+msgstr "Antigua y Barbuda"
+
+#: tmp/KYCTextValues.js
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: tmp/KYCTextValues.js
+msgid "Mauritius"
+msgstr "Mauricio"
+
+#: tmp/KYCTextValues.js
+msgid "Burundi"
+msgstr "Burundi"
+
+#: tmp/KYCTextValues.js
+msgid "Malaysia"
+msgstr "Malasia"
+
+#: tmp/KYCTextValues.js
+msgid "Grenada"
+msgstr "Granada"
+
+#: tmp/KYCTextValues.js
+msgid "Maldives"
+msgstr "Maldivas"
+
+#: tmp/KYCTextValues.js
+msgid "Unlimited Deposits"
+msgstr "Depósitos ilimitados"
+
+#: tmp/KYCTextValues.js
+msgid "Philippines"
+msgstr "Filipinas"
+
+#: tmp/KYCTextValues.js
+msgid "Holy See (Vatican City State)"
+msgstr "Santa Sede (Estado de la Ciudad del Vaticano)"
+
+#: tmp/KYCTextValues.js
+msgid "Greenland"
+msgstr "Tierra Verde"
+
+#: tmp/KYCTextValues.js
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"

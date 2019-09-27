@@ -1,0 +1,186 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Banexcoin Payment</title>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="/local/landing-page/css/landing-style.css" rel="stylesheet">
+      <script src="./local/js/alphapoint.min.js"></script>
+  </head>
+  <style>
+    html {
+      overflow: hidden;
+      box-sizing: border-box;
+      height: fit-content;
+      width: 100%;
+      background-color: white;
+    }
+    body {
+      height: 100%;
+    }
+    html body a {color: black!important;}
+    .flobox {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+      padding: 10px 15px;
+    }
+    .flobox h3.title {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .flobox h3.subt {
+      font-size: 0.7rem;
+      color: #a7a7a7;
+      margin: 0;
+    }
+    #amount {
+      font-size: 1.5rem;
+    }
+    .neutral {
+      color: black;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    .negative {
+      color: crimson;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    .positive {
+      color: #74ba74;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    tr:nth-child(2n-1) {
+      background: rgba(228, 225, 225, 0.17);
+    }
+    table tr:nth-child(2n-1):hover {
+      background: rgba(228, 225, 225, 0.5);
+    }
+    td {
+        font-size: 0.8rem;
+        color:#474747;
+    }
+    .tr-subtitle {
+      background: #2900ff21!important;
+      cursor: default;
+    }
+    .tr-subtitle td {
+      font-weight: bold;
+      padding: 1.75rem 0.75rem;
+      border: none;
+      color: #5b5b5b;
+    }
+    tr img {
+      width: 20px;
+      margin-right: 3px;
+    }
+  </style>
+  <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      
+        <table class="table" id="tableStat">
+
+        </table>
+      
+      <script src="./local/js/jquery.inputmask/dist/jquery.inputmask.bundle.min.js"></script>
+  </body>
+  <script>
+    window.apex = new alphapoint.APEX(
+      'wss://api.banexcoin.com/WSGateway/'
+    );
+    var mainer = 0;
+    const getInstrumentById = async (iid) => {
+        const vartrade = {
+            OMSId: 1,
+            InstrumentId: iid,
+            Interval: 60,
+            IncludeLastCount: 1
+          };
+        let trade = await window.apex.SubscribeTicker(vartrade);
+        return trade;
+      }
+
+    
+
+    const main = async () => {
+      var retornar = 0;
+      function toDate(date) {
+        if (date === void 0) {
+          return new Date(0);
+        }
+        if (isDate(date)) {
+          return date;
+        } else {
+          return new Date(parseFloat(date.toString()));
+        }
+      }
+
+      function isDate(date) {
+        return (date instanceof Date);
+      }
+
+      function format(date, format) {
+        var d = toDate(date);
+        return format
+          .replace(/Y/gm, d.getFullYear().toString())
+          .replace(/m/gm, ('0' + (d.getMonth() + 1)).substr(-2))
+          .replace(/d/gm, ('0' + (d.getDate() + 1)).substr(-2))
+          .replace(/H/gm, ('0' + (d.getHours() + 0)).substr(-2))
+          .replace(/i/gm, ('0' + (d.getMinutes() + 0)).substr(-2))
+          .replace(/s/gm, ('0' + (d.getSeconds() + 0)).substr(-2))
+          .replace(/v/gm, ('0000' + (d.getMilliseconds() % 1000)).substr(-3));
+      }
+      
+      
+      
+      
+      
+      
+        var d = new Date();
+        var mes = ((parseInt(d.getMonth()) + 1) > 9) ?(parseInt(d.getMonth()) + 1) : "0" + (parseInt(d.getMonth()) + 1);
+        var current_date =  (d.getFullYear()) +  '-'  + mes + '-' +  ((d.getDate() > 9 ? d.getDate() : "0" + d.getDate()) );
+        d.setDate(d.getDate() - 30);
+        var new_date =  (d.getFullYear()) +  '-'  + (d.getMonth() > 9 ? d.getMonth() : "0" + d.getMonth()) + '-' +  ((d.getDate() > 9 ? d.getDate() : "0" + d.getDate()) );
+        //console.log('5 days ago was: ' + current_date);
+        const vartrade = {
+          OMSId: 1,
+        };
+        const trade = await window.apex.GetInstruments(vartrade);
+        var jsonS = trade;
+        console.log(trade);
+        var filacabe = "<tr class='tr-subtitle'><td>Par</td><td>Moneda</td><td>Alto</td><td>Bajo</td><td>Volumen</td><td>Precio Compra</td></tr>";
+        $('table#tableStat').append(filacabe);
+        jsonS.forEach(async function(valor, indice, array) {
+          let jsonIns = await getInstrumentById(valor["InstrumentId"]);
+          console.log(jsonIns);
+          if(jsonIns.length > 0){
+            var fila = "<tr id-ins='" + valor["InstrumentId"] + "'>";
+              fila += "<td><img src='/local/product-icons/" + valor["Product1Symbol"].toLowerCase() + "-48px.svg'><img src='/local/product-icons/" + valor["Product2Symbol"].toLowerCase() + "-48px.svg'><b>" + valor["Symbol"]+ "</b></td>";
+              fila += "<td><b>" + valor["Product1Symbol"] + "</b></td>";
+              fila += "<td>" + jsonIns[0][1] + " " + valor["Product2Symbol"] + "</td>";
+              fila += "<td>" + jsonIns[0][2] + "</td>";
+              fila += "<td>" + jsonIns[0][5] + "</td>";
+              fila += "<td>" + jsonIns[0][7] + "</td>";
+              fila += "</tr>";
+          }
+          
+          $('table#tableStat').append(fila);
+        });
+        
+        
+      
+      
+    };
+    
+    main();
+
+    
+
+       
+
+  </script>
+</html>

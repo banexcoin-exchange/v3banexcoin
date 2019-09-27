@@ -1,0 +1,50 @@
+:root {
+    --pc__background-secondary: 39, 39, 39 !important;
+}
+body, html {
+    color: rgb(255, 255, 255)!important;
+}
+.market-overview__header, .product-balances__header, .activity__header-bar {
+    background: #404040!important;
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(162, 162, 162);
+}
+
+.ap-button__btn--general {
+    color: rgb(0, 0, 0)!important;
+    background: var(--general__bg-color);
+}
+@media only screen and (max-width: 99.2rem) {
+    .profile-and-settings-widget__body {
+        padding-bottom: 8rem;
+    }
+}
+@media only screen and (max-width: 99.2rem) {
+    .profile-and-settings-widget__body {
+        min-height: auto!important;
+    }
+}
+
+
+
+/* FIXES FOR CHANGES */
+.market-overview__header, .product-balances__header, .activity__header-text, .activity__action-text--primary, .balance-item__container, .instrument-selector__trigger, .ap-tab__menu-item--active, .buy-sell-make-transaction__title, .buy-sell-order-overview__title {
+    color: rgb(255, 255, 255)!important;
+}
+.instrument-table__value {
+    color: #FFF!important;
+}
+
+.page-header-nav__item--selected, .page-header-nav__item--selected:hover {
+    background: rgba(0, 0, 0, 0.21)!important;
+    color: #ed8a20!important;
+}
+@media only screen and (max-width: 99.2rem) {
+    .page-header-nav__item--selected, .page-header-nav__item--selected:hover {
+        /*padding-left: 2.5rem!important;*/
+        padding-left: 1rem!important;
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg width="48px" height="48px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;}
+	.st2{fill:#FF6600;}
+	.st3{fill:#4E4E4E;}
+</style>
+<title>xmr</title>
+<desc>Created with Sketch.</desc>
+<g>
+	<circle class="st0" cx="24" cy="24" r="24"/>
+	<g>
+		<path class="st1" d="M10.1,32.6C10.1,32.5,10.1,32.5,10.1,32.6C10.1,32.5,10.1,32.5,10.1,32.6C10.1,32.6,10.1,32.6,10.1,32.6z"/>
+		<path class="st1" d="M24,7.9c-9,0-16.2,7.3-16.2,16.2c0,1.8,0.3,3.5,0.8,5.1h0l0.1-0.1l-0.1,0.1h4.8V15.6L24,26.2l10.6-10.6v13.6
+			h4.8l0,0l0,0h0c0.5-1.6,0.8-3.3,0.8-5.1C40.2,15.1,32.9,7.9,24,7.9z"/>
+		<path class="st2" d="M24,0C10.7,0,0,10.7,0,24c0,1.8,0.2,3.6,0.6,5.2h8l0,0h4.8V15.6L24,26.2l10.6-10.6v13.6h4.8h8.1
+			c0.4-1.7,0.6-3.4,0.6-5.2C48,10.7,37.3,0,24,0z"/>
+		<polygon class="st0" points="39.4,29.2 34.5,29.2 34.5,15.6 24,26.2 13.4,15.6 13.4,29.2 8.6,29.2 8.6,29.2 8.6,29.2 10.1,32.5 
+			13.4,32.5 15.2,32.5 16.9,32.5 16.9,23.9 21.5,28.5 24,31 26.4,28.5 31,23.9 31,32.5 31.3,32.5 34.5,32.5 37.8,32.5 39.4,29.2 		
+			"/>
+		<polygon class="st2" points="39.4,29.2 39.4,29.2 39.4,29.2 		"/>
+		<path class="st3" d="M37.8,32.5h-3.3h-3.2H31v-8.6l-4.6,4.6L24,31l-2.5-2.4l-4.6-4.6v8.6h-1.8h-1.8h-3.3l0,0h0c0,0,0,0,0,0.1
+			c0,0,0,0,0,0c0,0,0-0.1-0.1-0.1H1.6C5,41.6,13.7,48,24,48c10.3,0,19-6.4,22.4-15.5H37.8z"/>
+		<polygon class="st0" points="10.1,32.5 10.1,32.5 10.1,32.5 10.1,32.5 		"/>
+	</g>
+</g>
+</svg>

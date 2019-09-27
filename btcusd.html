@@ -1,0 +1,249 @@
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Banexcoin</title>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="./local/css/jquery.payfield.css" rel="stylesheet">
+    <script src="./local/js/alphapoint.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+  </head>
+  <style>
+    html {
+      overflow: hidden;
+      box-sizing: border-box;
+      height: fit-content;
+      width: 100%;
+    }
+    body {
+      height: 100%;
+    }
+    html:hover,body:hover {
+      background: #f8f9fd;
+    }
+    html body a {color: black!important;}
+    .flobox {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+      padding: 10px 15px;
+    }
+    .flobox h3.title {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .flobox h3.subt {
+      font-size: 0.7rem;
+      color: #a7a7a7;
+      margin: 0;
+    }
+    #amount {
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
+    #amount .fas {
+      font-size: 1rem;
+      vertical-align: middle;
+    }
+    .neutral {
+      color: black;
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    .negative {
+      color: rgb(234, 0, 112);
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+    .positive {
+      color: rgb(112, 168, 0);
+      text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.68);
+    }
+  </style>
+  <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <a href="/" target="_blank">
+        <div class="flobox">
+          <h3 class="title">BTC/USD</h3>
+          <h3 class="subt">BITCOIN / USD</h3>
+          <p>
+            <b id="amount">0.000000</b>
+          </p>
+        </div>
+      </a>
+      <div id="chartContainer"></div>
+  </body>
+  <script>
+    window.apex = new alphapoint.APEX(
+      'wss://api.banexcoin.com/WSGateway/'
+    );
+    var mainer = 0;
+    const main = async () => {
+      var retornar = 0;
+      function toDate(date) {
+        if (date === void 0) {
+          return new Date(0);
+        }
+        if (isDate(date)) {
+          return date;
+        } else {
+          return new Date(parseFloat(date.toString()));
+        }
+      }
+
+      function isDate(date) {
+        return (date instanceof Date);
+      }
+
+      function format(date, format) {
+        var d = toDate(date);
+        return format
+          .replace(/Y/gm, d.getFullYear().toString())
+          .replace(/m/gm, ('0' + (d.getMonth() + 1)).substr(-2))
+          .replace(/d/gm, ('0' + (d.getDate() + 1)).substr(-2))
+          .replace(/H/gm, ('0' + (d.getHours() + 0)).substr(-2))
+          .replace(/i/gm, ('0' + (d.getMinutes() + 0)).substr(-2))
+          .replace(/s/gm, ('0' + (d.getSeconds() + 0)).substr(-2))
+          .replace(/v/gm, ('0000' + (d.getMilliseconds() % 1000)).substr(-3));
+      }
+      
+      
+      
+      
+      
+      
+        var d = new Date();
+        var mes = ((parseInt(d.getMonth()) + 1) > 9) ?(parseInt(d.getMonth()) + 1) : "0" + (parseInt(d.getMonth()) + 1);
+        var current_date =  (d.getFullYear()) +  '-'  + mes + '-' +  ((d.getDate() > 9 ? d.getDate() : "0" + d.getDate()) );
+        d.setDate(d.getDate() - 30);
+        var new_date =  (d.getFullYear()) +  '-'  + (d.getMonth() > 9 ? d.getMonth() : "0" + d.getMonth()) + '-' +  ((d.getDate() > 9 ? d.getDate() : "0" + d.getDate()) );
+        //console.log('5 days ago was: ' + current_date);
+        const vartrade = {
+          OMSId: 1,
+          InstrumentId: 1,
+          Interval: 86400,
+          //FromDate: new_date, // YYYY-MM-DD
+          //ToDate: current_date, // YYYY-MM-DD
+          IncludeLastCount: 100
+        };
+        const trade = await window.apex.SubscribeTicker(vartrade);
+        //console.log(trade);
+        var myJsonData = "[";
+        
+        var myJsonDataDates = "[";
+        var miArray = trade;
+        
+        miArray.forEach( function(valor, indice, array) {
+            var dateFormat = "d-m-Y";
+            var formatted = format(valor[0], dateFormat);
+
+            var newIndice = indice + 1;
+            myJsonData += "["+ newIndice + "," + valor[1] + "]";
+            myJsonDataDates += '["'+ formatted + '"]';
+            
+            if((indice + 1) < miArray.length){
+              myJsonData += ",";
+              myJsonDataDates += ",";
+            }
+        });
+        myJsonData += "]";
+        myJsonDataDates += "]";
+        //console.log(myJsonData);
+        var jsonString = JSON.parse(myJsonData);
+        var jsonStringDates = JSON.parse(myJsonDataDates);
+        var ultimo_number = jsonString[jsonString.length - 1][1];
+        var penultimo_number = jsonString[jsonString.length - 2][1];
+        var dif =  (parseFloat(ultimo_number) - parseFloat(penultimo_number));
+        
+        var element = document.getElementById("amount");
+        if(dif >= 0){
+          element.innerHTML = ultimo_number + ' <i class="fas fa-arrow-up"></i>';
+        } else {
+          element.innerHTML = ultimo_number + ' <i class="fas fa-arrow-down"></i>';
+        }
+        
+        
+        element.className = '';
+        element.classList.add("neutral");
+        setTimeout(function(){
+          element.classList.remove("neutral");
+          if(dif >= 0){
+            element.classList.add("positive");
+          } else {
+            element.classList.add("negative");
+          }
+        }, 500);
+        // 8000 8001
+        var options = {
+          chart: {
+            type: 'area',
+            sparkline: {
+              enabled: true
+            },
+            zoom: {
+              enabled: false
+            },
+            animations: {
+              enabled: false,
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          fill: {
+            colors: ['#ffa500'],
+          },
+          series: [{
+            data: jsonString,
+            labels: jsonStringDates,
+          }],
+          colors: ['#ffa500'],
+          stroke: {
+              show: true,
+              curve: 'smooth',
+              lineCap: 'butt',
+              colors: undefined,
+              width: 1,
+              dashArray: 0,      
+          },
+        }
+        document.getElementById("chartContainer").innerHTML = "";
+        var chart = new ApexCharts(document.querySelector("#chartContainer"), options);
+        chart.render();
+        retornar += 1;
+        mainer = 1;
+        return retornar;
+      
+      
+    };
+    
+    main();
+
+    setInterval(function () {
+      check();
+    }, 5000);
+    
+
+    function check(){
+      const SessionToken = localStorage.getItem('token');
+      if(!SessionToken){
+        //console.log("reintentando...." + mainer);
+        if(mainer == 1){
+          //console.log("exito....");
+          main();
+          mainer = 0;
+        } else {
+          //console.log("sin valor 0....");
+        }
+      }
+      
+    }
+       
+
+  </script>
+</html>

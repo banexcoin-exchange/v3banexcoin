@@ -1,0 +1,962 @@
+<html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Banexcoin Payment</title>
+            <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,900i" rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+            <link href="./local/css/jquery.payfield.css" rel="stylesheet">
+            <script src="./local/js/alphapoint.min.js"></script>
+            <style>
+                    body {
+                      font-size: 0.8rem;
+                      background-color: #F6F6F6;
+                      -webkit-font-smoothing: antialiased;
+                    }
+                    .h4, h4 {
+                      font-size: 1.3rem;
+                    }
+                    input[type=number]::-webkit-inner-spin-button,
+                    input[type=number]::-webkit-outer-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+                    input::placeholder, ::-webkit-input-placeholder {
+                      color: rgb(201, 201, 201)!important;
+                      opacity: 1; /* Firefox */
+                    }
+                    .nav-bi {
+                        background: white;
+                        height: 70px;
+                        padding: .8rem;
+                        width: 100%;
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                        z-index: 99;
+                    }
+                    .nav-bi .lin {
+                        width: 1.8px;
+                        height: 42px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        background: #c4c4c4;
+                        margin: 0 2rem;
+                    }
+                    .nav-bi img {
+                        width: 12rem;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+                    img.banner-in {
+                        width: calc(100%);
+                        margin: 0 0;
+                    }
+                    /* APEX ORIGINAL FIX*/
+                    .page-header__container-1 {
+                        position: relative;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-negative: 0;
+                        flex-shrink: 0;
+                        z-index: var(--z-index__navigation);
+                        margin-bottom: 4px;
+                        height: var(--nav-header__height);
+                        background: var(--nav-header__bg-color);
+                        -webkit-box-shadow: 0 4px 0 0 var(--nav-item__bg-color--selected),0 2px 2rem 0 var(--component__box-shadow-color);
+                        box-shadow: 0 4px 0 0 var(--nav-item__bg-color--selected),0 2px 2rem 0 var(--component__box-shadow-color);
+                    }
+              
+                    .page-header__header-item {
+                        font-size: 1.4rem;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 16rem;
+                        padding-top: .8rem;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        border-right: 1px solid var(--nav-item__separator-color);
+                        border-color: var(--nav-item__separator-color);
+                        color: var(--nav-item__color);
+                    }
+                    .page-header__header-item--logo {
+                        width: 16rem;
+                        color: var(--font__color-primary);
+                        -ms-flex-negative: 0;
+                        flex-shrink: 0;
+                    }
+                    @media only screen and (max-width: 99.2rem) {
+                      .page-header__header-item--logo {
+                          -ms-flex-order: 2;
+                          order: 2;
+                          -ms-flex: 1 1;
+                          flex: 1 1;
+                          border-right: 0;
+                          border-color: var(--nav-item__separator-color);
+                      }
+                    }
+                    @media only screen and (min-width: 79.2rem) {
+                      .page-header__header-item--logo {
+                          order: 0!important;
+                          flex: none!important;
+                      }
+                    }
+                    .page-header-nav__container, .page-header-nav__item {
+                        display: -ms-flexbox;
+                        display: flex;
+                    }
+                    @media only screen and (min-width: 79.2rem) {
+                      .page-header-nav__container {
+                          flex-direction: row!important;
+                          position: relative!important;
+                      }
+                    }
+              
+                    .page-header-nav__container--closed {
+                        overflow: hidden;
+                    }
+                    @media only screen and (max-width: 99.2rem) {
+                      .page-header-nav__container {
+                          -ms-flex-order: 1;
+                          order: 1;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                          z-index: var(--z-index__navigation);
+                          position: absolute;
+                          height: var(--nav-header__height);
+                      }
+                    }
+                    .page-header__right-panel {
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-pack: end;
+                        justify-content: flex-end;
+                        -ms-flex-positive: 1;
+                        flex-grow: 1;
+                    }
+                    @media only screen and (max-width: 99.2rem) {
+                      .page-header__right-panel {
+                          -ms-flex-order: 3;
+                          order: 3;
+                          -ms-flex-positive: unset;
+                          flex-grow: unset;
+                          position: absolute;
+                          right: 0;
+                          height: var(--nav-header__height);
+                      }
+                    }
+                    .page-header-nav__item {
+                        -ms-flex-align: center;
+                        align-items: center;
+                        width: 16rem;
+                        padding-top: .5rem;
+                        cursor: pointer;
+                        font-weight: 700;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        color: var(--nav-item__color);
+                        background: var(--nav-header__bg-color);
+                        border-right: solid 1px var(--nav-item__separator-color);
+                        border-color: var(--tab__separator-color);
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        z-index: var(--z-index__navigation);
+                    }
+                    @media only screen and (max-width: 99.2rem) {
+                      .page-header-nav__item--selected, .page-header-nav__item--selected:hover {
+                          -ms-flex-order: 1;
+                          order: 1;
+                          z-index: -1;
+                          background: transparent;
+                          cursor: default;
+                      }
+                    }
+              
+                    @media only screen and (max-width: 99.2rem) {
+                      .page-header-nav__item {
+                          padding-left: 3rem;
+                          padding-right: 3rem;
+                          min-height: var(--nav-header__height);
+                          display: -ms-flexbox;
+                          display: flex;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                          -ms-flex-line-pack: start;
+                          align-content: flex-start;
+                          -ms-flex-pack: start;
+                          justify-content: flex-start;
+                          width: 20rem;
+                          position: relative;
+                          border-top: 1px solid var(--tab__separator-color);
+                          -ms-flex-order: 2;
+                          order: 2;
+                      }
+                    }
+                    .page-header-nav__icon {
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: var(--nav-item__icon-size);
+                        margin: 0 1.2rem 0 0;
+                    }
+                    .page-header-nav__icon--exchange {
+                        margin-top: .3rem;
+                    }
+              
+                    .user-summary__container {
+                        width: 25rem;
+                        height: 100%;
+                        line-height: 1.4;
+                        min-width: 25rem;
+                        border-left: 1px solid var(--user-summary__border-color);
+                        border-right: 1px solid var(--user-summary__border-color);
+                    }
+                    @media only screen and (max-width: 99.2rem) {
+                      .user-summary__container {
+                          width: auto;
+                          min-width: 6rem;
+                      }
+                    }
+              
+                    /* APEX ORIGINAL END*/
+                    #all-pay, #no-pay {
+                      display: none;
+                    }
+                    div#loading_pay {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      position: absolute;
+                      background-image: url(/local/img/loading_pay.gif) !important;
+                      background-position: center;
+                      background-size: initial !important;
+                      background-repeat: no-repeat;
+                      background-color: rgb(248, 249, 250) !important;
+                      text-align: center;
+                      align-items: center;
+                      padding-top: 6%;
+                      line-height: 14;
+                      color: #6a6a6a;
+                      font-weight: 300;
+                      font-size: 1.5rem;
+                      z-index: 99;
+                    }
+                    .centered {
+                      margin: auto;
+                    }
+                    #box-amount {
+                        display: flex;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                    }
+                    .amount-simbol {
+                        margin-right: 4px;
+                        margin-top: 10px;
+                        text-align: right;
+                        color: rgb(44, 46, 47);
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .amount-payme {
+                        color: rgb(44, 46, 47);
+                        text-align: center;
+                        text-overflow: clip;
+                        cursor: pointer;
+                        letter-spacing: normal;
+                        line-height: 1.4;
+                        font-family: PayPal-Sans-Big, sans-serif;
+                        font-weight: 300;
+                        width: 84px;
+                        font-size: 38px;
+                        background: none;
+                        border-width: initial;
+                        border-style: none;
+                        border-color: initial;
+                        border-image: initial;
+                        padding: 0px;
+                        margin: 0px;
+                        outline: 0px;
+                    }
+                    .payment-title img {
+                        width: 278px;
+                        margin: 0px auto 0;
+                        display: block;
+                    }
+                    .payment-title span.title {
+                        width: 283px;
+                        margin: -21px auto 10px;
+                        display: block;
+                        text-align: right;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        cursor: default;
+                    }
+                    hr {
+                        margin-top: 0rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    ul.lista-error {
+                      margin: 0;
+                    }
+                    .form-group {
+                        margin-bottom: 0.5rem;
+                    }
+                    .boxpayment {
+                      /*border: 1px solid #cecece;*/
+                      border-radius: 3px;
+                      background: white;
+                      padding: 0px 0;
+                      margin: 10px auto;
+                      font-family: 'Roboto', sans-serif;
+                    }
+                    .boxpayment > div {padding: 0;}
+                    .right-info {
+                        text-align: center;
+                        padding: 0 1.5rem;
+                        background: white;
+                        border-width: 0 0 2px 0!important;
+                        border-radius: 12px!important;
+                        margin-right: 10px;
+                        border-color: #c3c3c3;
+                        color: #02AFA9;
+                    }
+                    input.form-control, div.form-control {
+                        border-width: 0 0 2px 0!important;
+                        border-radius: 12px!important;
+                        margin-right: 10px;
+                        border-color: #c3c3c3;
+                    }
+                    select.form-control {
+                        border-width: 0 0 2px 0!important;
+                        border-radius: 12px!important;
+                        margin-right: 10px;
+                        border-color: #c3c3c3;
+                        color: #02AFA9;
+                    }
+                    .form-control:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+                        border-color: #02AFA9!important;
+                        box-shadow: none!important;
+                    }
+                    label.label_pos {
+                      margin-left: 15px;
+                    }
+                    h3, h4 {
+                      color: #3a3a3a;
+                      font-weight: 400;
+                    }
+                    .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+                        color: #fff;
+                        background-color: #02AFA9;
+                        border-color: #02AFA9;
+                        text-transform: uppercase;
+                    }
+                    .btn-primary:hover {
+                      color: #fff;
+                      opacity: 0.5;
+                    }
+                    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+                        color: #fff;
+                        opacity: 0.5;
+                        /*border-color: #1B5E20;*/
+                        
+                    }
+                    .infor {
+                      padding-top: 20px;
+                    }
+                    ul.list-info {
+                      line-height: 2.8;
+                      list-style: none;
+                      text-align: left;
+                      padding: 0 30px;
+                    }
+                    ul.list-info li {
+                        padding-left: 2em;
+                        position: relative;
+                    }
+                    ul.list-info li::before {
+                      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAqFBMVEUAAACAgIBVqlWAgEBmmTNVgCtEdxFQgBBEdwlCfAdBdgdGeQZBdwZBdwVFegVEeAVFdgpCdglCdwlBdQdDdwdDdQdCdwdDdwZCdgZCdQZBdwZDdgZCdgZBdQVCdQZDdQZCdQZBdgZCdQVCdgVCdQVCdQVBdQZCdgZCdgZCdgZBdgZCdgZBdgZCdgVCdQVBdgVBdgVCdgVBdQVBdgVCdgVBdgVCdQVBdQU7WyRSAAAAN3RSTlMAAgMEBQYPEB4jJygrLzAxNDY6SmdvdHZ7fIGChJSfobK0vcXGys/Q1Nnb3ebo8fLz9fb3+fv81cVqRwAAAHJJREFUCB0FwQVCAgAAALGJ2N1itxI2cv//mRsAGH2eAsBxvQPgaFF3AOx91fcGgPVZdQJg9a16XOLweh/Dh+p3E9M+tritOoOnGq9dVD0P4GBRk6r5NnBVVY0AK69VvSwD7Myrv10AzqtLAAzuf26GgH9ePhEVjI8apwAAAABJRU5ErkJggg==);
+                      content: "";
+                      height: 15px;
+                      position: absolute;
+                      left: 5px;
+                      top: 8px;
+                      width: 15px;
+                    }
+                    #msj-error {
+                        display: flex;
+                        flex-wrap: wrap;
+                        color: rgb(209, 30, 52);
+                        font-size: 1em;
+                        opacity: 1;
+                        transition: opacity 0.5s ease 0s;
+                        padding: 5px 15px 0;
+                    }
+                    .title-box {
+                        display: block;
+                        padding: 15px 50px 0;
+                        color: #4f4f4f;
+                    }
+                    .title-box h4 {
+                        font-size: 1.7rem;
+                    }
+                    .total_to_pay {
+                      font-size: 1.2rem;
+                    }
+                    #paysaved {
+                      padding: 15px;
+                    }
+                    /* COMIENZA RADIO STYLE */
+                    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+                    /* VARS */
+                    /* MIXINS */
+                    /* STYLE THE HTML ELEMENTS (INCLUDES RESETS FOR THE DEFAULT FIELDSET AND LEGEND STYLES) */
+              
+                    fieldset {
+                      box-sizing: border-box;
+                      display: block;
+                      margin: 10px auto;
+                    }
+                    fieldset legend {
+                      margin: 0 0 1.5rem;
+                      padding: 0;
+                      width: 100%;
+                      float: left;
+                      display: table;
+                      font-size: 1.5rem;
+                      line-height: 140%;
+                      font-weight: 600;
+                      color: #333;
+                    }
+                    fieldset legend + * {
+                      clear: both;
+                    }
+              
+                    body:not(:-moz-handler-blocked) fieldset {
+                      display: table-cell;
+                    }
+                    .form-group label {
+                        font-size: 1rem;
+                        color: #4f4f4f;
+                    }
+                    /* TOGGLE STYLING */
+                    .crypt_icon {
+                      width: 100%;
+                      display: block;
+                      margin: 0 auto 8px;
+                      border-radius: 40px;
+                    }
+                    .toggle {
+                      margin: 0 0 1.5rem;
+                      box-sizing: border-box;
+                      font-size: 0;
+                      display: flex;
+                      flex-flow: row nowrap;
+                      justify-content: center;
+                      align-items: stretch;
+                    }
+                    span.title-cr {
+                        margin-top: 1rem;
+                        display: block;
+                    }
+                    .toggle input {
+                      width: 0;
+                      height: 0;
+                      position: absolute;
+                      left: -9999px;
+                    }
+                    .toggle input + label {
+                        margin: 0 .5rem;
+                        /*padding: 1rem .75rem 1rem;*/
+                        box-sizing: border-box;
+                        position: relative;
+                        display: inline-block;
+                        /*border: solid 1px #DDD;*/
+                        background-color: #FFF;
+                        font-size: 1rem;
+                        line-height: 140%;
+                        font-weight: 600;
+                        text-align: center;
+                        /*box-shadow: 0 0 0 rgba(255, 255, 255, 0);*/
+                        transition: border-color .15s ease-out, color .25s ease-out, background-color .15s ease-out, box-shadow .15s ease-out;
+                        border-radius: 61px;
+                        width: 54px;
+                        height: 54px;
+                    }
+                    /*.toggle input + label:first-of-type {
+                      border-radius: 6px 0 0 6px;
+                      border-right: none;
+                    }
+                    .toggle input + label:last-of-type {
+                      border-radius: 0 6px 6px 0;
+                      border-left: none;
+                    }*/
+                    .toggle input:hover + label {
+                      border-color: rgba(33, 49, 64, 0.47);
+                    }
+                    .toggle input:checked + label {
+                        background-color: #4B9DEA;
+                        box-shadow: 0 0 7px 4px rgba(102, 102, 102, 0.5);
+                        border: 2px solid #787878;
+                        z-index: 0;
+                    }
+                    .toggle input:checked + label[for="btc-c"] {
+                      background-color: #f7931a;
+                    }
+                    .toggle input:checked + label[for="dash-c"] {
+                      background-color: #1c75bc;
+                    }
+                    .toggle input:checked + label[for="eth-c"] {
+                      background-color: #627eea;
+                    }
+                    .toggle input:checked + label[for="ltc-c"] {
+                      background-color: #cbc6c6;
+                    }
+                    .toggle input:focus + label {
+                      outline: dotted 1px #CCC;
+                      outline-offset: .45rem;
+                    }
+                    @media (max-width: 800px) {
+                      .toggle input + label {
+                        padding: .75rem .25rem;
+                        flex: 0 0 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      }
+                    }
+              
+                    /* STYLING FOR THE STATUS HELPER TEXT FOR THE DEMO */
+                    .status {
+                      margin: 0;
+                      font-size: 1rem;
+                      font-weight: 400;
+                    }
+                    .status span {
+                      font-weight: 600;
+                      color: #B6985A;
+                    }
+                    .status span:first-of-type {
+                      display: inline;
+                    }
+                    .status span:last-of-type {
+                      display: none;
+                    }
+                    @media (max-width: 800px) {
+                      .status span:first-of-type {
+                        display: none;
+                      }
+                      .status span:last-of-type {
+                        display: inline;
+                      }
+                    }
+              
+                    /* TERMINA RADIO STYLE */
+                    ul.lines-step {
+                      align-items: center;
+                      text-align: center;
+                      margin: 0;
+                      padding: 0;
+                    }
+                    .lines-step li {
+                      width: 2em;
+                      height: 2em;
+                      text-align: center;
+                      line-height: 2em;
+                      border-radius: 1em;
+                      background: #f28e2a;
+                      margin: 0 1em;
+                      display: inline-block;
+                      color: white;
+                      position: relative;
+                    }
+              
+                    .lines-step li::before {
+                      content: '';
+                      position: absolute;
+                      top: .9em;
+                      left: -4em;
+                      width: 4em;
+                      height: .2em;
+                      background: #f28e2a;
+                      z-index: -2;
+                    }
+                    .lines-step li.active::after {
+                        content: '';
+                        position: absolute;
+                        top: -0.5em;
+                        left: -0.5em;
+                        width: 3em;
+                        height: 3em;
+                        background: #f3f3f3;
+                        z-index: -1;
+                        border-radius: 2em;
+                        border: 2px solid #ff7e44;
+                    }
+              
+                    .lines-step li:first-child::before {
+                      display: none;
+                    }
+              
+                    .lines-step .active {
+                      background: #f28e2a;
+                    }
+              
+                    .lines-step .active ~ li {
+                      background: #ffbe7e;
+                    }
+              
+                    .lines-step .active ~ li::before {
+                      background: #ffbe7e;
+                    }
+                    .lrt input {
+                      border-width: 1.5px;
+                    }
+                    #savedbutton > div {
+                        padding: 0;
+                    }
+                    /*div#savedbutton:before {
+                      content: '';
+                      height: 74.4%;
+                      width: 57px;
+                      border: 1.5px solid #e4aa73;
+                      border-right: none;
+                      position: absolute;
+                      top: 0px;
+                      bottom: 0;
+                      left: 48px;
+                      margin: 45px 0;
+                    }*/
+                    .timer {
+                      border-radius: 50%;
+                      border: 1.5px solid rgba(34, 34, 34, 0.56);
+                      width: 30px;
+                      height: 30px;
+                      display: inline-block;
+                      vertical-align: middle;
+                      cursor: pointer;
+                      position: absolute;
+                      right: 30px;
+                      top: -6px;
+                    }
+                    .timer .min, .timer .sec {
+                      width: 1.5px;
+                      height: 11px;
+                      background-color: #4d4d4d;
+                      margin-left: 13.7px;
+                      margin-top: 4px;
+                      transform-origin: 100% 100%;
+                      position: absolute;
+                      border-radius: 2px;
+                    }
+                    .timer .dot {
+                      width: 5px;
+                      height: 5px;
+                      background-color: #4c4c4c;
+                      margin: 12px 0 0 12px;
+                      transform-origin: 100% 100%;
+                      position: absolute;
+                      border-radius: 4px;
+                    }
+                    .timer .sec {background-color: red;}
+                    span.ssec {
+                      text-align: center;
+                      color: white;
+                      padding: 5px 15px;
+                      border-radius: 3px;
+                      border: 1.5px solid rgba(0, 0, 0, 0.36);
+                    }
+                    #high {background-color: rgb(107, 231, 112);}
+                    #normal {background-color: rgb(117, 215, 88);}
+                    #warning {background-color: rgb(233, 129, 33);}
+                    #danger {background-color: rgb(219, 67, 47);}
+                  </style>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div class="nav-bi">
+                <img src="./local/logos/logo-banexcoin.svg">
+                <span class="lin"></span>
+                <img src="./local/landing-page/images/interbank-logo.png">
+            </div>
+            <div class="container rest-topper">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 dep-pos centered boxpayment">
+                    <div class="col-lg-12 col-md-12 box-whited" id="all-pay">
+                      <div class="row">
+                          <div class="col-lg-12 col-md-12">
+                              <div class="row">
+                                <div id="savedbutton" class="col-lg-12">
+                                  <div class="row col-sm-12 col-lg-12" style="margin: 0;">
+                                        <div class="col-lg-12 col-md-12 title-box">
+                                            <h4 class="text-center" id="dt-status">Detalle de compra</h4>
+                                        </div>
+                                      <div class="form-group col-lg-12" id="usd-a">
+                                          <div class="col-lg-12 lrt">
+                                              <label for="amount_usd" class="label_pos">Moneda / Monto pagado</label>
+                                              <div class="input-group col-lg-12" >
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text right-info slc" id="fiat_currency">USD</span>
+                                                    </div>
+                                                    <div class="form-control" id="fiat_amount">1.00</div>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <div id="msj-error"></div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group col-lg-12" id="usd-b">
+                                          <div class="col-lg-12 lrt">
+                                              <label for="amount_ticket" class="label_pos">
+                                                Criptomoneda / Monto comprado
+                                              </label>
+                                              <div class="input-group col-lg-12">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text right-info slc" id="crypto_currency">BTC</span>
+                                                </div>
+                                                <div class="form-control" id="crypto_amount">0.00001</div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+      
+                              </div>
+                              <br>
+                              <br>
+                              <br>
+                          </div>
+                         
+                      </div>
+      
+                      <div id="loading_pay">Procesando compra</div>
+                    </div>
+                    <div class="box_step col-lg-12 col-md-12" id="stepb-2">
+                      <div id="materialize-progress">
+                        <div class="circle-loader"><div class="checkmark draw"></div><div class="error draw"></div></div>
+                      </div>
+                      <div id="materialize-transaction-report"></div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="row" id="no-pay">
+                  <h3 class="text-center">Debe autenticarse para realizar el pago del servicio</h3>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+    <script>
+    $('#all-pay').show();
+    
+    const main = async () => {
+        function setTickets(banexcoin_id, ap_ticket) {
+            data = {
+                'alphapointTicket': ap_ticket,
+                'id': banexcoin_id
+            };
+            $.ajax({
+                type: "POST",
+                url: "https://apibanexcoin.solucionestricore.com/interbank/update-alphapoint",
+                data: data,
+                dataType: "json",
+                beforeSend: function(){
+                    $('form.input').attr("readonly");
+                },
+                success: function(data){
+                    var bti = data.data.updateDepositById.deposit.id;
+                    console.log(bti);
+                    if(bti){
+                        
+                        
+                    } else {
+                        
+                    }
+                },
+                error:function(){
+                }
+            });
+        }
+        function getStatus(correlationId, amountCrypto, typeCrypto, amountFiat, typeFiat, message) {
+            data = {
+                "correlationId": correlationId,
+            };
+            $.ajax({
+                type: "POST",
+                url: "https://apibanexcoin.solucionestricore.com/interbank/oauth2-verify-transfer",
+                data: data,
+                dataType: "json",
+                beforeSend: function(){
+                },
+                success: function(data){
+                    
+                    console.log(data);
+
+                    if(data.correlation.status == 'SETTLED'){
+                        console.log("exitoso");
+                        $('#dt-status').text("El pago fue procesado con exito");
+                        $('#fiat_amount').text(amountFiat);
+                        $('#fiat_currency').text(typeFiat);
+                        $('#crypto_amount').text(amountCrypto);
+                        $('#crypto_currency').text(typeCrypto);
+                        generateticket(amountCrypto, typeCrypto, amountFiat, typeFiat);
+                        
+                    } else if(data.correlation.status == 'FAILED'){
+                        console.log("fallido");
+                        $('#dt-status').text("Hubo un error al procesar el pago");
+                        $('#usd-a').hide();
+                        $('#usd-b').hide();
+                        
+                    } else {
+                        getStatus(correlationId, amountCrypto, typeCrypto, amountFiat, typeFiat, message);
+                    }
+                },
+                error:function(){
+                }
+            });
+        }
+        function Proccess(banexcoin_id, acode) {
+            data = {
+                'depositId': banexcoin_id,
+                'code': acode
+            };
+            $.ajax({
+                type: "POST",
+                url: "https://apibanexcoin.solucionestricore.com/interbank/oauth2-transfer",
+                data: data,
+                dataType: "json",
+                beforeSend: function(){
+                    $('form.input').attr("readonly");
+                },
+                success: function(data){
+                    var amountFiat = data.data.amountFiat;
+                    var typeFiat = data.data.typeFiat;
+                    var amountCrypto = data.data.amountCrypto;
+                    var correlationId = data.data.correlationId;
+                    var amountCrypto = data.data.amountCrypto;
+                    var typeCrypto = data.data.typeCrypto;
+                    var message = data.data.message;
+                    console.log(correlationId);
+                    if(correlationId){
+                        getStatus(correlationId, amountCrypto, typeCrypto, amountFiat, typeFiat, message);
+                    } else {
+                        console.log('No se proceso pago');
+                    }
+                },
+                error:function(){
+                }
+            });
+        }
+
+
+        //obtenemos el session token
+        const SessionToken = localStorage.getItem('token');
+        apex = new alphapoint.APEX(
+            'wss://api.banexcoin.com/WSGateway/'
+        );
+        // ejecutamos la autenticacion con el session token
+        const auth = await apex.WebAuthenticateUser({
+            SessionToken
+        });
+        // Una vez que se autentica mediante el token del usuario se genera otro token
+        // que debemos reemplazar en el localstorage o sino se cerrará la sesion
+        localStorage.setItem('token', auth.SessionToken);
+    
+        const generateticket = async (amount_crypto, currency_type, amount_usd, tipo_fiat) => {
+                const ui = await apex.GetUserInfo();
+                const gai = await apex.GetAccountInfo();
+                var currency_tb = currency_type;
+                var amount_currency = amount_crypto;
+                var amount_currency_usd = amount_usd;
+    
+                const account = await apex.GetUserAccounts();
+                const example = {
+                    OMSId: 1,
+                    OperatorId: 1,
+                    AccountId: account[0],
+                    RequestUser: account[0],
+                    AssetId: 13,
+                    Amount: amount_currency,
+                    DepositInfo:
+                        '{"ProductSymbol":"' + currency_tb + '","fullname":"' + gai['AccountName'] + '","comments":"Compra de ' + currency_tb + ' con cuenta Interbank en ' + tipo_fiat + ' por el monto de ' + amount_usd + ' ' + tipo_fiat +'"}',
+                    Status: 'New'
+                };
+                if(currency_tb == 'BTC'){
+                    assetId = 1;
+                } else if(currency_tb == 'LTC'){
+                    assetId = 2;
+                } else if(currency_tb == 'DASH'){
+                    assetId = 3;
+                } else if(currency_tb == 'ETH'){
+                    assetId = 5;
+                }
+                const dep = {
+                    "assetManagerId": 1,
+                    "accountId": account[0],
+                    "assetId": assetId,
+                    "assetName": ""+currency_tb,
+                    "amount": parseFloat(amount_currency),
+                    "omsId": 1,
+                    "requestCode": null,
+                    "requestIP": null,
+                    "requestUser": account[0],
+                    "requestUserName": null,
+                    "operatorId": 1,
+                    "Status": 0,
+                    "feeAmt": 0.0,
+                    "updatedByUser": 0,
+                    "updatedByUserName": null,
+                    "ticketNumber": 0,
+                    "depositInfo": '{"ProductSymbol":"' + currency_tb + '","fullname":"' + gai['AccountName'] + '","comments":"Compra de ' + currency_tb + ' con cuenta Interbank"}',
+                    "createdTimestamp": "0001-01-01T00:00:00",
+                    "lastUpdateTimeStamp": "0001-01-01T00:00:00",
+                    "comments": null,
+                    "attachments": null
+                }
+                const deposit = await apex.CreateDepositTicket(dep);
+                console.log(deposit);
+                //setTickets(banexcoin_id, ap_ticket)
+                $("#loading_pay").hide();
+            }
+
+        // verificamos si estamos autenticados
+        if (auth.Authenticated) {
+            
+            
+            //generateticket(monto en cripto, tipo de moneda comprada, monto en usd o pen, tipo de moneda);
+            var url_string = window.location.href; //window.location.href
+            var url = new URL(url_string);
+            var c = url.searchParams.get("code");
+            var bti = localStorage.getItem('banexcoin-ticket-id');
+            console.log(c + " " + bti);
+
+            Proccess(bti, c);
+
+            //generateticket(data.success.amount, data.success.currency, data.success.amount_usd, tipo_fiat);
+        }
+
+
+        
+    };
+    main();
+    </script>
+    </body>
+</html>
